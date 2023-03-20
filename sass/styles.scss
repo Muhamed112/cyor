@@ -1,2 +1,12 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.nav-link span {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+
+.dropdown-menu {
+  border-top: 0.5px solid $secondary;
+}

@@ -1,7 +1,30 @@
-$primary: #3ec89d;
-$secondary: #3ab7ff;
+$primary: #0a2b51;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+$secondary: #a1ffa1;
 $success: #65ff9f;
 $info: #7164ff;
 $warning: #ff9f65;
 $danger: #ff457b;
 $dark: #18181d;
+
+$navbar-dark-color: #fff;
+$navbar-nav-link-padding-x: 1.125rem;
+$navbar-dark-hover-color: $secondary;
+$navbar-dark-active-color: $secondary;
+$navbar-brand-height: 0.35rem;
+
+$dropdown-padding-y: 1.875rem;
+$dropdown-border-radius: 0;
+$dropdown-spacer: 1.3rem;
+
+$font-family-base: "Inter", sans-serif;
+$font-size-base: 1rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1680px,
+);
