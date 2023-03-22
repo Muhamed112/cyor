@@ -14,7 +14,13 @@ gulp.task(
   "start",
   gulp.series("sass", function () {
     browserSync.init({
-      server: "./",
+      server: {
+        baseDir: "./",
+        index: "./index.html",
+        serveStaticOptions: {
+          extensions: ["html"],
+        },
+      },
     });
 
     gulp.watch("sass/*.scss", gulp.series("sass"));

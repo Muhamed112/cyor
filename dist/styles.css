@@ -10775,6 +10775,7 @@ textarea.form-control-lg {
   padding-left: 7px;
 }
 
-.dropdown-menu {
+.dropdown-menu,
+.subheader {
   border-top: 0.5px solid #a1ffa1;
 }
