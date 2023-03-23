@@ -8,6 +8,17 @@ $warning: #ff9f65;
 $danger: #ff457b;
 $dark: #18181d;
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+);
+
 $navbar-dark-color: #fff;
 $navbar-nav-link-padding-x: 1.125rem;
 $navbar-dark-hover-color: $secondary;
@@ -20,6 +31,10 @@ $dropdown-spacer: 1.3rem;
 
 $font-family-base: "Inter", sans-serif;
 $font-size-base: 1rem;
+
+$h1-font-size: $font-size-base + 1.441rem;
+$h2-font-size: $font-size-base + 0.563rem;
+$h3-font-size: $font-size-base + 0.25rem;
 
 $container-max-widths: (
   sm: 540px,
