@@ -15,8 +15,9 @@ $spacers: (
   2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 3.5,
+  5: $spacer * 1.875,
+  6: $spacer * 3,
+  7: $spacer * 3.5,
 );
 
 $navbar-dark-color: #fff;
@@ -36,10 +37,12 @@ $h1-font-size: $font-size-base + 1.441rem;
 $h2-font-size: $font-size-base + 0.563rem;
 $h3-font-size: $font-size-base + 0.25rem;
 
+$carousel-control-color: $dark;
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1680px,
+  xxl: 1225px,
 );

@@ -2,12 +2,28 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 p,
-h1 {
+h1,
+h2 {
   margin-bottom: 0;
 }
 h1,
 h2 {
   font-weight: 600;
+}
+
+.btn-primary {
+  background: $secondary;
+  border-radius: 12px;
+  color: $primary;
+  font-weight: 500;
+  padding: 15px 0;
+  text-align: center;
+  border: none;
+}
+
+.text-section {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .navbar {
@@ -44,4 +60,12 @@ h2 {
   bottom: 0;
   right: 0;
   left: 0;
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    margin-top: 14px;
+  }
 }

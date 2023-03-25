@@ -1,0 +1,50 @@
+@import "variables";
+
+.contact-hero {
+  height: 400px;
+  width: 100%;
+  background-image: url("/assets/contact-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+
+  .contact-hero-content {
+    max-width: 520px;
+  }
+}
+
+.carousel {
+  .carousel-inner {
+    margin-top: -70px;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 24px;
+    .carousel-item {
+      height: 480px;
+    }
+    .contact-form {
+      padding: 56px;
+    }
+    .live-call {
+      padding: 56px 100px;
+    }
+  }
+  .carousel-control-prev {
+    justify-content: flex-end;
+  }
+  .carousel-control-next {
+    justify-content: flex-start;
+  }
+  .carousel-indicators {
+    z-index: 15;
+  }
+  .carousel-indicators .active {
+    background-color: $primary !important;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #f3f4f6;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+}

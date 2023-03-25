@@ -1,0 +1,14 @@
+@import "variables";
+
+.career-hero {
+  height: 560px;
+  width: 100%;
+  background-image: url("/assets/career/career-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+
+  .career-hero-content {
+    max-width: 600px;
+  }
+}
