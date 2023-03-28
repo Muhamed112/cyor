@@ -46,5 +46,3 @@ gulp.task(
 gulp.task("default", gulp.series("start"));
 
 gulp.task("build", gulp.series(["sass", "html", "js"]));
-
-// exports.build = gulp.series("default");
