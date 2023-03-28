@@ -4,7 +4,7 @@
   margin-bottom: 40px;
   background-color: #f3f4f6;
   .container {
-    background-image: url("/assets/resources-hero.svg");
+    background-image: url("/assets/resources/resources-hero.svg");
     background-repeat: no-repeat;
     background-position: right;
     height: 100%;
@@ -15,21 +15,32 @@
 .resources-tabs {
   .nav-tabs {
     border-bottom: 1px solid #0a2b511a;
-    .nav-link {
-      border: none;
-    }
-    .nav-link.active {
-      border-bottom: 1px solid #0a2b511a;
+    .nav-item {
+      &:first-child {
+        .nav-link {
+          padding-left: 0;
+        }
+      }
+      .nav-link {
+        border: none;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+        color: rgba(10, 43, 81, 0.5);
+      }
+      .nav-link.active {
+        font-weight: 600;
+        border-bottom: 1px solid #0a2b511a;
+        color: $primary;
+      }
     }
   }
-  .blog-box {
-    padding: 56px 56px 0 56px;
+  .tab-box {
     background-color: #f3f4f6;
     height: 755px;
     border-radius: 12px;
     margin-top: 32px;
     margin-bottom: 84px;
-    overflow-y: scroll;
 
     .form-control {
       background-color: #f3f4f6;
@@ -43,7 +54,10 @@
         color: $primary;
       }
     }
-
+  }
+  .blog {
+    padding: 56px 56px 0 56px;
+    overflow-y: scroll;
     .box-content {
       .card-row {
         justify-content: space-between;
@@ -65,6 +79,16 @@
             color: #263238;
           }
         }
+      }
+    }
+  }
+
+  .accordion {
+    padding: 56px;
+
+    .accordion-item {
+      .accordion-button {
+        padding-left: 0;
       }
     }
   }
