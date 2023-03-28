@@ -2,7 +2,7 @@
 .contact-hero {
   height: 400px;
   width: 100%;
-  background-image: url("assets/contact-hero.png");
+  background-image: url("/assets/contact-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 56px;
