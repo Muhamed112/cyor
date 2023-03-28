@@ -12,11 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.0",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
     "sass": "^1.59.3"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "bootstrap": "^5.2.3",
     "popper.js": "^1.16.1"
   }
