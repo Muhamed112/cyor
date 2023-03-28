@@ -1,12 +1,25 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass")(require("sass"));
-const ghPages = require("gulp-gh-pages");
 
 gulp.task("sass", () => {
   return gulp
     .src("./sass/*.scss")
     .pipe(sass())
+    .pipe(gulp.dest("dist/"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("html", () => {
+  return gulp
+    .src("./*.html")
+    .pipe(gulp.dest("dist/"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("js", () => {
+  return gulp
+    .src("./js/*.js")
     .pipe(gulp.dest("dist/"))
     .pipe(browserSync.stream());
 });
@@ -31,10 +44,7 @@ gulp.task(
 );
 
 gulp.task("default", gulp.series("start"));
-gulp.task("build", gulp.series("start"));
 
-gulp.task("deploy", function () {
-  return gulp.src("./build/**/*").pipe(ghPages());
-});
+gulp.task("build", gulp.series(["sass", "html", "js"]));
 
 // exports.build = gulp.series("default");
