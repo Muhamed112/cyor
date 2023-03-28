@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-.career-hero {
+.content .career-hero {
+  z-index: 1;
   height: 560px;
   width: 100%;
   background-image: url("/assets/career/career-hero.png");
@@ -7,6 +8,142 @@
   background-repeat: no-repeat;
   padding-top: 56px;
 }
-.career-hero .career-hero-content {
+.content .career-hero .career-hero-content {
   max-width: 600px;
+}
+.content .career-hero .seperator {
+  height: 1px;
+  width: 70px;
+  background-color: #d9d9d9;
+}
+.content .join-us {
+  margin-bottom: 40px;
+  z-index: 2;
+  margin-top: -250px;
+}
+.content .join-us .card-row .card:first-child p {
+  max-width: 220px;
+}
+.content .join-us .card-row .card {
+  margin-right: 16px;
+  width: 380px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f3f4f6;
+  border-radius: 24px;
+  border: none;
+}
+.content .join-us .card-row .card p {
+  max-width: 295px;
+  line-height: 19px;
+}
+.content .benefits {
+  margin-bottom: 40px;
+}
+.content .benefits .card-row .card {
+  padding-left: 40px;
+  height: 145px;
+  width: 385px;
+  margin-right: 16px;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  border: none;
+}
+.content .benefits .card-row .card p {
+  line-height: 19px;
+}
+.content .benefits .card-row .card:last-child {
+  margin-right: 0;
+}
+.content .benefits .card-row:last-child {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.content .gallery {
+  margin-bottom: 40px;
+}
+.content .gallery .container {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 50px;
+}
+.content .gallery .container .gallery-row {
+  height: 400px;
+  margin-bottom: 20px;
+}
+.content .gallery .container .gallery-row .img-item:first-child {
+  border-top-left-radius: 16px;
+}
+.content .gallery .container .gallery-row .img-item:last-child {
+  border-top-right-radius: 16px;
+}
+.content .gallery .container .gallery-row .img-item {
+  height: 100%;
+}
+.content .gallery .container .gallery-row:last-child {
+  margin-bottom: 0;
+}
+.content .gallery .container .gallery-row:last-child .img-item:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 16px;
+}
+.content .gallery .container .gallery-row:last-child .img-item:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 16px;
+}
+.content .positions {
+  margin-bottom: 48px;
+}
+.content .positions .positions-row .position-card {
+  height: 640px;
+  width: 385px;
+  background-color: #f3f4f6;
+  padding: 40px;
+  border-radius: 24px;
+  line-height: 19px;
+}
+.content .positions .positions-row .position-card .card-header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 24px;
+}
+.content .apply {
+  margin-bottom: 55px;
+}
+.content .apply .main-row {
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(10, 43, 81, 0.24);
+}
+.content .apply .main-row img {
+  position: absolute;
+  top: -40%;
+}
+.content .apply .apply-form .form-select {
+  margin-bottom: 10px;
+  border-color: #0a2b51;
+  border-radius: 12px;
+}
+.content .apply .apply-form .row {
+  margin-bottom: 10px;
+}
+.content .apply .apply-form .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #0a2b51;
+  color: #0a2b51;
+  padding-left: 0;
+  padding-bottom: 5px;
+}
+.content .apply .apply-form .form-control::placeholder {
+  color: #0a2b51;
+}
+.content .apply .apply-form .btn-primary {
+  width: 280px;
+  padding: 10px 0;
+}
+.content .apply .apply-form .btn-secondary {
+  width: 145px;
 }

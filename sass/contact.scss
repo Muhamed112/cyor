@@ -21,20 +21,32 @@
     border-radius: 24px;
     .carousel-item {
       height: 480px;
+      .form-control {
+        height: 48px;
+        border: 0.5px solid $primary;
+        border-radius: 12px;
+        color: $primary;
+      }
+      .form-control::placeholder {
+        color: $primary;
+      }
+      textarea {
+        height: 90px !important;
+      }
     }
+
     .contact-form {
       padding: 56px;
     }
+
     .live-call {
       padding: 56px 100px;
+      img {
+        margin-left: 70px;
+      }
     }
   }
-  .carousel-control-prev {
-    justify-content: flex-end;
-  }
-  .carousel-control-next {
-    justify-content: flex-start;
-  }
+
   .carousel-indicators {
     z-index: 15;
   }

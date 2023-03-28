@@ -20,17 +20,26 @@
 .carousel .carousel-inner .carousel-item {
   height: 480px;
 }
+.carousel .carousel-inner .carousel-item .form-control {
+  height: 48px;
+  border: 0.5px solid #0a2b51;
+  border-radius: 12px;
+  color: #0a2b51;
+}
+.carousel .carousel-inner .carousel-item .form-control::placeholder {
+  color: #0a2b51;
+}
+.carousel .carousel-inner .carousel-item textarea {
+  height: 90px !important;
+}
 .carousel .carousel-inner .contact-form {
   padding: 56px;
 }
 .carousel .carousel-inner .live-call {
   padding: 56px 100px;
 }
-.carousel .carousel-control-prev {
-  justify-content: flex-end;
-}
-.carousel .carousel-control-next {
-  justify-content: flex-start;
+.carousel .carousel-inner .live-call img {
+  margin-left: 70px;
 }
 .carousel .carousel-indicators {
   z-index: 15;

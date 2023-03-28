@@ -1,14 +1,175 @@
 @import "variables";
 
-.career-hero {
-  height: 560px;
-  width: 100%;
-  background-image: url("/assets/career/career-hero.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 56px;
+.content {
+  .career-hero {
+    z-index: 1;
+    height: 560px;
+    width: 100%;
+    background-image: url("/assets/career/career-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 56px;
 
-  .career-hero-content {
-    max-width: 600px;
+    .career-hero-content {
+      max-width: 600px;
+    }
+
+    .seperator {
+      height: 1px;
+      width: 70px;
+      background-color: #d9d9d9;
+    }
+  }
+
+  .join-us {
+    margin-bottom: 40px;
+    z-index: 2;
+    margin-top: -250px;
+    .card-row {
+      .card:first-child {
+        p {
+          max-width: 220px;
+        }
+      }
+      .card {
+        margin-right: 16px;
+        width: 380px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        background-color: #f3f4f6;
+        border-radius: 24px;
+        border: none;
+
+        p {
+          max-width: 295px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    margin-bottom: 40px;
+
+    .card-row {
+      .card {
+        padding-left: 40px;
+        height: 145px;
+        width: 385px;
+        margin-right: 16px;
+        background-color: #f3f4f6;
+        border-radius: 20px;
+        border: none;
+        p {
+          line-height: 19px;
+        }
+      }
+      .card:last-child {
+        margin-right: 0;
+      }
+    }
+    .card-row:last-child {
+      padding-bottom: 48px;
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  .gallery {
+    margin-bottom: 40px;
+    .container {
+      border-bottom: 1px solid #d9d9d9;
+      padding-bottom: 50px;
+      .gallery-row {
+        height: 400px;
+        margin-bottom: 20px;
+        .img-item:first-child {
+          border-top-left-radius: 16px;
+        }
+        .img-item:last-child {
+          border-top-right-radius: 16px;
+        }
+
+        .img-item {
+          height: 100%;
+        }
+      }
+
+      .gallery-row:last-child {
+        margin-bottom: 0;
+
+        .img-item:first-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 16px;
+        }
+        .img-item:last-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 16px;
+        }
+      }
+    }
+  }
+
+  .positions {
+    margin-bottom: 48px;
+    .positions-row {
+      .position-card {
+        height: 640px;
+        width: 385px;
+        background-color: #f3f4f6;
+        padding: 40px;
+        border-radius: 24px;
+        line-height: 19px;
+
+        .card-header {
+          padding-bottom: 24px;
+          border-bottom: 1px solid #d9d9d9;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .apply {
+    margin-bottom: 55px;
+    .main-row {
+      position: relative;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(10, 43, 81, 0.24);
+      img {
+        position: absolute;
+        top: -40%;
+      }
+    }
+    .apply-form {
+      .form-select {
+        margin-bottom: 10px;
+        border-color: $primary;
+        border-radius: 12px;
+      }
+      .row {
+        margin-bottom: 10px;
+      }
+      .form-control {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $primary;
+        color: $primary;
+        padding-left: 0;
+        padding-bottom: 5px;
+      }
+      .form-control::placeholder {
+        color: $primary;
+      }
+      .btn-primary {
+        width: 280px;
+        padding: 10px 0;
+      }
+      .btn-secondary {
+        width: 145px;
+      }
+    }
   }
 }

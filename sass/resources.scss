@@ -1,0 +1,71 @@
+@import "variables";
+
+.resources-hero {
+  margin-bottom: 40px;
+  background-color: #f3f4f6;
+  .container {
+    background-image: url("/assets/resources-hero.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+}
+
+.resources-tabs {
+  .nav-tabs {
+    border-bottom: 1px solid #0a2b511a;
+    .nav-link {
+      border: none;
+    }
+    .nav-link.active {
+      border-bottom: 1px solid #0a2b511a;
+    }
+  }
+  .blog-box {
+    padding: 56px 56px 0 56px;
+    background-color: #f3f4f6;
+    height: 755px;
+    border-radius: 12px;
+    margin-top: 32px;
+    margin-bottom: 84px;
+    overflow-y: scroll;
+
+    .form-control {
+      background-color: #f3f4f6;
+      border: 0.5px solid $primary;
+      border-radius: 10px;
+      color: $primary;
+      margin-bottom: 36px;
+      height: 48px;
+
+      &::placeholder {
+        color: $primary;
+      }
+    }
+
+    .box-content {
+      .card-row {
+        justify-content: space-between;
+        .card {
+          width: 340px;
+          background-color: transparent;
+          border: none;
+          img {
+            height: 160px;
+            width: 100%;
+            margin-bottom: 20px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+          }
+          p {
+            padding-right: 32px;
+            padding-left: 36px;
+            margin-bottom: 48px;
+            color: #263238;
+          }
+        }
+      }
+    }
+  }
+}
