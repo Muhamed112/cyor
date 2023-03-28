@@ -30,3 +30,4 @@ gulp.task(
 );
 
 gulp.task("default", gulp.series("start"));
+exports.build = gulp.series(sass, start);
