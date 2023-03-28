@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass")(require("sass"));
+const ghPages = require("gulp-gh-pages");
 
 gulp.task("sass", () => {
   return gulp
@@ -30,5 +31,10 @@ gulp.task(
 );
 
 gulp.task("default", gulp.series("start"));
+gulp.task("build", gulp.series("start"));
 
-exports.build = gulp.series("default");
+gulp.task("deploy", function () {
+  return gulp.src("./build/**/*").pipe(ghPages());
+});
+
+// exports.build = gulp.series("default");
