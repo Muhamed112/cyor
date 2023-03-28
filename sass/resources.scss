@@ -87,7 +87,8 @@
     padding: 56px;
 
     .accordion-item {
-      .accordion-button {
+      .accordion-button,
+      .accordion-body {
         padding-left: 0;
       }
     }

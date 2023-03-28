@@ -75,6 +75,7 @@
 .resources-tabs .accordion {
   padding: 56px;
 }
-.resources-tabs .accordion .accordion-item .accordion-button {
+.resources-tabs .accordion .accordion-item .accordion-button,
+.resources-tabs .accordion .accordion-item .accordion-body {
   padding-left: 0;
 }

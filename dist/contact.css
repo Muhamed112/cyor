@@ -41,6 +41,10 @@
 .carousel .carousel-inner .live-call img {
   margin-left: 70px;
 }
+.carousel .carousel-inner .map span {
+  color: rgba(10, 43, 81, 0.25);
+  line-height: 19px;
+}
 .carousel .carousel-indicators {
   z-index: 15;
 }
