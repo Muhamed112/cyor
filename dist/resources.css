@@ -4,7 +4,7 @@
   background-color: #f3f4f6;
 }
 .resources-hero .container {
-  background-image: url("/assets/resources/resources-hero.svg");
+  background-image: url("../assets/resources/resources-hero.svg");
   background-repeat: no-repeat;
   background-position: right;
   height: 100%;
