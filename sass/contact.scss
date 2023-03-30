@@ -1,4 +1,4 @@
-@import "variables";
+@import "styles";
 
 .contact-hero {
   height: 400px;
@@ -21,6 +21,10 @@
     border-radius: 24px;
     .carousel-item {
       height: 480px;
+      span {
+        color: rgba(10, 43, 81, 0.5);
+        font-size: 13px;
+      }
       .form-control {
         height: 48px;
         border: 0.5px solid $primary;
@@ -41,14 +45,16 @@
 
     .live-call {
       padding: 56px 100px;
+      h2 {
+        font-size: 30px;
+      }
       img {
         margin-left: 70px;
       }
     }
     .map {
-      span {
-        color: rgba(10, 43, 81, 0.25);
-        line-height: 19px;
+      a {
+        font-weight: 600;
       }
     }
   }

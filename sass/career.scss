@@ -1,4 +1,4 @@
-@import "variables";
+@import "styles";
 
 .content {
   .career-hero {
@@ -138,10 +138,6 @@
       position: relative;
       padding-bottom: 40px;
       border-bottom: 1px solid rgba(10, 43, 81, 0.24);
-      img {
-        position: absolute;
-        top: -40%;
-      }
     }
     .apply-form {
       .form-select {
@@ -159,6 +155,7 @@
         color: $primary;
         padding-left: 0;
         padding-bottom: 5px;
+        margin-bottom: 14px;
       }
       .form-control::placeholder {
         color: $primary;
@@ -169,6 +166,12 @@
       }
       .btn-secondary {
         width: 145px;
+      }
+    }
+
+    img {
+      @include media-breakpoint-up(md) {
+        margin-left: 70px;
       }
     }
   }
