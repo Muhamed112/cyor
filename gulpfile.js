@@ -31,9 +31,6 @@ gulp.task(
       server: {
         baseDir: "./",
         index: "./index.html",
-        serveStaticOptions: {
-          extensions: ["html"],
-        },
       },
     });
 
