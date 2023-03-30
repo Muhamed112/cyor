@@ -125,25 +125,25 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.2813rem + 0.3756vw);
+  font-size: calc(1.3203rem + 0.8436vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 1.563rem;
+    font-size: 1.953rem;
   }
 }
 
 h3, .h3 {
-  font-size: 1.25rem;
+  font-size: calc(1.2813rem + 0.3756vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.563rem;
+  }
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
+  font-size: 1.25rem;
 }
 
 h5, .h5 {
@@ -8090,15 +8090,15 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: calc(1.2813rem + 0.3756vw) !important;
+  font-size: calc(1.3203rem + 0.8436vw) !important;
 }
 
 .fs-3 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.2813rem + 0.3756vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1.25rem !important;
 }
 
 .fs-5 {
@@ -11442,10 +11442,10 @@ textarea.form-control-lg {
     font-size: 2.441rem !important;
   }
   .fs-2 {
-    font-size: 1.563rem !important;
+    font-size: 1.953rem !important;
   }
-  .fs-4 {
-    font-size: 1.5rem !important;
+  .fs-3 {
+    font-size: 1.563rem !important;
   }
 }
 @media print {
@@ -11486,16 +11486,11 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+h4,
+.h4 {
   margin-bottom: 0;
-}
-
-h2, .h2 {
-  line-height: 30px;
-}
-
-h1, .h1 {
-  line-height: 47px;
+  letter-spacing: 0;
 }
 
 p {
@@ -11633,9 +11628,11 @@ p {
   border-radius: 24px;
   border: none;
 }
+.content .join-us .card-row .card h2, .content .join-us .card-row .card .h2 {
+  line-height: 30px;
+}
 .content .join-us .card-row .card p {
   max-width: 295px;
-  line-height: 19px;
 }
 .content .benefits {
   margin-bottom: 40px;
