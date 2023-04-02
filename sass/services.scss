@@ -1,0 +1,81 @@
+@import "styles";
+
+.services-hero {
+  margin-bottom: 40px;
+  .content {
+    max-width: 750px;
+  }
+}
+
+.services-tabs {
+  .nav-tabs {
+    border-bottom: 1px solid #0a2b511a;
+    padding-bottom: 12px;
+    .nav-link {
+      border: none;
+      padding: 6px 28px;
+      color: $primary;
+      border-radius: 4px;
+    }
+    .nav-link.active {
+      font-weight: 600;
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+
+  .tab-content {
+    .btn-primary {
+      width: 160px;
+      font-size: 12px;
+    }
+    .small-title {
+      font-size: 12px;
+    }
+
+    .icon-box {
+      background: #f3f4f6;
+      border-radius: 12px;
+      width: fit-content;
+    }
+
+    .services-intro {
+      img {
+        margin-left: 80px;
+      }
+    }
+    .services-more {
+      .container {
+        padding-bottom: 120px;
+      }
+    }
+    .services-contact {
+      padding: 112px 0;
+      .form-control {
+        height: 40px;
+        border: 0.5px solid #ffffff;
+        border-radius: 12px;
+        background: transparent;
+      }
+      .form-control::placeholder {
+        color: #fff;
+      }
+    }
+
+    .services-studies {
+      .card {
+        img {
+          border-top-right-radius: 12px;
+          border-top-left-radius: 12px;
+        }
+        .card-content {
+          background-color: #f3f4f6;
+          padding: 28px 36px;
+          color: #263238;
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+      }
+    }
+  }
+}
