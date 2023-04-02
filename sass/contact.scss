@@ -58,17 +58,4 @@
       }
     }
   }
-
-  .carousel-indicators {
-    z-index: 15;
-  }
-  .carousel-indicators .active {
-    background-color: $primary !important;
-  }
-  .carousel-indicators [data-bs-target] {
-    background-color: #f3f4f6;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-  }
 }

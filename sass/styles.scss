@@ -124,3 +124,16 @@ p {
     width: 300px;
   }
 }
+
+.carousel-indicators {
+  top: 100%;
+}
+.carousel-indicators .active {
+  background-color: $primary !important;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #f3f4f6;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}

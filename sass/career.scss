@@ -23,28 +23,23 @@
 
   .join-us {
     margin-bottom: 40px;
-    z-index: 2;
     margin-top: -250px;
+    z-index: 2;
     .card-row {
-      .card:first-child {
-        p {
-          max-width: 220px;
+      div:first-child {
+        .card {
+          p {
+            max-width: 220px;
+          }
         }
       }
       .card {
-        margin-right: 16px;
-        width: 380px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
+        height: 100%;
         align-items: center;
         padding: 50px 0;
         background-color: #f3f4f6;
         border-radius: 24px;
         border: none;
-        h2 {
-          line-height: 30px;
-        }
         p {
           max-width: 295px;
         }
@@ -54,25 +49,16 @@
 
   .benefits {
     margin-bottom: 40px;
-
     .card-row {
       .card {
         padding-left: 40px;
-        height: 145px;
-        width: 385px;
-        margin-right: 16px;
         background-color: #f3f4f6;
         border-radius: 20px;
         border: none;
-        p {
-          line-height: 19px;
-        }
-      }
-      .card:last-child {
-        margin-right: 0;
       }
     }
     .card-row:last-child {
+      margin-top: 24px;
       padding-bottom: 48px;
       border-bottom: 1px solid #d9d9d9;
     }

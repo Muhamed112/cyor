@@ -1,0 +1,125 @@
+@import "styles";
+
+.about-hero {
+  background-color: $primary;
+  background-image: url("/assets/about-us/hero-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+
+  .hero-content {
+    max-width: 560px;
+  }
+}
+
+.what-we-stand {
+  margin-bottom: 64px;
+  .card {
+    border-radius: 12px;
+    background-color: #f3f4f6;
+    padding: 40px;
+  }
+  .content {
+    padding: 40px 0 40px 56px;
+    .content-card {
+      img {
+        margin-right: 30px;
+      }
+      margin-bottom: 40px;
+    }
+    .content-card:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.partners {
+  background-color: #f3f4f6;
+  padding: 64px 0;
+
+  .partners-row {
+    margin-bottom: 64px;
+    .col-md-3 {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .carousel {
+    .card {
+      padding: 30px 0px 30px 40px;
+      background: #f3f4f6;
+      border: 0.5px solid $primary;
+      border-radius: 20px;
+    }
+    .carousel-indicators {
+      margin-top: 24px;
+    }
+    .carousel-indicators [data-bs-target] {
+      border: 0.5px solid $primary;
+    }
+  }
+}
+
+.services {
+  p {
+    letter-spacing: -0.01em;
+  }
+}
+
+.pop-block {
+  .block {
+    padding: 36px 56px;
+    background: #f3f4f6;
+    border-radius: 24px;
+
+    .btn-secondary {
+      width: 220px;
+      background: transparent;
+      padding-left: 30px;
+      margin-right: 16px;
+    }
+    .btn-primary {
+      width: 160px;
+    }
+  }
+}
+
+.pop-block:last-child {
+  .btn-primary {
+    width: 240px;
+  }
+}
+
+.gallery {
+  .container {
+    .gallery-row {
+      margin-bottom: 20px;
+      height: 400px;
+      .img-item:first-child {
+        border-top-left-radius: 16px;
+      }
+      .img-item:last-child {
+        border-top-right-radius: 16px;
+      }
+
+      .img-item {
+        height: 100%;
+      }
+    }
+
+    .gallery-row:last-child {
+      margin-bottom: 0;
+
+      .img-item:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 16px;
+      }
+      .img-item:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+      }
+    }
+  }
+}
