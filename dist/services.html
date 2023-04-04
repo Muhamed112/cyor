@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - Services</title>
-    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="dist/services.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
       <div class="container">
-        <a class="navbar-brand" href="/"><img src="assets/logo.png" /></a>
+        <a class="navbar-brand p-0" href="/">
+          <img src="assets/logo-header.svg" />
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -25,60 +27,200 @@
           class="collapse navbar-collapse flex-grow-0"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto align-items-md-center">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
+              <a class="nav-link py-md-5 px-md-3" aria-current="page" href="/">
+                Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/career.html">Career</a>
+              <a class="nav-link py-md-5 px-md-3" href="/about-us.html">
+                About Us
+              </a>
             </li>
             <li class="nav-item nav-res">
-              <a class="nav-link" href="/resources.html">Resources</a>
+              <a
+                class="nav-link py-md-5 px-md-3 d-none d-md-block"
+                href="/services.html"
+              >
+                Services
+              </a>
+              <a class="nav-link py-md-5 px-md-3 d-md-none" id="services-link">
+                Services
+              </a>
               <div class="subheader bg-primary text-white w-100">
-                <div class="container d-flex align-items-center">
-                  <div class="resources-row d-flex">
+                <div class="container">
+                  <div class="resources-row d-flex justify-content-between">
                     <div class="resource-item">
-                      <h2 class="mb-4">
-                        Our
-                        <span class="text-secondary">knowledge base</span> is
-                        divided into FAQ and blog page
-                      </h2>
-                      <p>For more questions feel free to contact us</p>
-                    </div>
-                    <div class="resource-item mx-7">
-                      <p class="mb-3 fw-semibold">FAQ</p>
-                      <ul class="no-wrap-url">
-                        <li>
-                          Why online presence and reputation are important?
-                        </li>
-                        <li>
-                          What are the factors that influence online reputation?
-                        </li>
-                        <li>How can you help me improve online reputation?</li>
-                      </ul>
+                      <h3 class="mb-5">
+                        Learn more about online <br />
+                        <span class="text-secondary">reputation</span> and
+                        online <br />
+                        <span class="text-secondary">presence</span>
+                      </h3>
+                      <p>
+                        For more questions feel free to
+                        <a href="/contact.html" class="text-white">
+                          contact us
+                        </a>
+                      </p>
                     </div>
                     <div class="resource-item">
-                      <p class="mb-3 fw-semibold">Blog</p>
-                      <ul>
-                        <li>
-                          Step by step process for optimizing Google My Business
-                          profile
-                        </li>
-                        <li>Drive more sales with SEO</li>
-                      </ul>
+                      <h4 class="mb-2">Online reputation management</h4>
+                      <p>
+                        Partner with CYOR24 and protect your brand <br />image,
+                        improve customer trust and loyalty, <br />
+                        and maintain a positive online reputation.
+                      </p>
+                      <button class="btn-primary rounded-2 py-2 px-4 mt-3">
+                        <a
+                          href="/services.html"
+                          class="w-100 px-3 text-decoration-none"
+                        >
+                          Explore more
+                        </a>
+                      </button>
                     </div>
+                    <div class="resource-item">
+                      <h4 class="mb-2">Online presence management</h4>
+                      <p>
+                        We will make sure your business looks good online!
+                        <br />
+                        We help businesses to establish and maintain their
+                        <br />
+                        online presence.
+                      </p>
+                      <button class="btn-primary rounded-2 py-2 px-4 mt-3">
+                        <a
+                          href="/resources.html"
+                          class="w-100 px-3 text-decoration-none"
+                        >
+                          Explore more
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="subheader-mobile d-md-none my-2 text-white"
+                id="services-div"
+              >
+                <div class="resources-row">
+                  <div class="resource-item mb-3">
+                    <a href="/services.html" id="orm-link">
+                      Online reputation management
+                    </a>
+                    <p>
+                      Partner with CYOR24 and protect your brand image, improve
+                      customer trust and loyalty, and maintain a positive online
+                      reputation.
+                    </p>
+                  </div>
+                  <div class="resource-item">
+                    <a href="/services.html" id="opm-link">
+                      Online presence management
+                    </a>
+                    <p>
+                      We will make sure your business looks good online!
+                      <br />We help businesses to establish and maintain their
+                      online presence.
+                    </p>
                   </div>
                 </div>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link py-md-5 px-md-3" href="/career.html">
+                Career
+              </a>
+            </li>
+            <li class="nav-item nav-res">
+              <a
+                class="nav-link py-md-5 px-md-3 d-none d-md-block"
+                href="/resources.html"
+              >
+                Resources
+              </a>
+              <a class="nav-link py-md-5 px-md-3 d-md-none" id="resources-link">
+                Resources
+              </a>
+              <div class="subheader bg-primary text-white w-100">
+                <div class="container">
+                  <div class="resources-row d-flex justify-content-between">
+                    <div class="resource-item">
+                      <h3 class="mb-5">
+                        Learn more about online <br />
+                        <span class="text-secondary">reputation</span> and
+                        online <br />
+                        <span class="text-secondary">presence</span>
+                      </h3>
+                      <p>
+                        For more questions feel free to
+                        <a href="/contact.html" class="text-white">
+                          contact us
+                        </a>
+                      </p>
+                    </div>
+                    <div class="resource-item">
+                      <h4 class="mb-2">FAQ</h4>
+                      <p>Why are online presence and reputation important?</p>
+                      <p>What is a Google Business Profile?</p>
+                      <p>Can i remove a negative Google review?</p>
+                      <button class="btn-primary rounded-2 py-2 px-4 mt-3">
+                        <a
+                          href="/resources.html"
+                          class="w-100 px-3 text-decoration-none"
+                        >
+                          Explore more
+                        </a>
+                      </button>
+                    </div>
+                    <div class="resource-item">
+                      <h4 class="mb-2">Blog</h4>
+                      <p>The consequences of a bad Online Reputation.</p>
+                      <p>How to optimize Google Business profile?</p>
+                      <p>How does the Google Search Algorithm work?</p>
+                      <button class="btn-primary rounded-2 py-2 px-4 mt-3">
+                        <a
+                          href="/resources.html"
+                          class="w-100 px-3 text-decoration-none"
+                        >
+                          Explore more
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="subheader-mobile resources d-md-none my-2 text-white"
+                id="resources-div"
+              >
+                <div class="resources-row">
+                  <div class="resource-item mb-3">
+                    <a href="/resources.html" id="faq-link">FAQ</a>
+                    <p>
+                      Why are online presence and reputation important? <br />
+                      What is a Google Business Profile? <br />
+                      Can I remove a negative Google review?
+                    </p>
+                  </div>
+                  <div class="resource-item">
+                    <a href="/resources.html" id="blog-link">Blog</a>
+                    <p>
+                      The consequences of a bad Online Reputation. <br />
+                      How to optimize Google Business Profile? <br />
+                      How does the Google Search Algorithm work?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item nav-contact">
+              <a class="nav-link py-md-5 px-md-3" href="/contact.html">
+                Contact
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -88,148 +230,745 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img src="assets/flags/ger.png" />
-                <span>DE</span>
+                <img src="assets/flags/gbr.png" />
+                <span class="d-none d-md-block">ENG</span>
+                <span class="d-md-none">English</span>
               </a>
               <ul class="dropdown-menu bg-primary">
                 <li>
                   <a class="nav-link" href="#">
-                    <img src="assets/flags/gbr.png" />
-                    <span>ENG</span>
+                    <img src="assets/flags/ger.png" />
+                    <span class="d-none d-md-block">DE</span>
+                    <span class="d-md-none">German</span>
                   </a>
                 </li>
                 <li>
                   <a class="nav-link" href="#">
                     <img src="assets/flags/nl.png" />
-                    <span>NL</span>
+                    <span class="d-none d-md-block">NL</span>
+                    <span class="d-md-none">Dutch</span>
                   </a>
                 </li>
                 <li>
                   <a class="nav-link" href="#">
                     <img src="assets/flags/es.png" />
-                    <span>ES</span>
+                    <span class="d-none d-md-block">ES</span>
+                    <span class="d-md-none">Spanish</span>
                   </a>
                 </li>
                 <li>
                   <a class="nav-link" href="#">
                     <img src="assets/flags/it.png" />
-                    <span>IT</span>
+                    <span class="d-none d-md-block">IT</span>
+                    <span class="d-md-none">Italian</span>
                   </a>
                 </li>
                 <li>
                   <a class="nav-link" href="#">
                     <img src="assets/flags/cro.png" />
-                    <span>HR</span>
+                    <span class="d-none d-md-block">HR</span>
+                    <span class="d-md-none">Croatian</span>
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
+          <div class="contact-col d-md-none mt-2 text-white">
+            <h4 class="mb-3">Want to get in touch?</h4>
+            <p class="mb-1">
+              Interested in our services? Reach out and our sales will call you
+              promptly.
+            </p>
+            <form>
+              <input
+                type="text"
+                class="form-control border-0 border-bottom border-white"
+                placeholder="Name and surname"
+              />
+              <input
+                type="text"
+                class="form-control border-0 border-bottom border-white mb-1"
+                placeholder="Phone number"
+              />
+              <button
+                class="btn-primary mt-4 mt-md-2 py-3 py-md-2 rounded-3 w-100"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="bottom-links d-flex pt-3 mt-4 d-md-none w-100">
+            <a href="/impressum.html">Impressum</a>
+            <a href="/terms-and-conditions.html"> Terms and conditions </a>
+            <a href="/data-protection.html"> Data protection </a>
+            <a href="/cookies.html">Cookies</a>
+          </div>
         </div>
       </div>
     </nav>
 
     <div class="content text-primary">
-      <div class="container">
-        <h1 class="my-3">SERVICES</h1>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
+      <section class="services-hero bg-primary text-white py-md-7">
+        <div class="container">
+          <div class="content mb-md-4">
+            <h1 class="mb-3">
+              The only online reputation and presence partner you will ever need
+            </h1>
+            <h4 class="fw-normal">
+              CYOR24 is a specialist in online reputation and presence
+              management, but that is only a small part of our extensive range
+              of services.
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-tabs">
+        <div class="container">
+          <ul class="nav nav-tabs mb-md-7" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                Online reputation management
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Online presence management
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content text-primary" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <section class="services-intro">
+              <div class="container">
+                <div class="row pb-md-7 border-bottom border-info">
+                  <div class="col-md-6">
+                    <h2 class="mb-md-7">
+                      What is online reputation management?
+                    </h2>
+                    <p class="mb-5">
+                      Online reputation refers to
+                      <strong>
+                        how your brand is perceived and talked about online
+                      </strong>
+                      including reviews, ratings, and comments on social media
+                      and other platforms.
+                    </p>
+                    <p class="mb-5">
+                      In the past, businesses had more control over their
+                      reputations, but now customers have the power to shape a
+                      company's image through online reviews.
+                    </p>
+                    <p class="mb-5">
+                      A negative online reputation can have a significant impact
+                      on your business, potentially leading to losing customers,
+                      revenue, and credibility.
+                    </p>
+                    <p>
+                      By partnering with CYOR24 for online reputation
+                      management, businesses can protect their brand image,
+                      improve customer trust and loyalty, and maintain a
+                      positive online reputation that supports their long-term
+                      success.
+                    </p>
+                  </div>
+
+                  <div class="col-md-6 text-center">
+                    <img src="assets/services/orm/first.png" />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-facts">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h2 class="text-light">Facts & stats</h2>
+                  </div>
+                  <div class="col-md-9">
+                    <h2 class="mb-4">Did you know that</h2>
+                    <p>
+                      30% of consumers say they have looked up a business’s
+                      reviews while standing or being parked right outside to
+                      decide if they should go in or not?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-competences">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="w-100 text-end mb-3">
+                  <span class="small-title">Our core competences</span>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center mb-md-7">
+                    <img src="assets/services/orm/competences-1.png" />
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="mb-4">
+                      Online monitoring and tracking of your company’s brand
+                    </h2>
+                    <p class="mb-4">
+                      We monitor and respond to customer reviews on various
+                      online platforms such as Google, Facebook or any other to
+                      ensure positive feedback and address any negative comments
+                      or concerns.
+                    </p>
+                    <button class="btn-primary mt-3 fw-semibold">
+                      Learn more
+                    </button>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h2 class="mb-4">
+                      Review management and responding to negative reviews on
+                      Google
+                    </h2>
+                    <p class="mb-4">
+                      Managing Google my Business profile and answering to the
+                      negative reviews on behalf of the company owner.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+                  <div class="col-md-6 text-center mt-md-7 mb-md-7">
+                    <img src="assets/services/orm/competences-2.png" />
+                  </div>
+
+                  <div class="col-md-6 text-center mt-md-7">
+                    <img src="assets/services/orm/competences-3.png" />
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="mb-4">
+                      Crisis management and reputation repair
+                    </h2>
+                    <p class="mb-4">
+                      We are the only Online reputation management company that
+                      is able to fully remove Google my Business reviews. And we
+                      guarantee for the results.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-more">
+              <div class="container border-bottom border-info pt-md-7">
+                <div class="w-100 text-end mb-md-7">
+                  <span class="small-title">More ORM services</span>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/orm/search.svg" />
+                    </div>
+                    <h2 class="mb-4">Search engine optimization (SEO)</h2>
+                    <p class="mb-4">
+                      Optimizing a company's website and online content to
+                      ensure high rankings on search engine result pages and
+                      boost the online reputation.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/orm/light-bulb.svg" />
+                    </div>
+                    <h2 class="mb-4">Content creation</h2>
+                    <p class="mb-4">
+                      We create high-quality content such as blog posts,
+                      articles, and videos to promote positive brand awareness
+                      and address any negative perceptions.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-info mb-md-7">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="d-flex justify-content-between">
+                  <p>
+                    <span class="fw-semibold">97%</span> of people read reviews
+                    for local businesses.
+                  </p>
+                  <span>/</span>
+                  <p>
+                    <span class="fw-semibold">92%</span> of B2B buyers are more
+                    likely to purchase after reading a trusted review
+                  </p>
+                  <span>/</span>
+                  <p><span class="fw-semibold">68%</span> of consumers</p>
+                </div>
+              </div>
+            </section>
+            <section class="services-contact bg-primary mb-md-7">
+              <div class="container">
+                <div class="row text-white">
+                  <div class="col-md-6">
+                    <h1 class="mb-4 text-secondary">Pay only for result!</h1>
+                    <p class="mb-3">
+                      The reason for CYOR24 fast expansion is primarily due to
+                      our "pay-only-for-results" approach.
+                    </p>
+                    <p>
+                      This means that we only require clients to pay for our
+                      services if we successfully resolve their online
+                      reputation issues caused by negative reviews.
+                    </p>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h1 class="mb-4 text-secondary">Contact us</h1>
+                    <p class="mb-3">
+                      Submit your phone number and we will get back to you as
+                      soon as possible.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input
+                          class="input form-control"
+                          placeholder="Name and surname"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          class="input form-control"
+                          placeholder="Your phone number"
+                          type="number"
+                        />
+                      </div>
+                      <div class="col-12 mt-2">
+                        <button
+                          class="btn-primary fw-bolder w-100"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-studies mb-md-7">
+              <div class="container">
+                <h2 class="mb-4">Case studies</h2>
+                <div class="row mt-md-3 pb-md-7 border-bottom border-info">
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <img
+                        src="/assets/resources/blog-img-placeholder.png"
+                        class="w-100"
+                      />
+                      <div class="card-content">
+                        <h4 class="fw-normal">
+                          From 2.7 stars on Google to 36% increase in revenue
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <img src="/assets/resources/blog-img-placeholder.png" />
+                      <div class="card-content">
+                        <h4 class="fw-normal">
+                          From 2.7 stars on Google to 36% increase in revenue
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-bottom mb-md-7">
+              <div class="container">
+                <h2 class="mb-3">
+                  Maybe interested in online presence management?
+                </h2>
+                <p class="mb-3">
+                  You are satisfied with your online reputation and look to
+                  strengthen your online presence instead?
+                </p>
+                <p class="fw-semibold">
+                  Check out our
+                  <a href="#" id="#opm">online presence management services.</a>
+                </p>
+              </div>
+            </section>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <section class="services-intro">
+              <div class="container">
+                <div class="row pb-md-7 border-bottom border-info">
+                  <div class="col-md-6">
+                    <h2 class="mb-md-7">What is online presence management?</h2>
+                    <p class="mb-5">
+                      Online presence refers to the collective
+                      <strong>
+                        digital footprint or representation of a brand, or
+                        organization on the internet.
+                      </strong>
+                    </p>
+                    <p class="mb-5">
+                      A poor online presence leads directly to missed business
+                      opportunities, potential partnerships or collaborations.
+                    </p>
+                    <p class="mb-5">
+                      In order to improve your online presence, it's essential
+                      to focus on aspects such as responsive web design,
+                      user-friendly interface, visually appealing graphics,
+                      relevant and high-quality content, and search engine
+                      optimization.
+                    </p>
+                    <p>
+                      By incorporating these elements, we can enhance the user
+                      experience, increase engagement, and improve the website's
+                      visibility and ranking on search engines, ultimately
+                      resulting in a positive online presence.
+                    </p>
+                  </div>
+
+                  <div class="col-md-6 text-center">
+                    <img src="assets/services/opm/first.png" />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-facts">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h2 class="text-light">Facts & stats</h2>
+                  </div>
+                  <div class="col-md-9">
+                    <h2 class="mb-4">Did you know that</h2>
+                    <p>
+                      Websites with blog content have 434% more search
+                      engine-indexed webpages.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-competences">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="w-100 text-end mb-3">
+                  <span class="small-title">Our core competences</span>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center mb-md-7">
+                    <img src="assets/services/opm/competences-1.png" />
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="mb-4">Website development</h2>
+                    <p class="mb-4">
+                      We design and develop compelling, mobile and user-friendly
+                      websites that meet the specific needs of clients and help
+                      them to significantly improve their online presence.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h2 class="mb-4">Digital marketing</h2>
+                    <p class="mb-4">
+                      Increase customer engagement, win new clients or improve
+                      brand awareness. We got you covered.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+                  <div class="col-md-6 text-center mb-md-7">
+                    <img src="assets/services/opm/competences-2.png" />
+                  </div>
+
+                  <div class="col-md-6 text-center">
+                    <img src="assets/services/opm/competences-3.png" />
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="mb-4">E-commerce development</h2>
+                    <p class="mb-4">
+                      We build e-commerce solutions that convert web shop
+                      visitors into buying customers.
+                    </p>
+                    <button class="btn-primary mt-3 fw-semibold">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-more">
+              <div class="container border-bottom border-info pt-md-7">
+                <div class="w-100 text-end mb-md-7">
+                  <span class="small-title">More OPM services</span>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/opm/info.svg" />
+                    </div>
+                    <h2 class="mb-4">Social media management</h2>
+                    <p class="mb-4">
+                      We monitor and manage a company's social media presence to
+                      maintain a positive image and engage with potential
+                      customers.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/opm/pallete.svg" />
+                    </div>
+                    <h2 class="mb-4">Graphic design</h2>
+                    <p class="mb-4">
+                      From a simple logotype to a motion graphics and videos. We
+                      build turn key solutions for every company size.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+
+                  <div class="col-md-6 mt-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/opm/smiley.svg" />
+                    </div>
+                    <h2 class="mb-4">UX design</h2>
+                    <p class="mb-4">
+                      Our team of experts create intuitive, user-friendly
+                      interfaces that keep users engaged.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+
+                  <div class="col-md-6 mt-md-6">
+                    <div class="icon-box p-3 mb-4">
+                      <img src="assets/services/opm/box.svg" />
+                    </div>
+                    <h2 class="mb-4">UI design</h2>
+                    <p class="mb-4">
+                      Our UI design will delight your visitors and make your
+                      website stand out from the crowd.
+                    </p>
+                    <button class="btn-primary fw-semibold">Learn more</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-info mb-md-7">
+              <div class="container py-md-7 border-bottom border-info">
+                <div class="d-flex justify-content-between">
+                  <p>
+                    <span class="fw-semibold">97%</span> of people read reviews
+                    for local businesses.
+                  </p>
+                  <span>/</span>
+                  <p>
+                    <span class="fw-semibold">92%</span> of B2B buyers are more
+                    likely to purchase after reading a trusted review
+                  </p>
+                  <span>/</span>
+                  <p><span class="fw-semibold">68%</span> of consumers</p>
+                </div>
+              </div>
+            </section>
+            <section class="services-contact bg-primary mb-md-7">
+              <div class="container">
+                <div class="row text-white">
+                  <div class="col-md-6">
+                    <h1 class="mb-4 text-secondary">
+                      Your success matter to us!
+                    </h1>
+                    <p class="mb-3">
+                      CYOR24 values each of its clients as if they were our
+                      first. We approach each assignment with utmost dedication
+                      and seriousness, and we are committed to going above and
+                      beyond to deliver exceptional outcomes.
+                    </p>
+                    <p>
+                      Providing outstanding results to our clients is crucial
+                      for building long-term relationships and establishing a
+                      positive reputation in our industry
+                    </p>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h1 class="mb-4 text-secondary">Contact us</h1>
+                    <p class="mb-3">
+                      Submit your phone number and we will get back to you as
+                      soon as possible.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input
+                          class="input form-control"
+                          placeholder="Name and surname"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          class="input form-control"
+                          placeholder="Your phone number"
+                          type="number"
+                        />
+                      </div>
+                      <div class="col-12 mt-2">
+                        <button
+                          class="btn-primary fw-bolder w-100"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-studies mb-md-7">
+              <div class="container">
+                <h2 class="mb-4">Case studies</h2>
+                <div class="row mt-md-3 pb-md-7 border-bottom border-info">
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <img
+                        src="/assets/resources/blog-img-placeholder.png"
+                        class="w-100"
+                      />
+                      <div class="card-content">
+                        <h4 class="fw-normal">
+                          From 2.7 stars on Google to 36% increase in revenue
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <img src="/assets/resources/blog-img-placeholder.png" />
+                      <div class="card-content">
+                        <h4 class="fw-normal">
+                          From 2.7 stars on Google to 36% increase in revenue
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="services-bottom mb-md-7">
+              <div class="container">
+                <h2 class="mb-3">
+                  Maybe interested in online reputation management?
+                </h2>
+                <p class="mb-3">
+                  You are satisfied with your online presence and look to
+                  strengthen your online reputation instead??
+                </p>
+                <p class="fw-semibold">
+                  Check out our
+                  <a href="#" id="#orm">
+                    online reputation management services.
+                  </a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="footer bg-primary text-white">
       <div class="container">
-        <div class="row py-7">
-          <div class="col-md-4 col-12">
-            <img src="assets/logo.png" class="footer-logo mb-5" />
-            <p class="mb-5">
+        <div class="d-flex flex-column flex-md-row align-items-center py-7">
+          <div class="first-col mb-4 mb-md-0">
+            <img src="assets/logo-footer.svg" class="footer-logo mb-5" />
+            <p class="mb-3 mb-md-5">
               CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 Countries
-              with more than 5,000 B2B clients.
+              with more than <br />
+              5,000 B2B clients.
             </p>
-            <a href="#" class="text-white">Learn more about us</a>
+            <a href="/about-us.html" class="text-white mt-1"
+              >Learn more about us</a
+            >
           </div>
-          <div class="col-md-4 col-12">
-            <h4 class="mb-3">Need help with online reputation and presence?</h4>
-            <p class="mb-3">
-              Click <a href="#" class="text-white">here</a> to see all the
-              services we offer.
+          <div class="middle-col mt-3 mt-md-0">
+            <h4 class="mb-3">
+              Need help with online reputation and presence management?
+            </h4>
+            <p class="mb-4 mb-md-3">
+              Click <a href="/services.html" class="text-white">here</a> to see
+              all the services we offer.
             </p>
-            <h4 class="mb-3">Are you looking for a job?</h4>
-            <p>
+            <h4 class="pt-3 mb-3 pt-md-0">Are you looking for a job?</h4>
+            <p class="mb-4 mb-md-0">
               Check our our
-              <a href="#" class="text-white">careers</a> section. Maybe we got
-              something for you.
+              <a href="/career.html" class="text-white">careers</a>
+              section. Maybe we got something for you.
             </p>
           </div>
-          <div class="col-md-4 col-12">
-            <h4 class="mb-3">Get in touch?</h4>
-            <p>
-              Submit your phone number and we will get to you as soon as
-              possible.
+          <div class="contact-col mt-3 mt-md-0">
+            <h4 class="mb-2">Want to get in touch?</h4>
+            <p class="mb-1">
+              Interested in our services? Reach out and our sales will call you
+              promptly.
             </p>
             <form>
-              <input type="text" class="form-control bg-primary text-white" />
-              <button class="btn-primary mt-3">Submit</button>
+              <input
+                type="text"
+                class="form-control border-0 border-bottom border-white"
+                placeholder="Name and surname"
+              />
+              <input
+                type="text"
+                class="form-control border-0 border-bottom border-white mb-1"
+                placeholder="Phone number"
+              />
+              <button
+                class="btn-primary mt-4 mt-md-2 py-3 py-md-2 rounded-3 w-100"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
       </div>
       <div class="bottom-footer bg-white">
         <div class="container d-flex justify-content-between py-4">
-          <div class="text-primary d-flex">
+          <div class="text-primary d-none d-md-flex">
             <a href="/impressum.html">Impressum</a>
             <a href="/terms-and-conditions.html" class="mx-4">
               Terms and conditions
@@ -238,13 +977,18 @@
             <a href="/cookies.html" class="mx-4">Cookies</a>
           </div>
 
-          <div class="socials d-flex">
+          <div class="socials d-none d-md-flex">
             <a href="#"><img src="assets/socials/facebook.svg" /></a>
 
             <a href="#">
               <img src="assets/socials/linkedin.svg" class="mx-4" />
             </a>
             <a href="#"><img src="assets/socials/youtube.svg" /></a>
+          </div>
+
+          <div class="copyright d-md-none d-flex justify-content-between w-100">
+            <span>Copyright © 2022 CYOR24.com</span>
+            <a onclick="topFunction()">Back to top</a>
           </div>
         </div>
       </div>
