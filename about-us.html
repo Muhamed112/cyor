@@ -11,7 +11,7 @@
       <div class="container">
         <a class="navbar-brand" href="/"><img src="assets/logo.png" /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -599,7 +599,7 @@
       </div>
       <div class="bottom-footer bg-white">
         <div class="container d-flex justify-content-between py-4">
-          <div class="text-primary d-flex">
+          <div class="text-primary d-none d-md-flex">
             <a href="/impressum.html">Impressum</a>
             <a href="/terms-and-conditions.html" class="mx-4">
               Terms and conditions
@@ -608,7 +608,7 @@
             <a href="/cookies.html" class="mx-4">Cookies</a>
           </div>
 
-          <div class="socials d-flex">
+          <div class="socials d-none d-md-flex">
             <a href="#"><img src="assets/socials/facebook.svg" /></a>
 
             <a href="#">
@@ -616,10 +616,14 @@
             </a>
             <a href="#"><img src="assets/socials/youtube.svg" /></a>
           </div>
+
+          <div class="copyright d-md-none d-flex justify-content-between w-100">
+            <span>Copyright © 2022 CYOR24.com</span>
+            <a onclick="topFunction()">Back to top</a>
+          </div>
         </div>
       </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

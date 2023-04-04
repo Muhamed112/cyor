@@ -34,6 +34,9 @@
       .form-control::placeholder {
         color: $primary;
       }
+      .form-control:focus {
+        box-shadow: none;
+      }
       textarea {
         height: 90px !important;
       }

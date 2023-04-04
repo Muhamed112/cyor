@@ -22,6 +22,7 @@ p {
   padding: 15px 0;
   text-align: center;
   border: none;
+  font-size: 12.8px;
 }
 
 .btn-secondary {
@@ -32,10 +33,17 @@ p {
 }
 
 .text-section {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   ul {
     padding-left: 30px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 
@@ -47,10 +55,15 @@ p {
       visibility: visible;
     }
   }
-  .nav-link span {
-    font-size: 12px;
-    font-weight: 600;
-    padding-left: 7px;
+
+  .dropdown-toggle {
+    padding-left: 24px !important;
+    padding-right: 0px !important;
+    span {
+      font-size: 12px;
+      font-weight: 600;
+      padding-left: 7px;
+    }
   }
 
   .dropdown-menu {
@@ -71,34 +84,17 @@ p {
     top: 100%;
     left: 0;
     position: absolute;
-    border-top: 0.5px solid $secondary;
-    .resource-item:first-child {
-      p {
-        margin-left: 0;
+    border-top: 0.5px solid #acffbe;
+    .resources-row {
+      .resource-item:first-child {
+        margin-right: 106px;
       }
-    }
-    .resource-item {
-      p {
-        width: fit-content;
-        margin-left: -25px;
+      .resource-item:last-child {
+        margin-left: auto;
       }
     }
     &:hover {
       visibility: visible;
-    }
-    ul {
-      padding-left: 0;
-      line-height: 19px;
-
-      li {
-        list-style-type: disc;
-      }
-    }
-
-    .no-wrap-url {
-      li {
-        white-space: nowrap;
-      }
     }
   }
 }
@@ -108,20 +104,42 @@ p {
   bottom: 0;
   right: 0;
   left: 0;
-  line-height: 19px;
-
   .footer-logo {
-    margin-bottom: 30px;
+    width: 208px;
+    @include media-breakpoint-down(md) {
+      width: 140px;
+    }
+  }
+
+  .middle-col {
+    @include media-breakpoint-up(md) {
+      margin: 0 116px;
+    }
   }
 
   .form-control {
-    border: 0;
+    background: transparent;
     border-radius: 0;
-    border-bottom: 1px solid #fff;
-    width: 300px;
+    padding-left: 0;
   }
+  .form-control::placeholder {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12.8px;
+  }
+
   .btn-primary {
-    width: 300px;
+    font-size: 12.8px;
+    font-weight: 500;
+  }
+
+  .copyright {
+    color: $primary;
+    font-size: 12.8px;
+    line-height: 15px;
+    a {
+      font-weight: 500;
+    }
   }
 }
 

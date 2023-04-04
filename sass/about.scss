@@ -8,6 +8,14 @@
 
   .hero-content {
     max-width: 560px;
+    line-height: 24px;
+  }
+}
+
+.hero-description {
+  h4 {
+    line-height: 24px;
+    letter-spacing: -0.01em;
   }
 }
 
