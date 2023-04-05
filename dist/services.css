@@ -12115,10 +12115,25 @@ p {
 }
 
 .services-hero {
+  background-color: #0a2b51;
+  color: #fff;
   margin-bottom: 40px;
 }
 .services-hero .content {
   max-width: 750px;
+}
+@media (max-width: 767.98px) {
+  .services-hero {
+    padding: 40px 0;
+    background-color: #f3f4f6;
+    background-image: url("/assets/about-us/hero-mobile.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #0a2b51;
+  }
+  .services-hero .content {
+    width: 100%;
+  }
 }
 
 .services-tabs .nav-tabs {
@@ -12135,6 +12150,18 @@ p {
   font-weight: 600;
   background-color: #0a2b51;
   color: #fff;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .nav-tabs .nav-link {
+    padding: 0;
+    color: rgba(10, 43, 81, 0.5);
+    padding: 0 32px;
+  }
+  .services-tabs .nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #0a2b51;
+    padding: 0;
+  }
 }
 .services-tabs .tab-content .btn-primary {
   width: 160px;
@@ -12173,4 +12200,31 @@ p {
   color: #263238;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-intro .row {
+    flex-direction: column-reverse;
+  }
+  .services-tabs .tab-content .services-intro .row img {
+    width: 100%;
+  }
+  .services-tabs .tab-content .services-facts {
+    background-color: #0a2b51;
+    position: relative;
+  }
+  .services-tabs .tab-content .services-facts .mob-icon-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  .services-tabs .tab-content .services-facts .text-opacity {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.25);
+  }
 }

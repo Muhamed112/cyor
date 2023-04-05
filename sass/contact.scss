@@ -11,6 +11,11 @@
   .contact-hero-content {
     max-width: 520px;
   }
+
+  @include media-breakpoint-down(md) {
+    height: 240px;
+    background-image: url("../assets/contact-hero-mob.png");
+  }
 }
 
 .carousel {
@@ -20,7 +25,6 @@
     background-color: #fff;
     border-radius: 24px;
     .carousel-item {
-      height: 480px;
       span {
         color: rgba(10, 43, 81, 0.5);
         font-size: 13px;
@@ -30,6 +34,7 @@
         border: 0.5px solid $primary;
         border-radius: 12px;
         color: $primary;
+        background-color: transparent;
       }
       .form-control::placeholder {
         color: $primary;
@@ -40,25 +45,71 @@
       textarea {
         height: 90px !important;
       }
+
+      .form-check-input {
+        height: 24px;
+        width: 24px;
+        margin-right: 16px;
+        margin-top: 0;
+        @include media-breakpoint-down(md) {
+          height: 20px;
+          width: 20px;
+        }
+      }
+      .form-check-input:focus {
+        box-shadow: none;
+      }
     }
 
     .contact-form {
-      padding: 56px;
+      padding: 56px 56px 32px 56px;
+      .contact-form-row {
+        @include media-breakpoint-up(md) {
+          input:last-child {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 24px;
+        .contact-form-row {
+          flex-direction: column;
+        }
+      }
     }
 
     .live-call {
       padding: 56px 100px;
-      h2 {
-        font-size: 30px;
+      .live-call-row {
+        @include media-breakpoint-up(md) {
+          input:last-child {
+            margin-left: 16px;
+          }
+        }
       }
       img {
         margin-left: 70px;
       }
     }
+
     .map {
       a {
         font-weight: 600;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 35px;
+      background: #f3f4f6;
+      border-radius: 12px;
+    }
+  }
+
+  .carousel-control-next {
+    justify-content: flex-start;
+  }
+  .carousel-control-prev {
+    justify-content: flex-end;
   }
 }

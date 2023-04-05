@@ -1,9 +1,23 @@
 @import "styles";
 
 .services-hero {
+  background-color: $primary;
+  color: #fff;
   margin-bottom: 40px;
   .content {
     max-width: 750px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+    background-color: #f3f4f6;
+    background-image: url("/assets/about-us/hero-mobile.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: $primary;
+    .content {
+      width: 100%;
+    }
   }
 }
 
@@ -22,6 +36,19 @@
       background-color: $primary;
       color: #fff;
     }
+
+    @include media-breakpoint-down(md) {
+      .nav-link {
+        padding: 0;
+        color: rgba(10, 43, 81, 0.5);
+        padding: 0 32px;
+      }
+      .nav-link.active {
+        background-color: transparent;
+        color: $primary;
+        padding: 0;
+      }
+    }
   }
 
   .tab-content {
@@ -39,16 +66,12 @@
       width: fit-content;
     }
 
-    // .services-intro {
-    //   img {
-    //     margin-left: 80px;
-    //   }
-    // }
     .services-more {
       .container {
         padding-bottom: 120px;
       }
     }
+
     .services-contact {
       padding: 112px 0;
       .form-control {
@@ -74,6 +97,38 @@
           color: #263238;
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .services-intro {
+        .row {
+          flex-direction: column-reverse;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .services-facts {
+        background-color: #0a2b51;
+        position: relative;
+        .mob-icon-box {
+          background-color: rgba(255, 255, 255, 0.1);
+          height: 32px;
+          width: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+        }
+        .text-opacity {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.25);
         }
       }
     }

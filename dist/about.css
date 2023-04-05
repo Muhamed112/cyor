@@ -12119,15 +12119,39 @@ p {
   background-image: url("/assets/about-us/hero-bg.png");
   background-position: right;
   background-repeat: no-repeat;
+  color: #fff;
 }
 .about-hero .hero-content {
   max-width: 560px;
   line-height: 24px;
 }
+@media (max-width: 767.98px) {
+  .about-hero {
+    background-color: #f3f4f6;
+    background-image: url("/assets/about-us/hero-mobile.svg");
+    color: #0a2b51;
+  }
+  .about-hero h1, .about-hero .h1 {
+    font-size: 31px;
+  }
+  .about-hero h4, .about-hero .h4 {
+    font-size: 16px;
+  }
+}
 
 .hero-description h4, .hero-description .h4 {
   line-height: 24px;
   letter-spacing: -0.01em;
+}
+@media (max-width: 767.98px) {
+  .hero-description h4:first-child, .hero-description .h4:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+@media (min-width: 768px) {
+  .hero-description h4:last-child, .hero-description .h4:last-child {
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .what-we-stand {
@@ -12137,6 +12161,11 @@ p {
   border-radius: 12px;
   background-color: #f3f4f6;
   padding: 40px;
+}
+@media (max-width: 767.98px) {
+  .what-we-stand .card {
+    padding: 24px;
+  }
 }
 .what-we-stand .content {
   padding: 40px 0 40px 56px;
@@ -12149,6 +12178,11 @@ p {
 }
 .what-we-stand .content .content-card:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 767.98px) {
+  .what-we-stand .content {
+    padding: 32px 0;
+  }
 }
 
 .partners {
@@ -12186,18 +12220,66 @@ p {
   background: #f3f4f6;
   border-radius: 24px;
 }
-.pop-block .block .btn-secondary {
-  width: 220px;
+.pop-block .block .form-control {
+  width: 200px;
   background: transparent;
-  padding-left: 30px;
+  border: 0.5px solid #0a2b51;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+.pop-block .block .form-control::placeholder {
+  color: #0a2b51 !important;
+}
+.pop-block .block .form-control:focus {
+  box-shadow: none;
+}
+.pop-block .block .btn-secondary {
+  width: 200px;
+  background: transparent;
+  padding-left: 16px;
   margin-right: 16px;
 }
 .pop-block .block .btn-primary {
   width: 160px;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (max-width: 767.98px) {
+  .pop-block .block {
+    padding: 24px;
+    flex-direction: column;
+  }
+  .pop-block .block .btn-group {
+    width: 100%;
+    flex-direction: column;
+  }
+  .pop-block .block .form-control {
+    height: 40px;
+  }
+  .pop-block .block .btn-primary {
+    padding: 10px 0;
+    font-weight: 500;
+  }
+  .pop-block .block .form-control,
+  .pop-block .block .btn-secondary,
+  .pop-block .block .btn-primary {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
+@media (max-width: 767.98px) {
+  .pop-block:last-child a {
+    width: 100%;
+  }
+}
 .pop-block:last-child .btn-primary {
   width: 240px;
+}
+@media (max-width: 767.98px) {
+  .pop-block:last-child .btn-primary {
+    width: 100%;
+  }
 }
 
 .gallery .container .gallery-row {

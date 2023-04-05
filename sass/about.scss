@@ -5,10 +5,23 @@
   background-image: url("/assets/about-us/hero-bg.png");
   background-position: right;
   background-repeat: no-repeat;
+  color: #fff;
 
   .hero-content {
     max-width: 560px;
     line-height: 24px;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-color: #f3f4f6;
+    background-image: url("/assets/about-us/hero-mobile.svg");
+    color: $primary;
+    h1 {
+      font-size: 31px;
+    }
+    h4 {
+      font-size: 16px;
+    }
   }
 }
 
@@ -16,6 +29,17 @@
   h4 {
     line-height: 24px;
     letter-spacing: -0.01em;
+  }
+
+  @include media-breakpoint-down(md) {
+    h4:first-child {
+      border-top: 1px solid #d9d9d9;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    h4:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
 }
 
@@ -25,6 +49,9 @@
     border-radius: 12px;
     background-color: #f3f4f6;
     padding: 40px;
+    @include media-breakpoint-down(md) {
+      padding: 24px;
+    }
   }
   .content {
     padding: 40px 0 40px 56px;
@@ -36,6 +63,10 @@
     }
     .content-card:last-child {
       margin-bottom: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 32px 0;
     }
   }
 }
@@ -82,21 +113,66 @@
     background: #f3f4f6;
     border-radius: 24px;
 
-    .btn-secondary {
-      width: 220px;
+    .form-control {
+      width: 200px;
       background: transparent;
-      padding-left: 30px;
+      border: 0.5px solid $primary;
+      border-radius: 12px;
+      margin-right: 16px;
+    }
+    .form-control::placeholder {
+      color: $primary !important;
+    }
+    .form-control:focus {
+      box-shadow: none;
+    }
+    .btn-secondary {
+      width: 200px;
+      background: transparent;
+      padding-left: 16px;
       margin-right: 16px;
     }
     .btn-primary {
       width: 160px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 24px;
+      flex-direction: column;
+      .btn-group {
+        width: 100%;
+        flex-direction: column;
+      }
+      .form-control {
+        height: 40px;
+      }
+      .btn-primary {
+        padding: 10px 0;
+        font-weight: 500;
+      }
+      .form-control,
+      .btn-secondary,
+      .btn-primary {
+        width: 100%;
+        margin-right: 0;
+      }
     }
   }
 }
 
 .pop-block:last-child {
+  @include media-breakpoint-down(md) {
+    a {
+      width: 100%;
+    }
+  }
   .btn-primary {
     width: 240px;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
 }
 
