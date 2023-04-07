@@ -12100,7 +12100,8 @@ p {
 }
 
 .carousel-indicators {
-  top: 100%;
+  margin-bottom: 0;
+  top: 500px;
 }
 
 .carousel-indicators .active {
@@ -12112,6 +12113,10 @@ p {
   height: 12px;
   width: 12px;
   border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 8px;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .content .career-hero {
