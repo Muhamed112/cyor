@@ -12137,17 +12137,15 @@ p {
   }
 }
 
-@media (min-width: 768px) {
-  .carousel {
-    margin-bottom: 98px;
-  }
+.carousel {
+  margin-bottom: 98px;
+  margin-top: -90px;
 }
 .carousel .carousel-inner {
-  margin-top: -90px;
+  height: 464px;
   z-index: 10;
   background-color: #fff;
   border-radius: 24px;
-  height: 464px;
 }
 .carousel .carousel-inner .carousel-item .light-par {
   color: rgba(10, 43, 81, 0.5);
@@ -12172,6 +12170,7 @@ p {
 }
 .carousel .carousel-inner .carousel-item .btn-primary {
   padding: 12px 0;
+  font-size: 16px;
 }
 .carousel .carousel-inner .carousel-item .form-check-input {
   height: 24px;
@@ -12215,18 +12214,68 @@ p {
   .carousel .carousel-inner .live-call .live-call-row input:last-child {
     margin-left: 16px;
   }
+  .carousel .carousel-inner .live-call .live-call-row img {
+    margin-left: 70px;
+  }
 }
-.carousel .carousel-inner .live-call img {
-  margin-left: 70px;
+@media (max-width: 767.98px) {
+  .carousel .carousel-inner .live-call {
+    padding: 24px;
+  }
+  .carousel .carousel-inner .live-call .row {
+    flex-direction: column-reverse;
+  }
+  .carousel .carousel-inner .live-call .row img {
+    width: 216px;
+    height: 188px;
+    margin-bottom: 18px;
+  }
+  .carousel .carousel-inner .live-call .live-call-row {
+    flex-direction: column;
+  }
 }
 .carousel .carousel-inner .map a {
   font-weight: 600;
 }
+.carousel .carousel-inner .map img {
+  height: 100%;
+  width: 50%;
+}
 @media (max-width: 767.98px) {
-  .carousel .carousel-inner {
+  .carousel .carousel-inner .map .map-row {
+    flex-direction: column-reverse;
+  }
+  .carousel .carousel-inner .map .map-row img {
+    width: 100%;
+  }
+  .carousel .carousel-inner .map .map-row .par-light {
+    font-size: 12.8px;
+    color: rgba(10, 43, 81, 0.5);
+    line-height: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel {
+    margin-bottom: 75px;
     margin-top: 35px;
+  }
+  .carousel .carousel-inner {
+    height: 550px;
     background: #f3f4f6;
     border-radius: 12px;
+  }
+  .carousel .carousel-inner .carousel-item .form-control {
+    height: 40px;
+  }
+  .carousel .carousel-inner .carousel-item textarea {
+    height: 160px !important;
+  }
+  .carousel .carousel-inner .carousel-item h2, .carousel .carousel-inner .carousel-item .h2 {
+    line-height: 24px;
+    font-size: 20px;
+  }
+  .carousel .carousel-inner .carousel-item .btn-primary {
+    font-size: 12.8px;
   }
 }
 .carousel .carousel-control-next {
