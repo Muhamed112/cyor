@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - About Us</title>
     <link rel="stylesheet" href="dist/about.css" />
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -351,21 +355,21 @@
               <div class="card border-0">
                 <img
                   src="/assets/about-us/logo-secondary.png"
-                  class="mb-md-4"
+                  class="mb-4"
                   width="140"
                   height="32"
                 />
                 <div class="d-flex">
                   <div class="info">
-                    <div class="info-card mb-md-4">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">Company name</p>
                       <p>CYORMEDIA LTD.</p>
                     </div>
-                    <div class="info-card mb-md-4">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">Founded</p>
                       <p>2011</p>
                     </div>
-                    <div class="info-card mb-md-4">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">Size</p>
                       <p>120+</p>
                     </div>
@@ -376,16 +380,16 @@
                       <p>Arnhem</p>
                     </div>
                   </div>
-                  <div class="info mx-auto">
-                    <div class="info-card mb-md-4">
+                  <div class="info">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">Brand name</p>
                       <p>CYOR24</p>
                     </div>
-                    <div class="info-card mb-md-4">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">HQ</p>
                       <p>Weisbaden, GER</p>
                     </div>
-                    <div class="info-card mb-md-4">
+                    <div class="info-card mb-4">
                       <p class="fw-semibold">B2B Clients</p>
                       <p>5000+</p>
                     </div>
@@ -400,11 +404,11 @@
             </div>
             <div class="col-md-8 col-12">
               <div class="content">
-                <h2 class="mb-4">What we stand for?</h2>
-                <div class="content-card d-flex align-items-center">
+                <h2 class="mb-md-4 mb-5">What we stand for?</h2>
+                <div class="content-card d-flex">
                   <img src="/assets/about-us/mission.svg" />
                   <div class="content-text">
-                    <h3 class="mb-md-3">Our mission</h3>
+                    <h3 class="mb-3">Our mission</h3>
                     <h4 class="fw-normal">
                       Our mission is to empower businesses to establish and
                       maintain a positive online reputation and strong online
@@ -413,10 +417,10 @@
                   </div>
                 </div>
 
-                <div class="content-card d-flex align-items-center">
+                <div class="content-card d-flex">
                   <img src="/assets/about-us/vision.svg" />
                   <div class="content-text">
-                    <h3 class="mb-md-3">Our vision</h3>
+                    <h3 class="mb-3">Our vision</h3>
                     <h4 class="fw-normal">
                       Our vision is to create equal opportunity for every
                       business, and give them a solid base for growth.
@@ -432,7 +436,7 @@
       <section class="partners mb-md-7 text-primary">
         <div class="container">
           <div
-            class="d-flex justify-content-between align-items-center mb-md-6"
+            class="d-none d-md-flex justify-content-between align-items-center mb-md-6"
           >
             <h2>Our partners and clients</h2>
             <p class="d-none d-md-block">
@@ -440,7 +444,7 @@
               thankful for everyone we met.
             </p>
           </div>
-          <div class="partners-row row">
+          <div class="partners-row row d-none d-md-flex">
             <div class="col-md-3 mb-md-3 text-center">
               <img src="assets/about-us/google.png" />
             </div>
@@ -466,16 +470,57 @@
               <img src="assets/about-us/shmid.png" />
             </div>
           </div>
+
+          <h2 class="mb-3 d-md-none">Our partners and clients</h2>
           <div
-            class="d-flex justify-content-between align-items-center mb-md-6"
+            id="carouselExampleIndicators"
+            class="carousel slide mb-6 pt-3 d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active text-center"
+                data-bs-interval="4000"
+              >
+                <img src="assets/about-us/google.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/meta.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/mercedes.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/yt.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/domino.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/redefining.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/opel.png" />
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/about-us/shmid.png" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-none d-md-flex justify-content-between align-items-center mb-md-6"
           >
             <h2>Testimonials</h2>
-            <p class="d-none d-md-block">
+            <p>
               It is our pleasure to share what our clients and partners say
               about us.
             </p>
           </div>
-          <div id="carouselExampleIndicators" class="carousel slide mb-6">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide mb-6 d-none d-md-flex"
+          >
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -572,19 +617,104 @@
               </div>
             </div>
           </div>
+
+          <h2 class="mb-3 d-md-none">Testimonials</h2>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide pt-3 d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/lukas.png" />
+                    <h3 class="mx-3">Lukas Schmidt</h3>
+                  </div>
+                  <p>
+                    “We have a full yearly coverage, against reputation damage,
+                    and it works!”
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/giovanni.png" />
+                    <h3 class="mx-3">Giovanni Rossi</h3>
+                  </div>
+                  <p>
+                    “I really liked the QR code flyer, get much more positive
+                    feedback from our clients.”
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/sophia.png" />
+                    <h3 class="mx-3">Sophia Wagner</h3>
+                  </div>
+                  <p>
+                    "Our website finally converts visitors in paying customers,
+                    thanks CYOR24."
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/mark.png" />
+                    <h3 class="mx-3">Mark Thijssen</h3>
+                  </div>
+                  <p>“Finally a company that deliver what they say”</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/mario.png" />
+                    <h3 class="mx-3">Mario Verde</h3>
+                  </div>
+                  <p>
+                    “Wow, Google my Business profile looks much better now,
+                    results are amazing”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="assets/about-us/rafaela.png" />
+                    <h3 class="mx-3">Rafaela Moreno</h3>
+                  </div>
+                  <p>
+                    "We didn’t realise how much online presence matters until
+                    we’ve seen the difference."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="services text-primary">
+      <section class="services text-primary py-3 py-md-0">
         <div class="container">
           <div
-            class="d-flex justify-content-between align-items-center mb-md-6"
+            class="d-none d-md-flex justify-content-between align-items-center mb-md-6"
           >
             <h2>Services we offer</h2>
             <a href="/services.html">Learn more about our services</a>
           </div>
+          <h2 class="mb-3 d-md-none mt-3 mt-md-0">Services we offer</h2>
 
-          <div class="row pb-md-7 border-bottom border-info">
+          <div class="row pb-md-7 d-none d-md-flex">
             <div class="col-md-4">
               <div class="text-big mb-5">
                 <h3 class="mb-3">Online reputation management</h3>
@@ -672,12 +802,127 @@
               </div>
             </div>
           </div>
+
+          <div class="services-tabs d-md-none">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  Online reputation
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  Online presence
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content text-primary" id="myTabContent">
+              <div
+                class="tab-pane fade show active pt-3"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="content-box mt-3">
+                  <h2 class="mb-3">
+                    Onlline monitoring and tracking of your company's brand
+                  </h2>
+                  <p>
+                    We monitor and respond to customer reviews on various online
+                    platforms such as Google, Facebook or any other to ensure
+                    positive feedback and address any negative comments or
+                    concerns.
+                  </p>
+                </div>
+                <div class="content-box pt-3 mt-3">
+                  <h2 class="mb-3">
+                    Review management and responding to negative reviews on
+                    Google
+                  </h2>
+                  <p>
+                    Managing Google Business Profile and answering to the
+                    negative reviews on behalf of the company owner.
+                  </p>
+                </div>
+                <div class="content-box py-3 mt-3">
+                  <h2 class="mb-3">Crisis management and reputation repair</h2>
+                  <p>
+                    We are the only Online Reputation Management company that is
+                    able to fully remove Google Business Profile reviews and
+                    guarantee for the results.
+                  </p>
+                </div>
+                <a href="/services.html">
+                  <button class="btn-primary w-100 fs-6 mt-3 fw-normal">
+                    See all services
+                  </button>
+                </a>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div class="content-box mt-3">
+                  <h2 class="mb-3">Website development</h2>
+                  <p>
+                    We design and develop compelling, mobile and user-friendly
+                    websites that meet the specific needs of clients and help
+                    them to significantly improve their online presence.
+                  </p>
+                </div>
+                <div class="content-box pt-3 mt-3">
+                  <h2 class="mb-3">Digital marketing</h2>
+                  <p>
+                    Increase customer engagement, win new clients or improve
+                    brand awareness. We got you covered.
+                  </p>
+                </div>
+                <div class="content-box py-3 mt-3">
+                  <h2 class="mb-3">E-commerce development</h2>
+                  <p>
+                    We build e-commerce solutions that convert web shop visitors
+                    into buying customers.
+                  </p>
+                </div>
+                <a href="/services.html">
+                  <button class="btn-primary w-100 fs-6 fw-normal mt-3">
+                    See all services
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="pop-block mb-md-7 text-primary">
-        <div class="container py-md-5 py-5 border-bottom border-info">
-          <div class="block d-flex justify-content-between align-items-center">
+        <div class="container">
+          <div class="seperator pb-4 mt-4 mt-md-0 mb-md-3 border-top border-info"></div>
+          <div
+            class="block d-flex justify-content-between align-items-center my-3 my-md-0"
+          >
             <div class="title-box">
               <h3 class="mb-2 mb-md-0">Let’s build your online reputation</h3>
               <p class="mt-1 mt-md-0 mb-4 mb-md-0">
@@ -696,41 +941,86 @@
               <button class="btn-primary">Submit</button>
             </div>
           </div>
+          <div class="seperator pt-4 mt-md-4 border-bottom border-info"></div>
         </div>
       </section>
 
-      <section class="gallery d-none d-md-block">
-        <div class="container pb-md-7">
-          <h2 class="mb-6 text-primary">
+      <section class="gallery d-md-block">
+        <div class="container pt-5 pt-md-0 pb-md-7 pb-3">
+          <h2 class="mb-5 mb-md-6 text-primary">
             Amazing people deserve amazing offices
           </h2>
           <div class="gallery-row d-flex">
-            <img class="img-item" src="assets/career/office.png" />
-            <img class="img-item mx-3" src="assets/career/meeting-room.png" />
             <img
-              class="img-item"
+              class="img-item d-none d-md-block"
+              src="assets/career/office.png"
+            />
+            <img
+              class="img-item d-md-none"
+              src="assets/career/office-mob.png"
+              width="60px"
+            />
+
+            <img
+              class="img-item mx-3 d-none d-md-block"
+              src="assets/career/meeting-room.png"
+            />
+            <img
+              class="img-item mx-1 d-md-none"
+              src="assets/career/meet-room-mob.png"
+              width="132px"
+            />
+
+            <img
+              class="img-item d-none d-md-block"
               src="assets/career/meeting.png"
               width="486px"
             />
+            <img
+              class="img-item d-md-none"
+              src="assets/career/meeting-mob.png"
+              width="130px"
+            />
           </div>
           <div class="gallery-row d-flex">
-            <img class="img-item" src="assets/career/talk.png" width="486px" />
             <img
-              class="img-item mx-3"
+              class="img-item d-none d-md-block"
+              src="assets/career/talk.png"
+              width="486px"
+            />
+            <img
+              class="img-item d-md-none"
+              src="assets/career/talk-mob.png"
+              width="130px"
+            />
+
+            <img
+              class="img-item mx-3 d-md-block d-none"
               src="assets/career/new-meeting.png"
               width="486px"
             />
             <img
-              class="img-item"
+              class="img-item mx-1 d-md-none"
+              src="assets/career/new-meeting-mob.png"
+              width="133px"
+            />
+
+            <img
+              class="img-item d-md-block d-none"
               src="assets/career/new-office.png"
               width="216px"
+            />
+            <img
+              class="img-item d-md-none"
+              src="assets/career/new-office-mob.png"
             />
           </div>
         </div>
       </section>
 
       <section class="pop-block mb-md-7 mb-6 text-primary">
-        <div class="container pt-md-5 pt-5 border-top border-info">
+        <div class="container">
+          <div class="seperator pb-3 mb-4 mb-md-3 border-top border-info"></div>
           <div class="block d-flex justify-content-between align-items-center">
             <div class="title-box">
               <h3 class="mb-2 mb-md-0">Do you consider joining our team?</h3>

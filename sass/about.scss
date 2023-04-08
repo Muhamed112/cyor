@@ -49,8 +49,8 @@
     border-radius: 12px;
     background-color: #f3f4f6;
     padding: 40px;
-    @include media-breakpoint-down(md) {
-      padding: 24px;
+    .info:last-child {
+      margin: 0 auto;
     }
   }
   .content {
@@ -60,13 +60,30 @@
         margin-right: 30px;
       }
       margin-bottom: 40px;
+      align-items: center;
     }
     .content-card:last-child {
       margin-bottom: 0;
     }
+  }
 
-    @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 8px;
+    .card {
+      padding: 24px;
+      .info:last-child {
+        margin: 0 0 0 auto;
+      }
+    }
+    .content {
       padding: 32px 0;
+      .content-card {
+        align-items: flex-start;
+        margin-bottom: 32px;
+        .content-text {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
@@ -94,9 +111,19 @@
     }
     .carousel-indicators {
       margin-top: 24px;
+      top: 100%;
     }
     .carousel-indicators [data-bs-target] {
       border: 0.5px solid $primary;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+    .carousel {
+      .card {
+        padding: 20px 20px 20px 24px;
+      }
     }
   }
 }
@@ -104,6 +131,29 @@
 .services {
   p {
     letter-spacing: -0.01em;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #0a2b511a;
+    .nav-item {
+      &:first-child {
+        .nav-link {
+          padding-left: 0;
+          padding-right: 16px;
+        }
+      }
+      .nav-link {
+        border: none;
+        padding-bottom: 16px;
+        padding-right: 0;
+        padding-left: 16px;
+        color: rgba(10, 43, 81, 0.5);
+      }
+      .nav-link.active {
+        font-weight: 600;
+        border-bottom: 1px solid #0a2b511a;
+        color: $primary;
+      }
+    }
   }
 }
 
@@ -184,12 +234,19 @@
       .img-item:first-child {
         border-top-left-radius: 16px;
       }
-      .img-item:last-child {
+      .img-item:nth-child(5) {
         border-top-right-radius: 16px;
       }
-
       .img-item {
         height: 100%;
+      }
+
+      @include media-breakpoint-down(md) {
+        height: 320px;
+        margin-bottom: 16px;
+        .img-item:nth-child(2) {
+          border-top-left-radius: 16px;
+        }
       }
     }
 
@@ -200,9 +257,16 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 16px;
       }
-      .img-item:last-child {
+      .img-item:nth-child(5) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 16px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+        .img-item:nth-child(2) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 16px;
+        }
       }
     }
   }
