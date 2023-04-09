@@ -64,9 +64,9 @@
     height: 745px;
     border-radius: 12px;
     margin-top: 32px;
-    margin-bottom: 84px;
+    margin-bottom: 56px;
     overflow-y: scroll;
-    
+
     .form-control {
       background-color: #f3f4f6;
       border: 0.5px solid $primary;
@@ -81,14 +81,22 @@
       &::placeholder {
         color: $primary;
       }
+      &:focus {
+        box-shadow: none;
+      }
     }
 
     @include media-breakpoint-down(md) {
       margin-top: 24px;
       height: 625px;
-      margin-bottom: 16px;
+      margin-bottom: 40px;
       .form-control {
         background-image: none;
+        height: 40px;
+        font-size: 12.8px;
+        &::placeholder {
+          font-size: 12.8px;
+        }
       }
     }
   }
@@ -113,9 +121,29 @@
             font-weight: 500;
           }
         }
-
         @include media-breakpoint-down(md) {
           flex-direction: column;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 24px;
+      .box-content {
+        .card-row {
+          .card {
+            width: 100%;
+            height: auto;
+            p {
+              margin-bottom: 24px;
+            }
+            img {
+              height: 160px;
+              margin-bottom: 16px;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+            }
+          }
         }
       }
     }
