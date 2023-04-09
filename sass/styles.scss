@@ -22,7 +22,7 @@ p {
   padding: 15px 0;
   text-align: center;
   border: none;
-  font-size: 12.8px;
+  font-size: 16px;
 }
 
 .btn-secondary {
@@ -62,11 +62,6 @@ p {
     color: #fff;
     font-weight: 300;
     font-size: 12.8px;
-  }
-
-  .btn-primary {
-    font-size: 12.8px;
-    font-weight: 500;
   }
 }
 
@@ -119,6 +114,14 @@ p {
           width: 29px;
         }
       }
+    }
+    .dropdown-toggle:focus {
+      outline: none !important;
+      box-shadow: none;
+    }
+    button:focus,
+    a:focus {
+      outline: none;
     }
 
     .dropdown-menu {
@@ -293,4 +296,42 @@ p {
   margin-left: 8px;
   border-top: 0;
   border-bottom: 0;
+}
+
+.marquee-section {
+  position: relative;
+  min-height: 24px;
+}
+
+.marquee-section {
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+
+.marquee-div {
+  position: absolute;
+  animation: move-right-to-left linear 40s infinite;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

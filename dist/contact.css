@@ -11864,7 +11864,7 @@ p {
   padding: 15px 0;
   text-align: center;
   border: none;
-  font-size: 12.8px;
+  font-size: 16px;
 }
 
 .btn-secondary {
@@ -11904,10 +11904,6 @@ p {
   color: #fff;
   font-weight: 300;
   font-size: 12.8px;
-}
-.contact-col .btn-primary {
-  font-size: 12.8px;
-  font-weight: 500;
 }
 
 .navbar {
@@ -11958,6 +11954,14 @@ p {
   .navbar .dropdown .dropdown-toggle img {
     width: 29px;
   }
+}
+.navbar .dropdown .dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.navbar .dropdown button:focus,
+.navbar .dropdown a:focus {
+  outline: none;
 }
 .navbar .dropdown .dropdown-menu {
   border-top: 0.5px solid #acffbe;
@@ -12119,6 +12123,42 @@ p {
   border-bottom: 0;
 }
 
+.marquee-section {
+  position: relative;
+  min-height: 24px;
+}
+
+.marquee-section {
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+
+.marquee-div {
+  position: absolute;
+  animation: move-right-to-left linear 40s infinite;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .contact-hero {
   height: 400px;
   width: 100%;

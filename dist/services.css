@@ -11864,7 +11864,7 @@ p {
   padding: 15px 0;
   text-align: center;
   border: none;
-  font-size: 12.8px;
+  font-size: 16px;
 }
 
 .btn-secondary {
@@ -11904,10 +11904,6 @@ p {
   color: #fff;
   font-weight: 300;
   font-size: 12.8px;
-}
-.contact-col .btn-primary {
-  font-size: 12.8px;
-  font-weight: 500;
 }
 
 .navbar {
@@ -11958,6 +11954,14 @@ p {
   .navbar .dropdown .dropdown-toggle img {
     width: 29px;
   }
+}
+.navbar .dropdown .dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.navbar .dropdown button:focus,
+.navbar .dropdown a:focus {
+  outline: none;
 }
 .navbar .dropdown .dropdown-menu {
   border-top: 0.5px solid #acffbe;
@@ -12119,6 +12123,42 @@ p {
   border-bottom: 0;
 }
 
+.marquee-section {
+  position: relative;
+  min-height: 24px;
+}
+
+.marquee-section {
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+
+.marquee-div {
+  position: absolute;
+  animation: move-right-to-left linear 40s infinite;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .services-hero {
   background-color: #0a2b51;
   color: #fff;
@@ -12134,66 +12174,134 @@ p {
     background-image: url("/assets/about-us/hero-mobile.svg");
     background-position: right;
     background-repeat: no-repeat;
+    margin-bottom: 24px;
     color: #0a2b51;
   }
   .services-hero .content {
     width: 100%;
   }
+  .services-hero .content h1, .services-hero .content .h1 {
+    font-size: 31px;
+  }
+  .services-hero .content h4, .services-hero .content .h4 {
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 767.98px) {
+  .services-tabs h1, .services-tabs .h1,
+  .services-tabs h2,
+  .services-tabs .h2 {
+    font-size: 20px;
+  }
+}
 .services-tabs .nav-tabs {
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
-  padding-bottom: 12px;
 }
-.services-tabs .nav-tabs .nav-link {
+.services-tabs .nav-tabs .nav-item:first-child .nav-link {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.services-tabs .nav-tabs .nav-item .nav-link {
   border: none;
-  padding: 6px 28px;
-  color: #0a2b51;
-  border-radius: 4px;
+  padding-bottom: 16px;
+  padding-right: 0px;
+  padding-left: 16px;
+  color: rgba(10, 43, 81, 0.5);
 }
-.services-tabs .nav-tabs .nav-link.active {
+.services-tabs .nav-tabs .nav-item .nav-link.active {
   font-weight: 600;
-  background-color: #0a2b51;
-  color: #fff;
-}
-@media (max-width: 767.98px) {
-  .services-tabs .nav-tabs .nav-link {
-    padding: 0;
-    color: rgba(10, 43, 81, 0.5);
-    padding: 0 32px;
-  }
-  .services-tabs .nav-tabs .nav-link.active {
-    background-color: transparent;
-    color: #0a2b51;
-    padding: 0;
-  }
+  border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
+  color: #0a2b51;
 }
 .services-tabs .tab-content .btn-primary {
   width: 160px;
-  font-size: 12px;
+  font-size: 12.8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .btn-primary {
+    width: 100%;
+  }
 }
 .services-tabs .tab-content .small-title {
-  font-size: 12px;
+  font-size: 12.8px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .small-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .services-tabs .tab-content .icon-box {
   background: #f3f4f6;
   border-radius: 12px;
-  width: fit-content;
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .icon-box {
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+  }
+  .services-tabs .tab-content .icon-box img {
+    width: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-facts img {
+    width: 16px;
+  }
+  .services-tabs .tab-content .services-facts h2, .services-tabs .tab-content .services-facts .h2,
+  .services-tabs .tab-content .services-facts span {
+    color: #a1ffa1;
+  }
+  .services-tabs .tab-content .services-facts p {
+    color: #fff;
+  }
 }
 .services-tabs .tab-content .services-more .container {
   padding-bottom: 120px;
 }
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-more .container {
+    padding-bottom: 32px;
+  }
+}
 .services-tabs .tab-content .services-contact {
   padding: 112px 0;
 }
-.services-tabs .tab-content .services-contact .form-control {
+.services-tabs .tab-content .services-contact .form-inputs .form-control:first-child {
+  margin-right: 8px;
+}
+.services-tabs .tab-content .services-contact .form-inputs .form-control {
   height: 40px;
   border: 0.5px solid #ffffff;
   border-radius: 12px;
   background: transparent;
-}
-.services-tabs .tab-content .services-contact .form-control::placeholder {
   color: #fff;
+  font-size: 12.8px;
+}
+.services-tabs .tab-content .services-contact .form-inputs .form-control::placeholder {
+  color: #fff;
+  font-size: 12.8px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-contact {
+    padding: 40px 0;
+  }
+  .services-tabs .tab-content .services-contact .form-inputs {
+    flex-direction: column;
+  }
+  .services-tabs .tab-content .services-contact .form-inputs .form-control:first-child {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
 .services-tabs .tab-content .services-studies .card img {
   border-top-right-radius: 12px;
@@ -12205,6 +12313,17 @@ p {
   color: #263238;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-studies .card img {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  .services-tabs .tab-content .services-studies .card .card {
+    padding: 24px 32px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
 }
 @media (max-width: 767.98px) {
   .services-tabs .tab-content .services-intro .row {
@@ -12231,5 +12350,10 @@ p {
     font-size: 20px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.25);
+  }
+}
+@media (max-width: 767.98px) and (max-width: 767.98px) {
+  .services-tabs .tab-content .services-competences .row:nth-child(3) {
+    flex-direction: column-reverse;
   }
 }

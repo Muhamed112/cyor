@@ -14,39 +14,47 @@
     background-image: url("/assets/about-us/hero-mobile.svg");
     background-position: right;
     background-repeat: no-repeat;
+    margin-bottom: 24px;
     color: $primary;
     .content {
       width: 100%;
+      h1 {
+        font-size: 31px;
+      }
+      h4 {
+        font-size: 16px;
+      }
     }
   }
 }
 
 .services-tabs {
+  @include media-breakpoint-down(md) {
+    h1,
+    h2 {
+      font-size: 20px;
+    }
+  }
   .nav-tabs {
     border-bottom: 1px solid #0a2b511a;
-    padding-bottom: 12px;
-    .nav-link {
-      border: none;
-      padding: 6px 28px;
-      color: $primary;
-      border-radius: 4px;
-    }
-    .nav-link.active {
-      font-weight: 600;
-      background-color: $primary;
-      color: #fff;
-    }
-
-    @include media-breakpoint-down(md) {
+    .nav-item {
+      &:first-child {
+        .nav-link {
+          padding-left: 0;
+          padding-right: 16px;
+        }
+      }
       .nav-link {
-        padding: 0;
+        border: none;
+        padding-bottom: 16px;
+        padding-right: 0px;
+        padding-left: 16px;
         color: rgba(10, 43, 81, 0.5);
-        padding: 0 32px;
       }
       .nav-link.active {
-        background-color: transparent;
+        font-weight: 600;
+        border-bottom: 1px solid #0a2b511a;
         color: $primary;
-        padding: 0;
       }
     }
   }
@@ -54,34 +62,93 @@
   .tab-content {
     .btn-primary {
       width: 160px;
-      font-size: 12px;
+      font-size: 12.8px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
+
     .small-title {
-      font-size: 12px;
+      font-size: 12.8px;
+      @include media-breakpoint-down(md) {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     .icon-box {
       background: #f3f4f6;
       border-radius: 12px;
-      width: fit-content;
+      width: 64px;
+      height: 64px;
+      @include media-breakpoint-down(md) {
+        border-radius: 8px;
+        width: 32px;
+        height: 32px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+
+    .services-facts {
+      @include media-breakpoint-down(md) {
+        img {
+          width: 16px;
+        }
+        h2,
+        span {
+          color: $secondary;
+        }
+        p {
+          color: #fff;
+        }
+      }
     }
 
     .services-more {
       .container {
         padding-bottom: 120px;
+        @include media-breakpoint-down(md) {
+          padding-bottom: 32px;
+        }
       }
     }
 
     .services-contact {
       padding: 112px 0;
-      .form-control {
-        height: 40px;
-        border: 0.5px solid #ffffff;
-        border-radius: 12px;
-        background: transparent;
+      .form-inputs {
+        .form-control:first-child {
+          margin-right: 8px;
+        }
+        .form-control {
+          height: 40px;
+          border: 0.5px solid #ffffff;
+          border-radius: 12px;
+          background: transparent;
+          color: #fff;
+          font-size: 12.8px;
+        }
+        .form-control::placeholder {
+          color: #fff;
+          font-size: 12.8px;
+        }
       }
-      .form-control::placeholder {
-        color: #fff;
+
+      @include media-breakpoint-down(md) {
+        padding: 40px 0;
+        .form-inputs {
+          flex-direction: column;
+          .form-control:first-child {
+            margin-right: 0;
+            margin-bottom: 8px;
+          }
+        }
       }
     }
 
@@ -98,6 +165,18 @@
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
         }
+
+        @include media-breakpoint-down(md) {
+          img {
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+          }
+          .card {
+            padding: 24px 32px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+          }
+        } 
       }
     }
 
@@ -129,6 +208,14 @@
           font-size: 20px;
           line-height: 24px;
           color: rgba(255, 255, 255, 0.25);
+        }
+      }
+
+      .services-competences {
+        @include media-breakpoint-down(md) {
+          .row:nth-child(3) {
+            flex-direction: column-reverse;
+          }
         }
       }
     }
