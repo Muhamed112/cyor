@@ -128,6 +128,7 @@ p {
       border-top: 0.5px solid #acffbe;
       padding: 24px 0 8px 0;
       min-width: 100px;
+      margin-top: 24px;
       white-space: nowrap;
       li {
         .nav-link {
@@ -237,6 +238,13 @@ p {
 
     .nav-link {
       width: fit-content;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .btn-primary {
+      font-size: 12.8px;
+      height: 48px;
     }
 
     .bottom-links {
@@ -334,4 +342,8 @@ p {
   to {
     transform: translateX(-50%);
   }
+}
+
+.lock-scroll {
+  overflow: hidden;
 }

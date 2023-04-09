@@ -10,6 +10,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -25,6 +29,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -757,9 +762,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-
-      
-
+    </div>
     <div class="footer bg-primary text-white">
       <div class="container">
         <div class="d-flex flex-column flex-md-row align-items-center py-7">
@@ -848,7 +851,7 @@
         // Optional parameters
         direction: "horizontal",
         loop: true,
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 16,
 
         // If we need pagination

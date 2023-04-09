@@ -13,7 +13,12 @@ $(document).ready(function () {
     e.preventDefault();
     var pattern = /#.+/gi; //use regex to get anchor(==selector)
     var contentID = e.target.toString().match(pattern)[0]; //get anchor
-    console.log(contentID);
+    $('.nav-tabs li a[data-bs-target="' + contentID + '"]').tab("show");
+  });
+
+  $(".test-link").click(function (e) {
+    var pattern = /#.+/gi; //use regex to get anchor(==selector)
+    var contentID = e.target.toString().match(pattern)[0]; //get anchor
     $('.nav-tabs li a[data-bs-target="' + contentID + '"]').tab("show");
   });
 });
@@ -45,3 +50,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function lockScroll() {
+  if ($("body").hasClass("lock-scroll")) {
+    $("body").removeClass("lock-scroll");
+  } else {
+    $("body").addClass("lock-scroll");
+  }
+}
+
+$("a.nav-link").on("click", function () {
+  $("body").toggleClass("lock-scroll");
+});

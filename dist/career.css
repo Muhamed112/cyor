@@ -11967,6 +11967,7 @@ p {
   border-top: 0.5px solid #acffbe;
   padding: 24px 0 8px 0;
   min-width: 100px;
+  margin-top: 24px;
   white-space: nowrap;
 }
 .navbar .dropdown .dropdown-menu li .nav-link {
@@ -12065,6 +12066,13 @@ p {
   .navbar .nav-link {
     width: fit-content;
   }
+  .navbar .nav-link:hover {
+    color: #fff;
+  }
+  .navbar .btn-primary {
+    font-size: 12.8px;
+    height: 48px;
+  }
   .navbar .bottom-links {
     border-top: 0.5px solid rgba(255, 255, 255, 0.5);
     justify-content: space-between;
@@ -12159,6 +12167,10 @@ p {
     transform: translateX(-50%);
   }
 }
+.lock-scroll {
+  overflow: hidden;
+}
+
 .content .career-hero {
   z-index: 1;
   height: 560px;
