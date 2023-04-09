@@ -12225,6 +12225,25 @@ p {
   margin-bottom: 56px;
   overflow-y: scroll;
 }
+.resources-tabs .tab-box label {
+  position: relative;
+  width: 100%;
+}
+.resources-tabs .tab-box label:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  right: 24px;
+  width: 30px;
+  background: url("/assets/search.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 767.98px) {
+  .resources-tabs .tab-box label:before {
+    display: none;
+  }
+}
 .resources-tabs .tab-box .form-control {
   background-color: #f3f4f6;
   border: 0.5px solid #0a2b51;
@@ -12232,9 +12251,8 @@ p {
   color: #0a2b51;
   margin-bottom: 35px;
   height: 48px;
-  background-image: url("/assets/search.svg");
-  background-repeat: no-repeat;
-  background-position: 97%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .resources-tabs .tab-box .form-control::placeholder {
   color: #0a2b51;
@@ -12305,8 +12323,15 @@ p {
 .resources-tabs .accordion .accordion-item .accordion-button {
   padding-left: 0;
   padding-top: 0;
-  padding-right: 30px;
+  padding-right: 26px;
   line-height: 24px;
+  color: #0a2b51;
+}
+@media (max-width: 767.98px) {
+  .resources-tabs .accordion .accordion-item .accordion-button {
+    padding-right: 0px;
+    align-items: flex-start;
+  }
 }
 .resources-tabs .accordion .accordion-item .accordion-body {
   padding-left: 0;
