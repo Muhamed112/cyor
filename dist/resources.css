@@ -12198,11 +12198,12 @@ p {
   padding-left: 0;
 }
 .resources-tabs .nav-tabs .nav-item .nav-link {
-  border: none;
+  border: 0;
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
   color: rgba(10, 43, 81, 0.5);
+  transition: none;
 }
 @media (max-width: 767.98px) {
   .resources-tabs .nav-tabs .nav-item .nav-link {
@@ -12213,8 +12214,8 @@ p {
 }
 .resources-tabs .nav-tabs .nav-item .nav-link.active {
   font-weight: 600;
-  border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
   color: #0a2b51;
+  border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
 }
 .resources-tabs .tab-box {
   background-color: #f3f4f6;

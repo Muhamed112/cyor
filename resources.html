@@ -322,10 +322,24 @@
             </h1>
             <h4 class="fw-normal">
               To find answes to questions regarding our services we advise you
-              to read <a href="#" class="fw-semibold">FAQ</a>.
+              to read
+              <a
+                href="#home-tab-pane"
+                data-toggle="tab"
+                role="tab"
+                class="tab-link fw-semibold"
+                >FAQ</a
+              >.
               <br class="d-md-none" />
               <br />If you would like to learn more about online reputation,
-              than go for <a href="#" class="fw-semibold">blog</a>.
+              than go for
+              <a
+                href="#profile-tab-pane"
+                data-toggle="tab"
+                role="tab"
+                class="tab-link fw-semibold"
+                >blog</a
+              >.
             </h4>
           </div>
         </div>
@@ -335,7 +349,7 @@
         <div class="container">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link active"
                 id="home-tab"
                 data-bs-toggle="tab"
@@ -346,10 +360,10 @@
                 aria-selected="true"
               >
                 Frequently asked questions
-              </button>
+              </a>
             </li>
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link"
                 id="profile-tab"
                 data-bs-toggle="tab"
@@ -360,7 +374,7 @@
                 aria-selected="false"
               >
                 Blog
-              </button>
+              </a>
             </li>
           </ul>
           <div class="tab-content text-primary" id="myTabContent">
@@ -967,6 +981,33 @@
           </div>
         </div>
       </section>
+    </div>
+
+    <ul class="nav nav-tabs" role="tablist" id="myTabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#log-in" data-toggle="tab">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#forgot-password" data-toggle="tab"
+          >Forgot password</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sign-up" data-toggle="tab">Sign up</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="log-in">
+        Login tab
+        <a
+          href="#forgot-password"
+          data-toggle="tab"
+          class="forgot-password-link"
+          >Go to Forget Password</a
+        >
+      </div>
+      <div class="tab-pane fade" id="forgot-password">Forgt password tab</div>
+      <div class="tab-pane fade" id="sign-up">sign-up tab</div>
     </div>
 
     <div class="footer bg-primary text-white">

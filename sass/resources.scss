@@ -41,11 +41,12 @@
         }
       }
       .nav-link {
-        border: none;
+        border: 0;
         padding-bottom: 20px;
         padding-right: 24px;
         padding-left: 24px;
         color: rgba(10, 43, 81, 0.5);
+        transition: none;
         @include media-breakpoint-down(md) {
           padding-bottom: 16px;
           padding-right: 20px;
@@ -54,8 +55,8 @@
       }
       .nav-link.active {
         font-weight: 600;
-        border-bottom: 1px solid #0a2b511a;
         color: $primary;
+        border-bottom: 1px solid #0a2b511a;
       }
     }
   }
