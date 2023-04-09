@@ -14,6 +14,21 @@
       margin-bottom: 20px;
     }
   }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 24px;
+    .container {
+      background-image: none;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      h1 {
+        font-size: 31.25px;
+        margin-bottom: 16px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 .resources-tabs {
@@ -31,6 +46,11 @@
         padding-right: 24px;
         padding-left: 24px;
         color: rgba(10, 43, 81, 0.5);
+        @include media-breakpoint-down(md) {
+          padding-bottom: 16px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
       }
       .nav-link.active {
         font-weight: 600;
@@ -41,11 +61,12 @@
   }
   .tab-box {
     background-color: #f3f4f6;
-    height: 755px;
+    height: 745px;
     border-radius: 12px;
     margin-top: 32px;
     margin-bottom: 84px;
-
+    overflow-y: scroll;
+    
     .form-control {
       background-color: #f3f4f6;
       border: 0.5px solid $primary;
@@ -61,29 +82,35 @@
         color: $primary;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 24px;
+      height: 625px;
+      margin-bottom: 16px;
+      .form-control {
+        background-image: none;
+      }
+    }
   }
   .blog {
     padding: 56px 56px 0 56px;
-    overflow-y: scroll;
     .box-content {
       .card-row {
         justify-content: space-between;
         .card {
           width: 340px;
+          height: 305px;
           background-color: transparent;
           border: none;
           img {
-            height: 160px;
+            height: 200px;
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
           }
           p {
-            padding-right: 32px;
-            padding-left: 36px;
-            margin-bottom: 48px;
-            color: #263238;
+            font-weight: 500;
           }
         }
 
@@ -95,8 +122,6 @@
   }
 
   .accordion {
-    padding: 56px;
-
     .accordion-item {
       .accordion-button {
         padding-left: 0;

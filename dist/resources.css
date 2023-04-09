@@ -12173,6 +12173,23 @@ p {
 .resources-hero .container h1, .resources-hero .container .h1 {
   margin-bottom: 20px;
 }
+@media (max-width: 767.98px) {
+  .resources-hero {
+    margin-bottom: 24px;
+  }
+  .resources-hero .container {
+    background-image: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .resources-hero .container h1, .resources-hero .container .h1 {
+    font-size: 31.25px;
+    margin-bottom: 16px;
+  }
+  .resources-hero .container h4, .resources-hero .container .h4 {
+    font-size: 16px;
+  }
+}
 
 .resources-tabs .nav-tabs {
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
@@ -12187,6 +12204,13 @@ p {
   padding-left: 24px;
   color: rgba(10, 43, 81, 0.5);
 }
+@media (max-width: 767.98px) {
+  .resources-tabs .nav-tabs .nav-item .nav-link {
+    padding-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .resources-tabs .nav-tabs .nav-item .nav-link.active {
   font-weight: 600;
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
@@ -12194,10 +12218,11 @@ p {
 }
 .resources-tabs .tab-box {
   background-color: #f3f4f6;
-  height: 755px;
+  height: 745px;
   border-radius: 12px;
   margin-top: 32px;
   margin-bottom: 84px;
+  overflow-y: scroll;
 }
 .resources-tabs .tab-box .form-control {
   background-color: #f3f4f6;
@@ -12213,38 +12238,42 @@ p {
 .resources-tabs .tab-box .form-control::placeholder {
   color: #0a2b51;
 }
+@media (max-width: 767.98px) {
+  .resources-tabs .tab-box {
+    margin-top: 24px;
+    height: 625px;
+    margin-bottom: 16px;
+  }
+  .resources-tabs .tab-box .form-control {
+    background-image: none;
+  }
+}
 .resources-tabs .blog {
   padding: 56px 56px 0 56px;
-  overflow-y: scroll;
 }
 .resources-tabs .blog .box-content .card-row {
   justify-content: space-between;
 }
 .resources-tabs .blog .box-content .card-row .card {
   width: 340px;
+  height: 305px;
   background-color: transparent;
   border: none;
 }
 .resources-tabs .blog .box-content .card-row .card img {
-  height: 160px;
+  height: 200px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 .resources-tabs .blog .box-content .card-row .card p {
-  padding-right: 32px;
-  padding-left: 36px;
-  margin-bottom: 48px;
-  color: #263238;
+  font-weight: 500;
 }
 @media (max-width: 767.98px) {
   .resources-tabs .blog .box-content .card-row {
     flex-direction: column;
   }
-}
-.resources-tabs .accordion {
-  padding: 56px;
 }
 .resources-tabs .accordion .accordion-item .accordion-button {
   padding-left: 0;

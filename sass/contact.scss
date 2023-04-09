@@ -68,7 +68,10 @@
     }
     .form-check-input:checked {
       background-color: $secondary;
-      border-color: $secondary;
+      border-color: $primary;
+    }
+    .form-check-input:checked[type="checkbox"] {
+      background-image: none;
     }
 
     @include media-breakpoint-down(md) {
@@ -160,6 +163,7 @@
 
   .swiper-button-prev {
     background-image: url("/assets/arrow-left.svg");
+    background-repeat: no-repeat;
     left: 10%;
   }
   .swiper-button-prev::after {
@@ -167,6 +171,7 @@
   }
   .swiper-button-next {
     background-image: url("/assets/arrow-right.svg");
+    background-repeat: no-repeat;
     right: 10%;
   }
   .swiper-button-next::after {
@@ -175,13 +180,17 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: #2c3e50;
-    height: 24px;
-    width: 15px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   .swiper-pagination {
     position: relative;
     margin-top: 32px;
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
   }
   .swiper-pagination-bullet {
     width: 12px;
@@ -190,5 +199,18 @@
   }
   .swiper-pagination-bullet-active {
     background-color: $primary;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 35px;
+    margin-bottom: 48px;
+    .swiper-slide {
+      height: 550px;
+
+      .swiper-item {
+        height: 100%;
+        background-color: #f3f4f6;
+      }
+    }
   }
 }

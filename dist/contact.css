@@ -12230,7 +12230,10 @@ p {
 }
 .swiper .swiper-item .form-check-input:checked {
   background-color: #a1ffa1;
-  border-color: #a1ffa1;
+  border-color: #0a2b51;
+}
+.swiper .swiper-item .form-check-input:checked[type=checkbox] {
+  background-image: none;
 }
 @media (max-width: 767.98px) {
   .swiper .swiper-item .form-control {
@@ -12315,6 +12318,7 @@ p {
 }
 .swiper .swiper-button-prev {
   background-image: url("/assets/arrow-left.svg");
+  background-repeat: no-repeat;
   left: 10%;
 }
 .swiper .swiper-button-prev::after {
@@ -12322,6 +12326,7 @@ p {
 }
 .swiper .swiper-button-next {
   background-image: url("/assets/arrow-right.svg");
+  background-repeat: no-repeat;
   right: 10%;
 }
 .swiper .swiper-button-next::after {
@@ -12330,12 +12335,21 @@ p {
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   color: #2c3e50;
-  height: 24px;
-  width: 15px;
+}
+@media (max-width: 767.98px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper .swiper-pagination {
   position: relative;
   margin-top: 32px;
+}
+@media (max-width: 767.98px) {
+  .swiper .swiper-pagination {
+    margin-top: 40px;
+  }
 }
 .swiper .swiper-pagination-bullet {
   width: 12px;
@@ -12344,4 +12358,17 @@ p {
 }
 .swiper .swiper-pagination-bullet-active {
   background-color: #0a2b51;
+}
+@media (max-width: 767.98px) {
+  .swiper {
+    margin-top: 35px;
+    margin-bottom: 48px;
+  }
+  .swiper .swiper-slide {
+    height: 550px;
+  }
+  .swiper .swiper-slide .swiper-item {
+    height: 100%;
+    background-color: #f3f4f6;
+  }
 }
