@@ -23,13 +23,13 @@
 
   .join-us {
     margin-bottom: 40px;
-    margin-top: -250px;
+    margin-top: -235px;
     z-index: 2;
     .card-row {
       div:first-child {
         .card {
           p {
-            max-width: 220px;
+            max-width: 270px;
           }
         }
       }
@@ -50,6 +50,7 @@
   .benefits {
     margin-bottom: 40px;
     .card-row {
+      margin-bottom: 24px;
       .card {
         padding-left: 40px;
         background-color: #f3f4f6;
@@ -57,18 +58,11 @@
         border: none;
       }
     }
-    .card-row:last-child {
-      margin-top: 24px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid #d9d9d9;
-    }
   }
 
   .gallery {
     margin-bottom: 40px;
     .container {
-      border-bottom: 1px solid #d9d9d9;
-      padding-bottom: 50px;
       .gallery-row {
         height: 400px;
         margin-bottom: 20px;
@@ -82,18 +76,15 @@
         .img-item {
           height: 100%;
         }
-      }
-
-      .gallery-row:last-child {
-        margin-bottom: 0;
-
-        .img-item:first-child {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 16px;
-        }
-        .img-item:last-child {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 16px;
+        &:nth-child(3) {
+          .img-item:first-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 16px;
+          }
+          .img-item:last-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 16px;
+          }
         }
       }
     }
@@ -102,6 +93,7 @@
   .positions {
     margin-bottom: 48px;
     .positions-row {
+      display: flex;
       .position-card {
         height: 640px;
         width: 385px;
@@ -117,20 +109,35 @@
         }
       }
     }
+
+    .position-frame {
+      background: #f3f4f6;
+      border-radius: 24px;
+      display: none;
+      .btn-primary,
+      .content-col {
+        width: 304px;
+      }
+      .frame-close {
+        cursor: pointer;
+      }
+    }
   }
 
   .apply {
     margin-bottom: 55px;
     .main-row {
       position: relative;
-      padding-bottom: 40px;
-      border-bottom: 1px solid rgba(10, 43, 81, 0.24);
+      padding-bottom: 24px;
     }
     .apply-form {
       .form-select {
         margin-bottom: 10px;
         border-color: $primary;
         border-radius: 12px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       .row {
         margin-bottom: 10px;
@@ -143,6 +150,9 @@
         padding-left: 0;
         padding-bottom: 5px;
         margin-bottom: 14px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       .form-control::placeholder {
         color: $primary;

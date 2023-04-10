@@ -13,6 +13,7 @@ $(document).ready(function () {
     e.preventDefault();
     var pattern = /#.+/gi; //use regex to get anchor(==selector)
     var contentID = e.target.toString().match(pattern)[0]; //get anchor
+
     $('.nav-tabs li a[data-bs-target="' + contentID + '"]').tab("show");
   });
 
@@ -20,6 +21,27 @@ $(document).ready(function () {
     var pattern = /#.+/gi; //use regex to get anchor(==selector)
     var contentID = e.target.toString().match(pattern)[0]; //get anchor
     $('.nav-tabs li a[data-bs-target="' + contentID + '"]').tab("show");
+  });
+
+  $(".frame-open").click(function (e) {
+    var id = $(this).attr("id");
+    $(".positions-row").css("display", "none");
+    $("#frame-" + id).css("display", "block");
+  });
+
+  $(".frame-close").click(function (e) {
+    $(".position-frame").css("display", "none");
+    $(".positions-row").css("display", "flex");
+  });
+
+  $(".ppl-box").click(function (e) {
+    var id = $(this).attr("id");
+    if (id === "text-" + id) {
+      $("#text-" + id).css("display", "block");
+    } else {
+      $("#text-" + id).css("display", "none");
+    }
+    $(this).toggleClass("ppl-box-active");
   });
 });
 
@@ -51,14 +73,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function lockScroll() {
-  if ($("body").hasClass("lock-scroll")) {
-    $("body").removeClass("lock-scroll");
-  } else {
-    $("body").addClass("lock-scroll");
-  }
-}
+// function lockScroll() {
+//   if ($("body").hasClass("lock-scroll")) {
+//     $("body").removeClass("lock-scroll");
+//   } else {
+//     $("body").addClass("lock-scroll");
+//   }
+// }
 
-$("a.nav-link").on("click", function () {
-  $("body").toggleClass("lock-scroll");
-});
+// $("a.nav-link").on("click", function () {
+//   $("body").toggleClass("lock-scroll");
+// });

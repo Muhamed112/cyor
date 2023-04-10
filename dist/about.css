@@ -11907,6 +11907,8 @@ p {
 }
 
 .navbar {
+  overscroll-behavior-y: contain;
+  overflow-y: scroll;
   position: relative;
 }
 .navbar .nav-res:hover .subheader {
@@ -12216,11 +12218,12 @@ p {
 }
 .what-we-stand .card {
   border-radius: 12px;
-  background-color: #f3f4f6;
+  background: #ffffff;
+  box-shadow: 0px 128px 77px rgba(0, 0, 0, 0.01), 0px 57px 57px rgba(0, 0, 0, 0.01), 0px 14px 31px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
   padding: 40px;
 }
 .what-we-stand .card .info:last-child {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 .what-we-stand .content {
   padding: 40px 0 40px 56px;
@@ -12246,7 +12249,8 @@ p {
     margin: 0 0 0 auto;
   }
   .what-we-stand .content {
-    padding: 32px 0;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(10, 43, 81, 0.1);
   }
   .what-we-stand .content .content-card {
     align-items: flex-start;
@@ -12257,62 +12261,88 @@ p {
   }
 }
 
-.partners {
-  background-color: #f3f4f6;
-  padding: 64px 0;
-}
-.partners .partners-row {
-  margin-bottom: 64px;
-}
-.partners .partners-row .col-md-3 {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.partners .carousel .card {
-  padding: 30px 0px 30px 40px;
-  background: #f3f4f6;
-  border: 0.5px solid #0a2b51;
-  border-radius: 20px;
-}
-.partners .carousel .carousel-indicators {
-  margin-top: 24px;
-  top: 100%;
-}
-.partners .carousel .carousel-indicators [data-bs-target] {
-  border: 0.5px solid #0a2b51;
-}
 @media (max-width: 767.98px) {
-  .partners {
-    padding: 40px 0;
-  }
-  .partners .carousel .card {
-    padding: 20px 20px 20px 24px;
+  .swiper .swiper-slide {
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 
 .services p {
   letter-spacing: -0.01em;
 }
-.services .nav-tabs {
+.services .services-tabs .nav-tabs {
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
 }
-.services .nav-tabs .nav-item:first-child .nav-link {
+.services .services-tabs .nav-tabs .nav-item:first-child .nav-link {
   padding-left: 0;
   padding-right: 16px;
 }
-.services .nav-tabs .nav-item .nav-link {
+.services .services-tabs .nav-tabs .nav-item .nav-link {
   border: none;
   padding-bottom: 16px;
   padding-right: 0;
   padding-left: 16px;
   color: rgba(10, 43, 81, 0.5);
+  transition: none;
 }
-.services .nav-tabs .nav-item .nav-link.active {
+.services .services-tabs .nav-tabs .nav-item .nav-link.active {
   font-weight: 600;
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
   color: #0a2b51;
+}
+.services .services-tabs .tab-pane .content-box h2, .services .services-tabs .tab-pane .content-box .h2 {
+  font-size: 20px;
+}
+.services .services-tabs .tab-pane .btn-primary {
+  height: 45px;
+}
+
+.reputation .ppl-box {
+  border-radius: 16px;
+  padding: 24px 0px 24px 40px;
+  width: 480px;
+}
+.reputation .ppl-box img {
+  width: 72px;
+  margin-right: 18px;
+  border-radius: 24px;
+}
+.reputation .ppl-box:hover {
+  background: #ffffff;
+  box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+}
+@media (max-width: 767.98px) {
+  .reputation .ppl-box {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+    padding: 16px 0px 16px 32px;
+    margin-bottom: 32px;
+  }
+  .reputation .ppl-box img {
+    width: 48px;
+    margin-right: 24px;
+    border-radius: 12px;
+  }
+}
+.reputation .ppl-box-active {
+  background: #ffffff;
+  box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+}
+.reputation .test-text {
+  width: 570px;
+}
+.reputation .hide {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .reputation h2, .reputation .h2 {
+    font-size: 20px;
+  }
+  .reputation h4, .reputation .h4 {
+    font-size: 16px;
+  }
 }
 
 .pop-block .block {
@@ -12355,6 +12385,7 @@ p {
   }
   .pop-block .block .form-control {
     height: 40px;
+    padding-left: 16px;
   }
   .pop-block .block .btn-primary {
     padding: 10px 0;

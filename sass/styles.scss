@@ -66,6 +66,8 @@ p {
 }
 
 .navbar {
+  overscroll-behavior-y: contain;
+  overflow-y: scroll;
   position: relative;
   .nav-res:hover {
     .subheader {

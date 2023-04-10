@@ -47,10 +47,13 @@
   margin-bottom: 64px;
   .card {
     border-radius: 12px;
-    background-color: #f3f4f6;
+    background: #ffffff;
+    box-shadow: 0px 128px 77px rgba(0, 0, 0, 0.01),
+      0px 57px 57px rgba(0, 0, 0, 0.01), 0px 14px 31px rgba(0, 0, 0, 0.02),
+      0px 0px 0px rgba(0, 0, 0, 0.02);
     padding: 40px;
     .info:last-child {
-      margin: 0 auto;
+      margin: 0 0 0 auto;
     }
   }
   .content {
@@ -76,7 +79,8 @@
       }
     }
     .content {
-      padding: 32px 0;
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(10, 43, 81, 0.1);
       .content-card {
         align-items: flex-start;
         margin-bottom: 32px;
@@ -88,42 +92,11 @@
   }
 }
 
-.partners {
-  background-color: #f3f4f6;
-  padding: 64px 0;
-
-  .partners-row {
-    margin-bottom: 64px;
-    .col-md-3 {
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .carousel {
-    .card {
-      padding: 30px 0px 30px 40px;
-      background: #f3f4f6;
-      border: 0.5px solid $primary;
-      border-radius: 20px;
-    }
-    .carousel-indicators {
-      margin-top: 24px;
-      top: 100%;
-    }
-    .carousel-indicators [data-bs-target] {
-      border: 0.5px solid $primary;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    padding: 40px 0;
-    .carousel {
-      .card {
-        padding: 20px 20px 20px 24px;
-      }
+.swiper {
+  .swiper-slide {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      padding-bottom: 10px;
     }
   }
 }
@@ -132,27 +105,99 @@
   p {
     letter-spacing: -0.01em;
   }
-  .nav-tabs {
-    border-bottom: 1px solid #0a2b511a;
-    .nav-item {
-      &:first-child {
+  .services-tabs {
+    .nav-tabs {
+      border-bottom: 1px solid #0a2b511a;
+      .nav-item {
+        &:first-child {
+          .nav-link {
+            padding-left: 0;
+            padding-right: 16px;
+          }
+        }
         .nav-link {
-          padding-left: 0;
-          padding-right: 16px;
+          border: none;
+          padding-bottom: 16px;
+          padding-right: 0;
+          padding-left: 16px;
+          color: rgba(10, 43, 81, 0.5);
+          transition: none;
+        }
+        .nav-link.active {
+          font-weight: 600;
+          border-bottom: 1px solid #0a2b511a;
+          color: $primary;
         }
       }
-      .nav-link {
-        border: none;
-        padding-bottom: 16px;
-        padding-right: 0;
-        padding-left: 16px;
-        color: rgba(10, 43, 81, 0.5);
+    }
+
+    .tab-pane {
+      .content-box {
+        h2 {
+          font-size: 20px;
+        }
       }
-      .nav-link.active {
-        font-weight: 600;
-        border-bottom: 1px solid #0a2b511a;
-        color: $primary;
+      .btn-primary {
+        height: 45px;
       }
+    }
+  }
+}
+
+.reputation {
+  .ppl-box {
+    border-radius: 16px;
+    padding: 24px 0px 24px 40px;
+    width: 480px;
+    img {
+      width: 72px;
+      margin-right: 18px;
+      border-radius: 24px;
+    }
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
+        0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
+        0px 0px 0px rgba(0, 0, 0, 0.02);
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
+        0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
+        0px 0px 0px rgba(0, 0, 0, 0.02);
+      padding: 16px 0px 16px 32px;
+      margin-bottom: 32px;
+
+      img {
+        width: 48px;
+        margin-right: 24px;
+        border-radius: 12px;
+      }
+    }
+  }
+  .ppl-box-active {
+    background: #ffffff;
+    box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
+      0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
+      0px 0px 0px rgba(0, 0, 0, 0.02);
+  }
+
+  .test-text {
+    width: 570px;
+  }
+  .hide {
+    display: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    h2 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
     }
   }
 }
@@ -197,6 +242,7 @@
       }
       .form-control {
         height: 40px;
+        padding-left: 16px;
       }
       .btn-primary {
         padding: 10px 0;
