@@ -12356,10 +12356,11 @@ p {
 .swiper .swiper-button-prev {
   background-image: url("/assets/arrow-left.svg");
   background-repeat: no-repeat;
+  left: 15%;
 }
-@media (min-width: 1400px) {
+@media (max-width: 1399.98px) {
   .swiper .swiper-button-prev {
-    left: 10%;
+    left: 3%;
   }
 }
 .swiper .swiper-button-prev::after {
@@ -12368,10 +12369,11 @@ p {
 .swiper .swiper-button-next {
   background-image: url("/assets/arrow-right.svg");
   background-repeat: no-repeat;
+  right: 15%;
 }
-@media (min-width: 1400px) {
+@media (max-width: 1399.98px) {
   .swiper .swiper-button-next {
-    right: 10%;
+    right: 3%;
   }
 }
 .swiper .swiper-button-next::after {

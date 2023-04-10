@@ -185,8 +185,9 @@
   .swiper-button-prev {
     background-image: url("/assets/arrow-left.svg");
     background-repeat: no-repeat;
-    @include media-breakpoint-up(xxl) {
-      left: 10%;
+    left: 15%;
+    @include media-breakpoint-down(xxl) {
+      left: 3%;
     }
   }
   .swiper-button-prev::after {
@@ -195,8 +196,9 @@
   .swiper-button-next {
     background-image: url("/assets/arrow-right.svg");
     background-repeat: no-repeat;
-    @include media-breakpoint-up(xxl) {
-      right: 10%;
+    right: 15%;
+    @include media-breakpoint-down(xxl) {
+      right: 3%;
     }
   }
   .swiper-button-next::after {

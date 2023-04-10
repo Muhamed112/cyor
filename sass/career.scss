@@ -19,6 +19,11 @@
       width: 70px;
       background-color: #d9d9d9;
     }
+
+    @include media-breakpoint-down(md) {
+      height: 240px;
+      background-image: url("../assets/career/career-hero-mob.png");
+    }
   }
 
   .join-us {

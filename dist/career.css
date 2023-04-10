@@ -12190,6 +12190,12 @@ p {
   width: 70px;
   background-color: #d9d9d9;
 }
+@media (max-width: 767.98px) {
+  .content .career-hero {
+    height: 240px;
+    background-image: url("../assets/career/career-hero-mob.png");
+  }
+}
 .content .join-us {
   margin-bottom: 40px;
   margin-top: -235px;

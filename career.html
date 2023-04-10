@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - Career</title>
     <link rel="stylesheet" href="dist/career.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/c99e187881.js"
       crossorigin="anonymous"
@@ -315,7 +320,7 @@
     <div class="content text-primary">
       <section class="career-hero text-white">
         <div class="container">
-          <div class="career-hero-content">
+          <div class="career-hero-content d-none d-md-block">
             <h1 class="mb-4">
               Are you ready for a new chapter in your life? Join our team.
             </h1>
@@ -328,7 +333,21 @@
         </div>
       </section>
 
-      <section class="join-us">
+      <section class="mob-desc d-md-none mt-3 pt-3 mb-4">
+        <div class="container">
+          <h1 class="mb-3">
+            Are you ready for a new chapter in your life? Join our team.
+          </h1>
+          <p class="mb-3">
+            CYOR24.com operates in 20 countries and we are always looking for
+            new colleagues.
+          </p>
+          <p class="mb-3">Scroll down to see what do we offer.</p>
+          <div class="separator pt-4 border-bottom border-info"></div>
+        </div>
+      </section>
+
+      <section class="join-us d-none d-md-block">
         <div class="container">
           <h2 class="mb-6 text-light">Why should you join us?</h2>
           <div class="row card-row">
@@ -388,6 +407,56 @@
           </div>
         </div>
       </section>
+
+      <h2 class="mb-6 text-light">Why should you join us?</h2>
+
+      <div class="swiper d-md-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slider">
+            <div class="card">
+              <h3 class="mb-5 fw-semibold">
+                Competitive <br />
+                compensation
+              </h3>
+              <img
+                src="assets/career/dollar.svg"
+                height="120px"
+                width="120px"
+              />
+              <p class="mt-5">
+                CYOR24 offers a <br />compensation package that is both
+                competitive and comprehensive.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slider">
+            <div class="card">
+              <h3 class="mb-5 fw-semibold">
+                Career <br />
+                development
+              </h3>
+              <img src="assets/career/arrow.svg" height="120px" width="120px" />
+              <p class="mt-5">
+                We believe in empowering our team members with the tools and
+                resources they need to reach their full potential.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slider">
+            <div class="card">
+              <h3 class="mb-5 fw-semibold">
+                Cutting-edge <br />
+                technology
+              </h3>
+              <img src="assets/career/react.svg" height="120px" width="120px" />
+              <p class="mt-5">
+                Our company invests in technology to help our employees be more
+                efficient and our clients more successful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="benefits">
         <div class="container">
@@ -484,7 +553,7 @@
         </div>
       </section>
 
-      <section class="positions">
+      <section class="positions d-none d-md-block">
         <div class="container">
           <h2 class="mb-6">Open positions</h2>
           <div class="positions-row">
@@ -994,7 +1063,7 @@
               </form>
             </div>
             <div class="col-md-6 col-12">
-              <img src="assets/career/form-img.png" />
+              <img src="assets/career/form-img.png" class="w-100" />
             </div>
           </div>
           <div class="separator pt-3 border-bottom border-info"></div>
@@ -1085,6 +1154,15 @@
       </div>
     </div>
 
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
