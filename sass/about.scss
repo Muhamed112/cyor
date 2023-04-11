@@ -289,9 +289,12 @@
 
       @include media-breakpoint-down(md) {
         height: 320px;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         .img-item:nth-child(2) {
           border-top-left-radius: 16px;
+        }
+        .img-item:nth-child(6) {
+          border-top-right-radius: 16px;
         }
       }
     }
@@ -312,6 +315,10 @@
         .img-item:nth-child(2) {
           border-top-left-radius: 0;
           border-bottom-left-radius: 16px;
+        }
+        .img-item:nth-child(6) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 16px;
         }
       }
     }
