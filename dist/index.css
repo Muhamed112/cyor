@@ -12177,127 +12177,54 @@ p {
   overflow: hidden;
 }
 
-.services-hero {
-  background-color: #0a2b51;
-  color: #fff;
-  margin-bottom: 40px;
+.home-hero {
+  padding: 120px 0;
 }
-.services-hero .content {
-  max-width: 750px;
+.home-hero h1, .home-hero .h1 {
+  font-size: 61px;
+}
+.home-hero .swiper-slide {
+  padding: 0 40px;
+}
+.home-hero .btn-primary {
+  width: 200px;
 }
 @media (max-width: 767.98px) {
-  .services-hero {
-    padding: 40px 0;
-    background-color: #f3f4f6;
-    background-image: url("/assets/about-us/hero-mobile.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-    margin-bottom: 24px;
-    color: #0a2b51;
-  }
-  .services-hero .content {
-    width: 100%;
-  }
-  .services-hero .content h1, .services-hero .content .h1 {
-    font-size: 31px;
-  }
-  .services-hero .content h4, .services-hero .content .h4 {
-    font-size: 16px;
+  .home-hero .btn-primary {
+    width: 160px;
   }
 }
 
-@media (max-width: 767.98px) {
-  .services-tabs h1, .services-tabs .h1,
-  .services-tabs h2,
-  .services-tabs .h2 {
-    font-size: 20px;
-  }
+.how-we-work {
+  padding: 125px 0;
 }
-.services-tabs .nav-tabs {
-  border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
-}
-.services-tabs .nav-tabs .nav-item:first-child .nav-link {
-  padding-left: 0;
-  padding-right: 16px;
-}
-.services-tabs .nav-tabs .nav-item .nav-link {
+.how-we-work .card {
+  height: 665px;
   border: none;
-  padding-bottom: 16px;
-  padding-right: 0px;
-  padding-left: 16px;
-  color: rgba(10, 43, 81, 0.5);
+  border-radius: 24px;
+  padding: 0px 40px 0px 40px;
 }
-.services-tabs .nav-tabs .nav-item .nav-link.active {
-  font-weight: 600;
-  border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
-  color: #0a2b51;
+.how-we-work .card .btn-secondary {
+  visibility: hidden;
 }
-.services-tabs .tab-content .btn-primary {
-  width: 160px;
-  font-size: 12.8px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .btn-primary {
-    width: 100%;
-  }
-}
-.services-tabs .tab-content .small-title {
+.how-we-work .card span {
   font-size: 12.8px;
 }
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .small-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-  }
+.how-we-work .card:hover {
+  background: #ffffff;
+  box-shadow: 0px 214px 128px rgba(0, 0, 0, 0.01), 0px 95px 95px rgba(0, 0, 0, 0.02), 0px 24px 52px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
 }
-.services-tabs .tab-content .icon-box {
-  background: #f3f4f6;
-  border-radius: 12px;
-  width: 64px;
-  height: 64px;
+.how-we-work .card:hover .btn-secondary {
+  visibility: visible;
 }
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .icon-box {
-    border-radius: 8px;
-    width: 32px;
-    height: 32px;
-  }
-  .services-tabs .tab-content .icon-box img {
-    width: 16px;
-  }
+
+.home-contact {
+  padding: 90px 0 80px 0;
 }
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .services-facts img {
-    width: 16px;
-  }
-  .services-tabs .tab-content .services-facts h2, .services-tabs .tab-content .services-facts .h2,
-  .services-tabs .tab-content .services-facts span {
-    color: #a1ffa1;
-  }
-  .services-tabs .tab-content .services-facts p {
-    color: #fff;
-  }
-}
-.services-tabs .tab-content .services-more .container {
-  padding-bottom: 120px;
-}
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .services-more .container {
-    padding-bottom: 32px;
-  }
-}
-.services-tabs .tab-content .services-contact {
-  padding: 112px 0;
-}
-.services-tabs .tab-content .services-contact .form-inputs .form-control:first-child {
+.home-contact .form-inputs .form-control:first-child {
   margin-right: 8px;
 }
-.services-tabs .tab-content .services-contact .form-inputs .form-control {
+.home-contact .form-inputs .form-control {
   height: 40px;
   border: 0.5px solid #ffffff;
   border-radius: 12px;
@@ -12305,73 +12232,19 @@ p {
   color: #fff;
   font-size: 12.8px;
 }
-.services-tabs .tab-content .services-contact .form-inputs .form-control::placeholder {
+.home-contact .form-inputs .form-control::placeholder {
   color: #fff;
   font-size: 12.8px;
 }
 @media (max-width: 767.98px) {
-  .services-tabs .tab-content .services-contact {
+  .home-contact {
     padding: 40px 0;
   }
-  .services-tabs .tab-content .services-contact .form-inputs {
+  .home-contact .form-inputs {
     flex-direction: column;
   }
-  .services-tabs .tab-content .services-contact .form-inputs .form-control:first-child {
+  .home-contact .form-inputs .form-control:first-child {
     margin-right: 0;
     margin-bottom: 8px;
-  }
-}
-.services-tabs .tab-content .services-studies .card img {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-}
-.services-tabs .tab-content .services-studies .card .card-content {
-  background-color: #f3f4f6;
-  padding: 28px 36px;
-  color: #263238;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .services-studies .card img {
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-  }
-  .services-tabs .tab-content .services-studies .card .card {
-    padding: 24px 32px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
-}
-@media (max-width: 767.98px) {
-  .services-tabs .tab-content .services-intro .row {
-    flex-direction: column-reverse;
-  }
-  .services-tabs .tab-content .services-intro .row img {
-    width: 100%;
-  }
-  .services-tabs .tab-content .services-facts {
-    background-color: #0a2b51;
-    position: relative;
-  }
-  .services-tabs .tab-content .services-facts .mob-icon-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 32px;
-    width: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-  }
-  .services-tabs .tab-content .services-facts .text-opacity {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.25);
-  }
-}
-@media (max-width: 767.98px) and (max-width: 767.98px) {
-  .services-tabs .tab-content .services-competences .row:nth-child(3) {
-    flex-direction: column-reverse;
   }
 }

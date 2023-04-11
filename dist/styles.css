@@ -11873,6 +11873,10 @@ p {
   border-radius: 12px;
   padding: 10px 0;
 }
+.btn-secondary:hover {
+  background: #a1ffa1;
+  color: #0a2b51;
+}
 
 .text-section {
   margin-top: 25px;

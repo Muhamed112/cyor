@@ -27,9 +27,13 @@ p {
 
 .btn-secondary {
   background: #fff;
-  border: 1px solid #0a2b51;
+  border: 1px solid $primary;
   border-radius: 12px;
   padding: 10px 0;
+  &:hover {
+    background: $secondary;
+    color: $primary;
+  }
 }
 
 .text-section {

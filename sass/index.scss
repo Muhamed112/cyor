@@ -1,0 +1,75 @@
+@import "styles";
+
+.home-hero {
+  h1 {
+    font-size: 61px;
+  }
+  padding: 120px 0;
+  .swiper-slide {
+    padding: 0 40px;
+  }
+  .btn-primary {
+    width: 200px;
+    @include media-breakpoint-down(md) {
+      width: 160px;
+    }
+  }
+}
+
+.how-we-work {
+  padding: 125px 0;
+  .card {
+    height: 665px;
+    border: none;
+    border-radius: 24px;
+    padding: 0px 40px 0px 40px;
+    .btn-secondary {
+      visibility: hidden;
+    }
+    span {
+      font-size: 12.8px;
+    }
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 0px 214px 128px rgba(0, 0, 0, 0.01),
+        0px 95px 95px rgba(0, 0, 0, 0.02), 0px 24px 52px rgba(0, 0, 0, 0.02),
+        0px 0px 0px rgba(0, 0, 0, 0.02);
+      .btn-secondary {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.home-contact {
+  padding: 90px 0 80px 0;
+  .form-inputs {
+    .form-control:first-child {
+      margin-right: 8px;
+    }
+    .form-control {
+      height: 40px;
+      border: 0.5px solid #ffffff;
+      border-radius: 12px;
+      background: transparent;
+      color: #fff;
+      font-size: 12.8px;
+    }
+    .form-control::placeholder {
+      color: #fff;
+      font-size: 12.8px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+    .form-inputs {
+      flex-direction: column;
+      .form-control:first-child {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
