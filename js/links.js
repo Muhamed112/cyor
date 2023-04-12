@@ -43,6 +43,51 @@ $(document).ready(function () {
     }
     $(this).toggleClass("ppl-box-active");
   });
+
+  function countUp() {
+    $(".count").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-count");
+
+      $({ countNum: $this.text() }).animate(
+        {
+          countNum: countTo,
+        },
+
+        {
+          duration: 7000,
+          easing: "linear",
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+          },
+        }
+      );
+    });
+  }
+  $(function () {
+    "user strict";
+    var bAnimate = true;
+    $(".count").css("opacity", "0.0");
+
+    $(window).scroll(function () {
+      // console.log("scroll top=" + $(this).scrollTop());
+      // console.log("div offset top=" + $("div").offset().top);
+      var scrolling = $(this).scrollTop(),
+        divoffset = $(".count").offset().top,
+        screenBottom = scrolling + $(window).height(),
+        elemBottom = divoffset + $(".count").outerHeight(); //
+      if (screenBottom > elemBottom) {
+        if (bAnimate) {
+          $(".count").css("opacity", "1.0");
+          countUp();
+          bAnimate = false;
+        }
+      }
+    });
+  });
 });
 
 const servicesToggle = document.getElementById("services-link");
@@ -72,15 +117,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-// function lockScroll() {
-//   if ($("body").hasClass("lock-scroll")) {
-//     $("body").removeClass("lock-scroll");
-//   } else {
-//     $("body").addClass("lock-scroll");
-//   }
-// }
-
-// $("a.nav-link").on("click", function () {
-//   $("body").toggleClass("lock-scroll");
-// });

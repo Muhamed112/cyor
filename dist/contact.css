@@ -11876,6 +11876,7 @@ p {
 .btn-secondary:hover {
   background: #a1ffa1;
   color: #0a2b51;
+  border-color: #a1ffa1;
 }
 
 .text-section {
@@ -11911,8 +11912,6 @@ p {
 }
 
 .navbar {
-  overscroll-behavior-y: contain;
-  overflow-y: scroll;
   position: relative;
 }
 .navbar .nav-res:hover .subheader {

@@ -33,6 +33,7 @@ p {
   &:hover {
     background: $secondary;
     color: $primary;
+    border-color: $secondary;
   }
 }
 
@@ -70,8 +71,6 @@ p {
 }
 
 .navbar {
-  overscroll-behavior-y: contain;
-  overflow-y: scroll;
   position: relative;
   .nav-res:hover {
     .subheader {
