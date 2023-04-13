@@ -14,6 +14,26 @@
       width: 160px;
     }
   }
+  @include media-breakpoint-down(md) {
+    padding: 64px 0;
+    h1 {
+      font-size: 31.25px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    .swiper-slide {
+      padding: 0;
+    }
+  }
+}
+
+.partners-slider {
+  @include media-breakpoint-down(md) {
+    .swiper-slide {
+      text-align: center;
+    }
+  }
 }
 
 .how-we-work {
@@ -23,11 +43,12 @@
     border: none;
     border-radius: 24px;
     padding: 0px 40px 0px 40px;
-    .btn-secondary {
-      visibility: hidden;
-    }
-    span {
+
+    .small {
       font-size: 12.8px;
+    }
+    img {
+      object-fit: contain;
     }
 
     &:hover {
@@ -35,9 +56,21 @@
       box-shadow: 0px 214px 128px rgba(0, 0, 0, 0.01),
         0px 95px 95px rgba(0, 0, 0, 0.02), 0px 24px 52px rgba(0, 0, 0, 0.02),
         0px 0px 0px rgba(0, 0, 0, 0.02);
-      .btn-secondary {
-        visibility: visible;
-      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 64px 0;
+    h1 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .card {
+      padding: 0;
+      height: auto;
     }
   }
 }
@@ -74,18 +107,61 @@
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 32px;
+    .card {
+      padding-left: 60px;
+      padding-right: 60px;
+      h1 {
+        font-weight: 700;
+        font-size: 61.04px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+      button {
+        display: none;
+      }
+      .icon {
+        margin-bottom: 40px;
+      }
+
+      &:hover {
+        button {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .home-services {
   padding-bottom: 120px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 64px;
+    h3 {
+      font-weight: 600;
+      font-size: 33.25px;
+    }
+  }
   .seperator-big {
     padding-bottom: 120px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 64px;
+    }
   }
   .services {
     .services-left {
       width: 300px;
       h4 {
         padding-right: 50px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        h4 {
+          padding-right: 0;
+        }
       }
     }
     .services-right {
@@ -117,12 +193,42 @@
             visibility: visible;
           }
         }
+        @include media-breakpoint-down(md) {
+          padding: 32px 24px;
+          width: 100%;
+          margin-bottom: 32px;
+          a {
+            display: none;
+          }
+          &:hover {
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      .services-right {
+        .card-row {
+          flex-direction: column;
+          .card {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
       }
     }
   }
 }
 
 .reputation {
+  margin-bottom: 80px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 32px;
+  }
   .ppl-box {
     border-radius: 16px;
     padding: 24px 0px 24px 40px;
@@ -181,7 +287,7 @@
 }
 
 .home-contact {
-  padding: 90px 0 80px 0;
+  padding: 120px 0;
   .form-inputs {
     .form-control:first-child {
       margin-right: 8px;
@@ -199,9 +305,19 @@
       font-size: 12.8px;
     }
   }
+  .btn-primary {
+    padding: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   @include media-breakpoint-down(md) {
     padding: 40px 0;
+    h1 {
+      font-size: 16px;
+    }
     .form-inputs {
       flex-direction: column;
       .form-control:first-child {
@@ -214,8 +330,18 @@
 
 .statistics {
   padding: 120px 0;
+  @include media-breakpoint-down(md) {
+    padding: 32px 0;
+  }
   .heading {
     margin-bottom: 120px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      padding-top: 64px;
+      border-bottom: 1px solid $info;
+      border-top: 1px solid $info;
+    }
   }
   .statistic {
     justify-content: space-between;
@@ -232,6 +358,33 @@
     }
     .statistic-right {
       text-align: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+
+      .statistic-left,
+      .statistic-right {
+        width: 100%;
+      }
+      .statistic-right {
+        text-align: left;
+      }
+      .statistic-left {
+        padding: 0;
+        text-align: center;
+        div {
+          width: 100%;
+          justify-content: center;
+        }
+        h1 {
+          font-weight: 600;
+          font-size: 61.04px;
+        }
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -289,15 +442,47 @@
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    h1 {
+      font-size: 31px;
+    }
+    padding: 64px 0 32px 0;
+    .blog-header {
+      padding: 0 58px 0 58px;
+    }
+    .swiper {
+      padding-bottom: 32px;
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 326px;
+          height: 480px;
+          .card {
+            height: 100%;
+            width: 100%;
+            img {
+              height: 255px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .home-faq {
   padding: 64px 0;
   .separator-top {
     padding-bottom: 120px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 64px;
+    }
   }
   .separator-bottom {
     padding-top: 120px;
+    @include media-breakpoint-down(md) {
+      padding-top: 32px;
+    }
   }
   .accordion-item {
     .accordion-button {
@@ -309,9 +494,12 @@
         background-image: url("/assets/home/minus.svg");
       }
     }
+    .collapsed {
+      padding-bottom: 6px;
+    }
 
     .accordion-body {
-      padding: 8px 24px 24px 32px;
+      padding: 8px 24px 20px 32px;
     }
     .show {
       box-shadow: 0px 386px 232px rgba(0, 0, 0, 0.01),
@@ -320,11 +508,18 @@
       border-radius: 32px;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    padding: 32px 0 64px 0;
+    h1 {
+      font-size: 31px;
+    }
+  }
 }
 
 .get-started {
   background-color: #f3f4f6;
-  padding: 68px 0;
+  padding: 64px 0;
   button {
     width: 160px;
     height: 48px;
@@ -334,6 +529,25 @@
     align-items: center;
   }
   .btn-secondary {
-    background: transparent;
+    background-color: transparent;
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 64px 0;
+    .container {
+      padding: 0 58px;
+      .buttons {
+        flex-direction: column;
+        button:first-child {
+          margin-bottom: 8px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
   }
 }
