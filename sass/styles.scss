@@ -200,6 +200,9 @@ p {
       line-height: 19px;
       color: #ffffff;
       text-decoration: none;
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
     }
     p {
       margin-top: 12px;

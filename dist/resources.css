@@ -12035,6 +12035,11 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
+@media (max-width: 767.98px) {
+  .navbar .subheader-mobile a {
+    font-weight: 400;
+  }
+}
 .navbar .subheader-mobile p {
   margin-top: 12px;
   font-weight: 300;
@@ -12185,7 +12190,7 @@ p {
   background-repeat: no-repeat;
   background-position: right;
   height: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 .resources-hero .container h1, .resources-hero .container .h1 {
   margin-bottom: 20px;
@@ -12276,6 +12281,11 @@ p {
 }
 .resources-tabs .tab-box .form-control:focus {
   box-shadow: none;
+}
+@media (max-width: 767.98px) {
+  .resources-tabs .tab-box .form-control {
+    margin-bottom: 24px;
+  }
 }
 @media (max-width: 767.98px) {
   .resources-tabs .tab-box {

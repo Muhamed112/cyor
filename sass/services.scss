@@ -52,7 +52,7 @@
         color: rgba(10, 43, 81, 0.5);
       }
       .nav-link.active {
-        font-weight: 600;
+        font-weight: 500;
         border-bottom: 1px solid #0a2b511a;
         color: $primary;
       }
@@ -76,7 +76,7 @@
       font-size: 12.8px;
       @include media-breakpoint-down(md) {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 24px;
       }
     }
