@@ -11912,7 +11912,7 @@ p {
 }
 
 .navbar {
-  position: relative;
+  transition: all 1s ease-in;
 }
 .navbar .nav-res:hover .subheader {
   visibility: visible;
@@ -12176,6 +12176,10 @@ p {
   overflow: hidden;
 }
 
+.nav-up {
+  top: -50px;
+}
+
 .about-hero {
   background-color: #0a2b51;
   background-image: url("/assets/about-us/hero-bg.png");
@@ -12265,7 +12269,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
-  .swiper .swiper-slide {
+  .partners-swiper .swiper-slide {
     text-align: center;
     padding-bottom: 10px;
   }
@@ -12298,13 +12302,25 @@ p {
   font-size: 20px;
 }
 .services .services-tabs .tab-pane .btn-primary {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 45px;
 }
 
+.reputation nav {
+  width: 480px;
+}
+.reputation .nav-tabs {
+  border: 0;
+}
 .reputation .ppl-box {
   border-radius: 16px;
   padding: 24px 0px 24px 40px;
   width: 480px;
+  border: 0;
+  text-align: left;
 }
 .reputation .ppl-box img {
   width: 72px;
@@ -12319,9 +12335,11 @@ p {
   .reputation .ppl-box {
     width: 100%;
     background: #ffffff;
-    box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
     padding: 16px 0px 16px 32px;
     margin-bottom: 32px;
+  }
+  .reputation .ppl-box:hover {
+    box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
   }
   .reputation .ppl-box img {
     width: 48px;
@@ -12329,11 +12347,11 @@ p {
     border-radius: 12px;
   }
 }
-.reputation .ppl-box-active {
+.reputation .ppl-box.active {
   background: #ffffff;
   box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
 }
-.reputation .test-text {
+.reputation .tab-content {
   width: 570px;
 }
 .reputation .hide {
@@ -12346,6 +12364,16 @@ p {
   .reputation h4, .reputation .h4 {
     font-size: 16px;
   }
+}
+.reputation .swiper {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+.reputation .swiper .swiper-slide {
+  width: 325px;
+}
+.reputation .swiper .swiper-slide-active .ppl-box {
+  box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
 }
 
 .pop-block .block {

@@ -11912,7 +11912,7 @@ p {
 }
 
 .navbar {
-  position: relative;
+  transition: all 1s ease-in;
 }
 .navbar .nav-res:hover .subheader {
   visibility: visible;
@@ -12176,6 +12176,10 @@ p {
   overflow: hidden;
 }
 
+.nav-up {
+  top: -50px;
+}
+
 .contact-hero {
   height: 400px;
   width: 100%;
@@ -12404,8 +12408,9 @@ p {
 .swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #e5e8ed;
+  background: #e5e8ed;
   margin: 0 8px !important;
+  opacity: 1;
 }
 @media (max-width: 767.98px) {
   .swiper .swiper-pagination-bullet {
@@ -12413,7 +12418,7 @@ p {
   }
 }
 .swiper .swiper-pagination-bullet-active {
-  background-color: #0a2b51;
+  background: #0a2b51;
 }
 @media (max-width: 767.98px) {
   .swiper {

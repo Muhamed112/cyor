@@ -222,14 +222,15 @@
   .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #e5e8ed;
+    background: #e5e8ed;
     margin: 0 8px !important;
+    opacity: 1;
     @include media-breakpoint-down(md) {
       margin: 0 6px !important;
     }
   }
   .swiper-pagination-bullet-active {
-    background-color: $primary;
+    background: $primary;
   }
 
   @include media-breakpoint-down(md) {

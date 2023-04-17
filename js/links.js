@@ -34,59 +34,17 @@ $(document).ready(function () {
     $(".positions-row").css("display", "flex");
   });
 
-  $(".ppl-box").click(function (e) {
-    var id = $(this).attr("id");
-    if (id === "text-" + id) {
-      $("#text-" + id).css("display", "block");
+  var lastScrollTop = 0;
+  $(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st < lastScrollTop) {
+      //âíèç
+      $(".navbar").addClass("sticky-top");
     } else {
-      $("#text-" + id).css("display", "none");
+      // ââåðõ
+      $(".navbar").removeClass("sticky-top");
     }
-    $(this).toggleClass("ppl-box-active");
-  });
-
-  function countUp() {
-    $(".count").each(function () {
-      var $this = $(this),
-        countTo = $this.attr("data-count");
-
-      $({ countNum: $this.text() }).animate(
-        {
-          countNum: countTo,
-        },
-
-        {
-          duration: 7000,
-          easing: "linear",
-          step: function () {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            $this.text(this.countNum);
-          },
-        }
-      );
-    });
-  }
-  $(function () {
-    "user strict";
-    var bAnimate = true;
-    $(".count").css("opacity", "0.0");
-
-    $(window).scroll(function () {
-      // console.log("scroll top=" + $(this).scrollTop());
-      // console.log("div offset top=" + $("div").offset().top);
-      var scrolling = $(this).scrollTop(),
-        divoffset = $(".count").offset().top,
-        screenBottom = scrolling + $(window).height(),
-        elemBottom = divoffset + $(".count").outerHeight(); //
-      if (screenBottom > elemBottom) {
-        if (bAnimate) {
-          $(".count").css("opacity", "1.0");
-          countUp();
-          bAnimate = false;
-        }
-      }
-    });
+    lastScrollTop = st;
   });
 });
 

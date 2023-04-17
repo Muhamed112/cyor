@@ -11912,7 +11912,7 @@ p {
 }
 
 .navbar {
-  position: relative;
+  transition: all 1s ease-in;
 }
 .navbar .nav-res:hover .subheader {
   visibility: visible;
@@ -12174,4 +12174,8 @@ p {
 }
 .lock-scroll {
   overflow: hidden;
+}
+
+.nav-up {
+  top: -50px;
 }

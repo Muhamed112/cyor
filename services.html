@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0 nav-down">
       <div class="container">
         <a class="navbar-brand p-0" href="/">
           <img src="assets/logo-header.svg" />
@@ -333,7 +333,7 @@
         <div class="container">
           <ul class="nav nav-tabs mb-md-7 mb-3" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link active"
                 id="home-tab"
                 data-bs-toggle="tab"
@@ -347,10 +347,10 @@
                   Online reputation managment
                 </span>
                 <span class="d-md-none"> Online reputation </span>
-              </button>
+              </a>
             </li>
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link"
                 id="profile-tab"
                 data-bs-toggle="tab"
@@ -364,7 +364,7 @@
                   Online presence management
                 </span>
                 <span class="d-md-none"> Online presence </span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -438,12 +438,69 @@
                   </div>
                   <div class="col-md-9">
                     <h2 class="mb-4">Did you know that</h2>
-                    <p class="mb-3 mb-md-0">
-                      <span class="fw-semibold"> 30% </span>
-                      of consumers say they have looked up a business’s reviews
-                      while standing or being parked right outside to decide if
-                      they should go in or not?
-                    </p>
+                    <div
+                      id="carouselExampleAutoplaying"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <p class="carousel-item mb-3 mb-md-0 active">
+                          <span class="fw-semibold"> 30% </span>
+                          of consumers say they have looked up a business’s
+                          reviews while standing or being parked right outside
+                          to decide if they should go in or not?
+                        </p>
+
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 90% </span>
+                          of respondents who recalled reading online reviews
+                          claimed that positive online reviews influence buying
+                          decisions.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Google accounts for
+                          <span class="fw-semibold"> 73% </span> of all reviews
+                          worldwide.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 97% </span> of people read
+                          reviews for local businesses.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 92% </span> of B2B buyers
+                          are more likely to purchase after reading a trusted
+                          review
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 93% </span> of consumers
+                          say online reviews impact their purchasing decisions.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 91% </span> of 18-34 year
+                          old trust online reviews as much as personal
+                          recommendations.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          A bad reputation costs a company at least
+                          <span class="fw-semibold"> 10% </span> more per hire.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 68% </span> of consumers
+                          will leave a review if asked.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Customers are willing to spend
+                          <span class="fw-semibold"> 31% </span> more on a
+                          business with excellent reviews.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Customers are willing to spend A one-star increase on
+                          Google my Business rating leads to a
+                          <span class="fw-semibold"> 5-9% </span> increase in
+                          revenue.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -773,7 +830,15 @@
                 </p>
                 <p class="fw-semibold">
                   Check out our
-                  <a href="#" id="#opm">online presence management services.</a>
+                  <a
+                    href="#profile-tab-pane"
+                    data-toggle="tab"
+                    role="tab"
+                    class="tab-link"
+                    onclick="topFunction()"
+                  >
+                    online presence management services.
+                  </a>
                 </p>
               </div>
             </section>
@@ -843,11 +908,67 @@
                   </div>
                   <div class="col-md-9">
                     <h2 class="mb-4">Did you know that</h2>
-                    <p class="mb-3 mb-md-0">
-                      Websites with blog content have
-                      <span class="fw-semibold">434%</span> more search
-                      engine-indexed webpages.
-                    </p>
+                    <div
+                      id="carouselExampleAutoplaying"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <p class="carousel-item mb-3 mb-md-0 active">
+                          <span class="fw-semibold"> 40% </span>
+                          of small businesses didn’t have a web presence in 2023
+                        </p>
+
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 60.67% </span>
+                          of website traffic comes from mobile devices
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 92.3% </span> of internet
+                          users access the internet using a mobile phone
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 30% </span> of people would
+                          rather return to a website they’ve purchased from in
+                          the past.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          It’s estimated that by the year 2040,
+                          <span class="fw-semibold"> 95% </span> of purchases
+                          will be through e-Commerce.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 71% </span> of people
+                          believe they’ll get a better deal online, even if the
+                          item isn’t technically on sale.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 25% </span> of small
+                          businesses have no idea what their lead generation
+                          conversion rates are.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 61% </span> of people will
+                          make a purchase after reading a recommendation on a
+                          blog
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Websites with blog content have
+                          <span class="fw-semibold"> 434% </span> more search
+                          engine-indexed webpages.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 78% </span> of small
+                          businesses attract new customers and engage existing
+                          ones using social media.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          One in four small businesses
+                          <span class="fw-semibold"> (28%) </span> don't have a
+                          website, 44% plan to create one in 2022.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -1192,7 +1313,13 @@
                 </p>
                 <p class="fw-semibold">
                   Check out our
-                  <a href="#" id="#orm">
+                  <a
+                    href="#home-tab-pane"
+                    data-toggle="tab"
+                    role="tab"
+                    class="tab-link"
+                    onclick="topFunction()"
+                  >
                     online reputation management services.
                   </a>
                 </p>
@@ -1287,8 +1414,8 @@
     </div>
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
     <script

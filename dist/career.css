@@ -11912,7 +11912,7 @@ p {
 }
 
 .navbar {
-  position: relative;
+  transition: all 1s ease-in;
 }
 .navbar .nav-res:hover .subheader {
   visibility: visible;
@@ -12176,6 +12176,10 @@ p {
   overflow: hidden;
 }
 
+.nav-up {
+  top: -50px;
+}
+
 .content .career-hero {
   z-index: 1;
   height: 560px;
@@ -12370,6 +12374,24 @@ p {
 .content .positions .position-frame .frame-close {
   cursor: pointer;
 }
+.content .positions .position-frame .frame-footer {
+  align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .content .positions .position-frame .frame-footer p {
+    width: 650px;
+  }
+}
+.content .positions .position-frame .frame-footer a {
+  text-decoration: none;
+}
+.content .positions .position-frame .frame-footer .btn-primary {
+  height: 47px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .content .slider-third {
   margin-bottom: 16px;
 }
@@ -12499,6 +12521,7 @@ p {
   width: 10px;
   height: 10px;
   background-color: #e5e8ed;
+  opacity: 1;
   margin: 0 6px !important;
 }
 .slider-first .swiper .swiper-pagination .swiper-pagination-bullet-active,

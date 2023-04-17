@@ -11912,7 +11912,7 @@ p {
 }
 
 .navbar {
-  position: relative;
+  transition: all 1s ease-in;
 }
 .navbar .nav-res:hover .subheader {
   visibility: visible;
@@ -12176,6 +12176,10 @@ p {
   overflow: hidden;
 }
 
+.nav-up {
+  top: -50px;
+}
+
 .services-hero {
   background-color: #0a2b51;
   color: #fff;
@@ -12225,6 +12229,7 @@ p {
   padding-right: 0px;
   padding-left: 16px;
   color: rgba(10, 43, 81, 0.5);
+  transition: none;
 }
 .services-tabs .nav-tabs .nav-item .nav-link.active {
   font-weight: 600;

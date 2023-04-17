@@ -92,7 +92,7 @@
   }
 }
 
-.swiper {
+.partners-swiper {
   .swiper-slide {
     @include media-breakpoint-down(md) {
       text-align: center;
@@ -138,6 +138,10 @@
         }
       }
       .btn-primary {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 45px;
       }
     }
@@ -145,10 +149,18 @@
 }
 
 .reputation {
+  nav {
+    width: 480px;
+  }
+  .nav-tabs {
+    border: 0;
+  }
   .ppl-box {
     border-radius: 16px;
     padding: 24px 0px 24px 40px;
     width: 480px;
+    border: 0;
+    text-align: left;
     img {
       width: 72px;
       margin-right: 18px;
@@ -165,12 +177,13 @@
     @include media-breakpoint-down(md) {
       width: 100%;
       background: #ffffff;
-      box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
-        0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
-        0px 0px 0px rgba(0, 0, 0, 0.02);
       padding: 16px 0px 16px 32px;
       margin-bottom: 32px;
-
+      &:hover {
+        box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
+          0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
+          0px 0px 0px rgba(0, 0, 0, 0.02);
+      }
       img {
         width: 48px;
         margin-right: 24px;
@@ -178,14 +191,14 @@
       }
     }
   }
-  .ppl-box-active {
+  .ppl-box.active {
     background: #ffffff;
     box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
       0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
       0px 0px 0px rgba(0, 0, 0, 0.02);
   }
 
-  .test-text {
+  .tab-content {
     width: 570px;
   }
   .hide {
@@ -198,6 +211,21 @@
     }
     h4 {
       font-size: 16px;
+    }
+  }
+
+  .swiper {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    .swiper-slide {
+      width: 325px;
+    }
+    .swiper-slide-active {
+      .ppl-box {
+        box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01),
+          0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02),
+          0px 0px 0px rgba(0, 0, 0, 0.02);
+      }
     }
   }
 }
