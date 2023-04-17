@@ -143,6 +143,11 @@
         align-items: center;
         justify-content: center;
         height: 45px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
       }
     }
   }
@@ -186,7 +191,7 @@
       }
       img {
         width: 48px;
-        margin-right: 24px;
+        margin-right: 8px;
         border-radius: 12px;
       }
     }

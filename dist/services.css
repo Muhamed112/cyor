@@ -12035,6 +12035,11 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
+@media (max-width: 767.98px) {
+  .navbar .subheader-mobile a {
+    font-weight: 400;
+  }
+}
 .navbar .subheader-mobile p {
   margin-top: 12px;
   font-weight: 300;
@@ -12232,7 +12237,7 @@ p {
   transition: none;
 }
 .services-tabs .nav-tabs .nav-item .nav-link.active {
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: 1px solid rgba(10, 43, 81, 0.1019607843);
   color: #0a2b51;
 }
@@ -12255,7 +12260,7 @@ p {
 @media (max-width: 767.98px) {
   .services-tabs .tab-content .small-title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 24px;
   }
 }
