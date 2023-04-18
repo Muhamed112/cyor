@@ -11911,9 +11911,6 @@ p {
   font-size: 12.8px;
 }
 
-.navbar {
-  transition: all 1s ease-in;
-}
 .navbar .nav-res:hover .subheader {
   visibility: visible;
 }
@@ -12075,9 +12072,6 @@ p {
   }
   .navbar .nav-link {
     width: fit-content;
-  }
-  .navbar .nav-link:hover {
-    color: #fff;
   }
   .navbar .btn-primary {
     font-size: 12.8px;

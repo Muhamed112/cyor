@@ -113,6 +113,7 @@
       width: 50%;
       border-bottom-left-radius: 12px;
       border-top-left-radius: 12px;
+      object-fit: cover;
     }
     .par-light {
       font-size: 12.8px;
@@ -239,7 +240,6 @@
     padding-left: 32px !important;
     padding-right: 32px !important;
     .swiper-slide {
-      width: 326px;
       height: 548px;
     }
   }

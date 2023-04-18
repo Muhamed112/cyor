@@ -11911,9 +11911,6 @@ p {
   font-size: 12.8px;
 }
 
-.navbar {
-  transition: all 1s ease-in;
-}
 .navbar .nav-res:hover .subheader {
   visibility: visible;
 }
@@ -12075,9 +12072,6 @@ p {
   }
   .navbar .nav-link {
     width: fit-content;
-  }
-  .navbar .nav-link:hover {
-    color: #fff;
   }
   .navbar .btn-primary {
     font-size: 12.8px;
@@ -12450,6 +12444,7 @@ p {
 .reputation .ppl-box.active {
   background: #ffffff;
   box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+  color: #0a2b51;
 }
 .reputation .tab-content {
   width: 570px;
@@ -12732,6 +12727,7 @@ p {
 }
 .get-started .btn-secondary:hover {
   background-color: #a1ffa1;
+  border-color: #a1ffa1;
 }
 @media (max-width: 767.98px) {
   .get-started {

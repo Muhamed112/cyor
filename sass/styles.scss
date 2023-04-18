@@ -71,7 +71,6 @@ p {
 }
 
 .navbar {
-  transition: all 1s ease-in;
   .nav-res:hover {
     .subheader {
       visibility: visible;
@@ -246,9 +245,6 @@ p {
 
     .nav-link {
       width: fit-content;
-      &:hover {
-        color: #fff;
-      }
     }
     .btn-primary {
       font-size: 12.8px;

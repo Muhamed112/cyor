@@ -11911,9 +11911,6 @@ p {
   font-size: 12.8px;
 }
 
-.navbar {
-  transition: all 1s ease-in;
-}
 .navbar .nav-res:hover .subheader {
   visibility: visible;
 }
@@ -12075,9 +12072,6 @@ p {
   }
   .navbar .nav-link {
     width: fit-content;
-  }
-  .navbar .nav-link:hover {
-    color: #fff;
   }
   .navbar .btn-primary {
     font-size: 12.8px;
@@ -12300,6 +12294,7 @@ p {
   width: 50%;
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
+  object-fit: cover;
 }
 .swiper .map .par-light {
   font-size: 12.8px;
@@ -12433,7 +12428,6 @@ p {
     padding-right: 32px !important;
   }
   .swiper .swiper-slide {
-    width: 326px;
     height: 548px;
   }
 }

@@ -11911,9 +11911,6 @@ p {
   font-size: 12.8px;
 }
 
-.navbar {
-  transition: all 1s ease-in;
-}
 .navbar .nav-res:hover .subheader {
   visibility: visible;
 }
@@ -12076,9 +12073,6 @@ p {
   .navbar .nav-link {
     width: fit-content;
   }
-  .navbar .nav-link:hover {
-    color: #fff;
-  }
   .navbar .btn-primary {
     font-size: 12.8px;
     height: 48px;
@@ -12195,7 +12189,7 @@ p {
   padding-top: 56px;
 }
 .content .career-hero .career-hero-content {
-  max-width: 600px;
+  max-width: 640px;
 }
 .content .career-hero .seperator {
   height: 1px;
@@ -12210,7 +12204,7 @@ p {
 }
 .content .join-us {
   margin-bottom: 40px;
-  margin-top: -235px;
+  margin-top: -270px;
   z-index: 2;
 }
 .content .join-us .card-row div:first-child .card p {
@@ -12235,8 +12229,7 @@ p {
   padding-right: 32px !important;
 }
 .content .slider-first .swiper .swiper-slide {
-  width: 327px;
-  height: 320px;
+  height: auto;
 }
 .content .slider-first .swiper .swiper-slide .card {
   height: 100%;
@@ -12262,7 +12255,8 @@ p {
   margin-bottom: 24px;
 }
 .content .benefits .card-row .card {
-  padding-left: 40px;
+  padding-left: 32px;
+  height: 145px;
   background-color: #f3f4f6;
   border-radius: 20px;
   border: none;
@@ -12275,8 +12269,7 @@ p {
   padding-right: 32px !important;
 }
 .content .slider-second .swiper .swiper-slide {
-  width: 327px;
-  height: 256px;
+  height: auto;
 }
 .content .slider-second .swiper .swiper-slide .card {
   height: 120px;
@@ -12297,48 +12290,49 @@ p {
 .content .gallery {
   margin-bottom: 40px;
 }
-.content .gallery .container .gallery-row {
+.content .gallery .container .row {
   height: 400px;
   margin-bottom: 20px;
 }
-.content .gallery .container .gallery-row .img-item:first-child {
+.content .gallery .container .row .img-fluid:first-child {
   border-top-left-radius: 16px;
 }
-.content .gallery .container .gallery-row .img-item:nth-child(5) {
+.content .gallery .container .row .img-fluid:nth-child(5) {
   border-top-right-radius: 16px;
 }
-.content .gallery .container .gallery-row .img-item {
+.content .gallery .container .row .img-fluid {
   height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 767.98px) {
-  .content .gallery .container .gallery-row {
+  .content .gallery .container .row {
     height: 280px;
     margin-bottom: 8px;
   }
-  .content .gallery .container .gallery-row .img-item:nth-child(2) {
+  .content .gallery .container .row .img-fluid:nth-child(2) {
     border-top-left-radius: 16px;
   }
-  .content .gallery .container .gallery-row .img-item:nth-child(6) {
+  .content .gallery .container .row .img-fluid:nth-child(6) {
     border-top-right-radius: 16px;
   }
 }
-.content .gallery .container .gallery-row:nth-child(4) {
+.content .gallery .container .row:nth-child(4) {
   margin-bottom: 0;
 }
-.content .gallery .container .gallery-row:nth-child(4) .img-item:first-child {
+.content .gallery .container .row:nth-child(4) .img-fluid:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 16px;
 }
-.content .gallery .container .gallery-row:nth-child(4) .img-item:nth-child(5) {
+.content .gallery .container .row:nth-child(4) .img-fluid:nth-child(5) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 16px;
 }
 @media (max-width: 767.98px) {
-  .content .gallery .container .gallery-row:nth-child(4) .img-item:nth-child(2) {
+  .content .gallery .container .row:nth-child(4) .img-fluid:nth-child(2) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 16px;
   }
-  .content .gallery .container .gallery-row:nth-child(4) .img-item:nth-child(6) {
+  .content .gallery .container .row:nth-child(4) .img-fluid:nth-child(6) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 16px;
   }
@@ -12405,8 +12399,7 @@ p {
   padding-right: 32px !important;
 }
 .content .slider-third .swiper .swiper-slide {
-  width: 327px;
-  height: 632px;
+  height: auto;
 }
 .content .slider-third .swiper .swiper-slide .position-card {
   height: 100%;
@@ -12500,6 +12493,12 @@ p {
   }
   .content .apply .main-row .apply-form .buttons-row {
     flex-direction: column;
+  }
+  .content .apply .main-row .apply-form .buttons-row .first button:first-child {
+    margin-right: 10px;
+  }
+  .content .apply .main-row .apply-form .buttons-row .first button {
+    color: #0a2b51;
   }
 }
 .content .apply .main-row img {

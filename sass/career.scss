@@ -11,7 +11,7 @@
     padding-top: 56px;
 
     .career-hero-content {
-      max-width: 600px;
+      max-width: 640px;
     }
 
     .seperator {
@@ -28,7 +28,7 @@
 
   .join-us {
     margin-bottom: 40px;
-    margin-top: -235px;
+    margin-top: -270px;
     z-index: 2;
     .card-row {
       div:first-child {
@@ -58,8 +58,7 @@
       padding-left: 32px !important;
       padding-right: 32px !important;
       .swiper-slide {
-        width: 327px;
-        height: 320px;
+        height: auto;
         .card {
           height: 100%;
           width: 100%;
@@ -86,7 +85,8 @@
     .card-row {
       margin-bottom: 24px;
       .card {
-        padding-left: 40px;
+        padding-left: 32px;
+        height: 145px;
         background-color: #f3f4f6;
         border-radius: 20px;
         border: none;
@@ -99,8 +99,7 @@
       padding-left: 32px !important;
       padding-right: 32px !important;
       .swiper-slide {
-        width: 327px;
-        height: 256px;
+        height: auto;
         .card {
           height: 120px;
           width: 100%;
@@ -124,46 +123,47 @@
   .gallery {
     margin-bottom: 40px;
     .container {
-      .gallery-row {
+      .row {
         height: 400px;
         margin-bottom: 20px;
-        .img-item:first-child {
+        .img-fluid:first-child {
           border-top-left-radius: 16px;
         }
-        .img-item:nth-child(5) {
+        .img-fluid:nth-child(5) {
           border-top-right-radius: 16px;
         }
-        .img-item {
+        .img-fluid {
           height: 100%;
+          object-fit: cover;
         }
 
         @include media-breakpoint-down(md) {
           height: 280px;
           margin-bottom: 8px;
-          .img-item:nth-child(2) {
+          .img-fluid:nth-child(2) {
             border-top-left-radius: 16px;
           }
-          .img-item:nth-child(6) {
+          .img-fluid:nth-child(6) {
             border-top-right-radius: 16px;
           }
         }
       }
-      .gallery-row:nth-child(4) {
+      .row:nth-child(4) {
         margin-bottom: 0;
-        .img-item:first-child {
+        .img-fluid:first-child {
           border-top-left-radius: 0;
           border-bottom-left-radius: 16px;
         }
-        .img-item:nth-child(5) {
+        .img-fluid:nth-child(5) {
           border-top-right-radius: 0;
           border-bottom-right-radius: 16px;
         }
         @include media-breakpoint-down(md) {
-          .img-item:nth-child(2) {
+          .img-fluid:nth-child(2) {
             border-top-left-radius: 0;
             border-bottom-left-radius: 16px;
           }
-          .img-item:nth-child(6) {
+          .img-fluid:nth-child(6) {
             border-top-right-radius: 0;
             border-bottom-right-radius: 16px;
           }
@@ -233,8 +233,7 @@
       padding-left: 32px !important;
       padding-right: 32px !important;
       .swiper-slide {
-        width: 327px;
-        height: 632px;
+        height: auto;
         .position-card {
           height: 100%;
           width: 100%;
@@ -330,6 +329,14 @@
           }
           .buttons-row {
             flex-direction: column;
+            .first {
+              button:first-child {
+                margin-right: 10px;
+              }
+              button {
+                color: $primary;
+              }
+            }
           }
         }
       }

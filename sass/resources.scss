@@ -126,12 +126,12 @@
     padding: 56px 56px 0 56px;
     .box-content {
       .card-row {
-        justify-content: space-between;
         .card {
           width: 340px;
           height: 305px;
           background-color: transparent;
           border: none;
+          margin-right: 24px;
           img {
             height: 200px;
             width: 100%;
@@ -141,6 +141,9 @@
           }
           p {
             font-weight: 500;
+          }
+          &:last-child {
+            margin-right: 0;
           }
         }
         @include media-breakpoint-down(md) {
