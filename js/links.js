@@ -27,11 +27,14 @@ $(document).ready(function () {
     var id = $(this).attr("id");
     $(".positions-row").css("display", "none");
     $("#frame-" + id).css("display", "block");
+    $(".swiper-positions").css("display", "none");
+    $("#frame-mob-" + id).css("display", "block");
   });
 
   $(".frame-close").click(function (e) {
     $(".position-frame").css("display", "none");
     $(".positions-row").css("display", "flex");
+    $(".swiper-positions").css("display", "block");
   });
 
   var lastScrollTop = 0;

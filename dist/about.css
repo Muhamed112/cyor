@@ -12450,51 +12450,56 @@ p {
 }
 
 .gallery .container .gallery-row {
-  margin-bottom: 20px;
   height: 400px;
+  margin-bottom: 20px;
 }
-.gallery .container .gallery-row .img-item:first-child {
+.gallery .container .gallery-row img:first-child {
   border-top-left-radius: 16px;
+  width: calc(20% - 16px);
 }
-.gallery .container .gallery-row .img-item:nth-child(5) {
+@media (max-width: 767.98px) {
+  .gallery .container .gallery-row img:first-child {
+    width: calc(20% - 8px);
+  }
+}
+.gallery .container .gallery-row img:last-child {
   border-top-right-radius: 16px;
+  margin-right: 0;
+  width: 40%;
 }
-.gallery .container .gallery-row .img-item {
+.gallery .container .gallery-row img {
   height: 100%;
+  object-fit: cover;
+  margin-right: 16px;
+  width: calc(40% - 16px);
+}
+@media (max-width: 767.98px) {
+  .gallery .container .gallery-row img {
+    margin-right: 8px;
+    width: calc(40% - 8px);
+  }
+}
+.gallery .container .gallery-row:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.gallery .container .gallery-row:nth-of-type(2) img:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 16px;
+  width: calc(40% - 16px);
+}
+@media (max-width: 767.98px) {
+  .gallery .container .gallery-row:nth-of-type(2) img:first-child {
+    width: calc(40% - 8px);
+  }
+}
+.gallery .container .gallery-row:nth-of-type(2) img:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 16px;
+  width: 20%;
 }
 @media (max-width: 767.98px) {
   .gallery .container .gallery-row {
-    height: 320px;
+    height: 280px;
     margin-bottom: 8px;
-  }
-  .gallery .container .gallery-row .img-item:nth-child(2) {
-    border-top-left-radius: 16px;
-  }
-  .gallery .container .gallery-row .img-item:nth-child(6) {
-    border-top-right-radius: 16px;
-  }
-}
-.gallery .container .gallery-row:last-child {
-  margin-bottom: 0;
-}
-.gallery .container .gallery-row:last-child .img-item:first-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 16px;
-}
-.gallery .container .gallery-row:last-child .img-item:nth-child(5) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 16px;
-}
-@media (max-width: 767.98px) {
-  .gallery .container .gallery-row:last-child {
-    margin-bottom: 24px;
-  }
-  .gallery .container .gallery-row:last-child .img-item:nth-child(2) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 16px;
-  }
-  .gallery .container .gallery-row:last-child .img-item:nth-child(6) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 16px;
   }
 }
