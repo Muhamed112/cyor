@@ -12261,6 +12261,11 @@ p {
   border-radius: 20px;
   border: none;
 }
+@media (max-width: 1399.98px) {
+  .content .benefits .card-row .card {
+    height: 195px;
+  }
+}
 .content .slider-second {
   margin-bottom: 16px;
 }

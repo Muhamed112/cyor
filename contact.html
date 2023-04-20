@@ -773,12 +773,19 @@
     </div>
 
     <script>
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+      let value = params.slide;
+
       const swiper = new Swiper(".swiper", {
         // Optional parameters
         slidesPerView: 1,
         spaceBetween: 16,
         centeredSlides: false,
         loop: true,
+        initialSlide: value - 1,
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -791,8 +798,7 @@
       });
     </script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -805,6 +811,7 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/links.js"></script>
   </body>
 </html>

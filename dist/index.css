@@ -12282,11 +12282,16 @@ p {
 }
 @media (max-width: 767.98px) {
   .help {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   .help .card {
     padding-left: 60px;
     padding-right: 60px;
+    background: #ffffff;
+    box-shadow: 0px 116px 69px rgba(0, 0, 0, 0.01), 0px 51px 51px rgba(0, 0, 0, 0.02), 0px 13px 28px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+  }
+  .help .card button {
+    visibility: visible;
   }
   .help .card h1, .help .card .h1 {
     font-weight: 700;
@@ -12295,14 +12300,8 @@ p {
   .help .card h3, .help .card .h3 {
     font-size: 25px;
   }
-  .help .card button {
-    display: none;
-  }
   .help .card .icon {
     margin-bottom: 40px;
-  }
-  .help .card:hover button {
-    display: block;
   }
 }
 
@@ -12601,9 +12600,14 @@ p {
   border: 0;
   background-color: #f3f4f6;
 }
-.home-blog .swiper .swiper-wrapper .swiper-slide .card img {
+.home-blog .swiper .swiper-wrapper .swiper-slide .card .img-container {
   height: 393px;
   width: 100%;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+.home-blog .swiper .swiper-wrapper .swiper-slide .card .img-container img {
+  height: 100%;
   object-fit: cover;
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -12622,6 +12626,12 @@ p {
   border: 0.5px solid #0a2b51;
   font-size: 16px;
   font-weight: 500;
+  color: #0a2b51;
+}
+@media (max-width: 767.98px) {
+  .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content {
+    padding: 0 24px 32px 24px;
+  }
 }
 .home-blog .swiper .swiper-wrapper .swiper-slide .card:hover {
   box-shadow: 0px 100px 123px rgba(35, 39, 46, 0.01), 0px 91px 91px rgba(35, 39, 46, 0.02), 0px 23px 50px rgba(35, 39, 46, 0.02), 0px 0px 0px rgba(35, 39, 46, 0.02);
@@ -12654,8 +12664,11 @@ p {
     height: 100%;
     width: 100%;
   }
-  .home-blog .swiper .swiper-wrapper .swiper-slide .card img {
-    height: 255px;
+  .home-blog .swiper .swiper-wrapper .swiper-slide .card h4, .home-blog .swiper .swiper-wrapper .swiper-slide .card .h4 {
+    font-weight: 500;
+  }
+  .home-blog .swiper .swiper-wrapper .swiper-slide .card .img-container {
+    height: 230px;
   }
 }
 
