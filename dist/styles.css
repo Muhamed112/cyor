@@ -11872,10 +11872,10 @@ p {
   border: 1px solid #0a2b51;
   border-radius: 12px;
   padding: 10px 0;
+  color: #0a2b51;
 }
 .btn-secondary:hover {
   background: #a1ffa1;
-  color: #0a2b51;
   border-color: #a1ffa1;
 }
 
