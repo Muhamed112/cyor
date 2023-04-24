@@ -11893,6 +11893,14 @@ p {
     padding-left: 32px;
   }
 }
+.header-close {
+  cursor: pointer;
+}
+.header-close img {
+  height: 24px;
+  width: 24px;
+}
+
 .contact-col .form-control {
   background: transparent;
   border-radius: 0;

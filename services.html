@@ -12,6 +12,23 @@
     ></script>
   </head>
   <body>
+    <div class="pre-header bg-secondary w-100 py-md-3 py-2">
+      <div
+        class="container d-flex justify-content-center align-items-center py-1 py-md-0"
+      >
+        <p class="mx-auto d-none d-lg-block">
+          You’ve spoken to our team and requested an offer? You can see it
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <p class="mx-auto d-lg-none">
+          You can see your offer
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <a class="header-close">
+          <img src="/assets/close-black.svg" />
+        </a>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
       <div class="container">
         <a class="navbar-brand p-0" href="/">
@@ -25,7 +42,6 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -100,7 +116,7 @@
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/services.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -119,7 +135,9 @@
                     <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link"> OPM </a>
+                    <a href="/services.html?tab=profile-tab" id="opm-link">
+                      OPM
+                    </a>
                   </div>
                 </div>
               </div>
@@ -177,7 +195,7 @@
                       <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/resources.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -196,10 +214,15 @@
                     <a href="/resources.html" id="faq-link">FAQ</a>
                   </div>
                   <div class="resource-item">
-                    <a href="/resources.html" id="blog-link">Blog</a>
+                    <a href="/resources.html?tab=profile-tab" id="blog-link">
+                      Blog
+                    </a>
                   </div>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-5 px-md-3" href="/offer.html"> Offer </a>
             </li>
             <li class="nav-item nav-contact">
               <a class="nav-link py-md-5 px-md-3" href="/contact.html">

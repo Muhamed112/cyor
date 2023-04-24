@@ -52,6 +52,14 @@ p {
   }
 }
 
+.header-close {
+  cursor: pointer;
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
 .contact-col {
   .form-control {
     background: transparent;

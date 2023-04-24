@@ -31,7 +31,11 @@ $(document).ready(function () {
     $("#frame-mob-" + id).css("display", "block");
   });
 
-  $(".frame-close").click(function (e) {
+  $(".header-close").click(function (e) {
+    $(".pre-header").css("display", "none");
+  });
+
+  $(".header-close").click(function (e) {
     $(".position-frame").css("display", "none");
     $(".positions-row").css("display", "flex");
     $(".swiper-positions").css("display", "block");
