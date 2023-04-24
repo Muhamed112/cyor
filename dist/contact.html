@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - Contact</title>
     <link rel="stylesheet" href="dist/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -20,6 +29,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,12 +63,13 @@
                   <div class="resources-row d-flex justify-content-between">
                     <div class="resource-item">
                       <h3 class="mb-5">
-                        Learn more about online <br />
+                        Learn more about online
+                        <br class="d-none d-xxl-block" />
                         <span class="text-secondary">reputation</span> and
-                        online <br />
+                        online <br class="d-none d-xxl-block" />
                         <span class="text-secondary">presence</span>
                       </h3>
-                      <p>
+                      <p class="text-nowrap">
                         For more questions feel free to
                         <a href="/contact.html" class="text-white">
                           contact us
@@ -68,8 +79,9 @@
                     <div class="resource-item">
                       <h4 class="mb-2">Online reputation management</h4>
                       <p>
-                        Partner with CYOR24 and protect your brand <br />image,
-                        improve customer trust and loyalty, <br />
+                        Partner with CYOR24 and protect your brand
+                        <br class="d-none d-xxl-block" />image, improve customer
+                        trust and loyalty, <br class="d-none d-xxl-block" />
                         and maintain a positive online reputation.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -85,9 +97,9 @@
                       <h4 class="mb-2">Online presence management</h4>
                       <p>
                         We will make sure your business looks good online!
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         We help businesses to establish and maintain their
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         online presence.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -108,24 +120,10 @@
               >
                 <div class="resources-row">
                   <div class="resource-item mb-3">
-                    <a href="/services.html" id="orm-link">
-                      Online reputation management
-                    </a>
-                    <p>
-                      Partner with CYOR24 and protect your brand image, improve
-                      customer trust and loyalty, and maintain a positive online
-                      reputation.
-                    </p>
+                    <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link">
-                      Online presence management
-                    </a>
-                    <p>
-                      We will make sure your business looks good online!
-                      <br />We help businesses to establish and maintain their
-                      online presence.
-                    </p>
+                    <a href="/services.html" id="opm-link"> OPM </a>
                   </div>
                 </div>
               </div>
@@ -164,7 +162,7 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">FAQ</h4>
-                      <p>Why are online presence and reputation important?</p>
+                      <p>What is online presence management?</p>
                       <p>What is a Google Business Profile?</p>
                       <p>Can i remove a negative Google review?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -178,9 +176,9 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">Blog</h4>
-                      <p>The consequences of a bad Online Reputation.</p>
-                      <p>How to optimize Google Business profile?</p>
-                      <p>How does the Google Search Algorithm work?</p>
+                      <p>Does my Business need a Website?</p>
+                      <p>How to Improve your Online Visibility</p>
+                      <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
                           href="/resources.html"
@@ -200,19 +198,9 @@
                 <div class="resources-row">
                   <div class="resource-item mb-3">
                     <a href="/resources.html" id="faq-link">FAQ</a>
-                    <p>
-                      Why are online presence and reputation important? <br />
-                      What is a Google Business Profile? <br />
-                      Can I remove a negative Google review?
-                    </p>
                   </div>
                   <div class="resource-item">
                     <a href="/resources.html" id="blog-link">Blog</a>
-                    <p>
-                      The consequences of a bad Online Reputation. <br />
-                      How to optimize Google Business Profile? <br />
-                      How does the Google Search Algorithm work?
-                    </p>
                   </div>
                 </div>
               </div>
@@ -236,35 +224,35 @@
               </a>
               <ul class="dropdown-menu bg-primary">
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/ger.png" />
                     <span class="d-none d-md-block">DE</span>
                     <span class="d-md-none">German</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/nl.png" />
                     <span class="d-none d-md-block">NL</span>
                     <span class="d-md-none">Dutch</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/es.png" />
                     <span class="d-none d-md-block">ES</span>
                     <span class="d-md-none">Spanish</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/it.png" />
                     <span class="d-none d-md-block">IT</span>
                     <span class="d-md-none">Italian</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/cro.png" />
                     <span class="d-none d-md-block">HR</span>
                     <span class="d-md-none">Croatian</span>
@@ -306,11 +294,12 @@
         </div>
       </div>
     </nav>
+
     <div class="content text-primary">
       <section class="contact-hero text-white">
         <div class="container">
-          <div class="contact-hero-content">
-            <h2 class="mb-4">How would you like <br />to reach out to us?</h2>
+          <div class="contact-hero-content d-none d-md-block">
+            <h2 class="mb-4">How would you like to <br />reach out to us?</h2>
             <h4 class="mb-4 fw-normal">
               Feel free to contact us by live call, e-mail or through
               information provided in our contact listing.
@@ -320,185 +309,383 @@
         </div>
       </section>
 
-      <div id="carouselExampleIndicators" class="carousel slide mb-6">
-        <div class="container">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item contact-form active">
-              <div>
-                <h2>Contact us</h2>
-                <p class="mb-5">
-                  Use the contact form below or swipe left and right for other
-                  contact options
-                </p>
-                <div class="row">
-                  <div class="col-md-6 col-12 mb-3 px-md-2">
-                    <input
-                      type="text"
-                      placeholder="Name and surname"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 mb-3 px-md-2">
-                    <input
-                      type="text"
-                      placeholder="E-mail"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 mb-3 px-md-2">
-                    <input
-                      type="text"
-                      placeholder="Phone number"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 mb-3 px-md-2">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-12">
+      <section class="mob-desc d-md-none my-4">
+        <div class="container mt-3">
+          <h2 class="mb-3">How would you like to reach out to us?</h2>
+          <h4 class="mb-3 fw-normal">
+            Feel free to contact us by live call, e-mail or through information
+            provided in our contact listing.
+          </h4>
+        </div>
+      </section>
+
+      <div class="swiper d-none d-md-block">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="swiper-item contact-form">
+                <div>
+                  <h2 class="mb-3 mb-md-0">Contact us</h2>
+                  <p class="mb-3 mb-md-5">
+                    Use the contact form below or swipe left and right for other
+                    contact options
+                  </p>
+                  <form>
+                    <div
+                      class="contact-form-row d-flex mt-1 mt-md- 0mb-0 mb-md-3"
+                    >
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="form-control mb-2 mb-md-0"
+                      />
+
+                      <input
+                        type="text"
+                        placeholder="E-mail"
+                        class="form-control mb-2 mb-md-0"
+                      />
+                    </div>
+                    <div class="contact-form-row d-flex mb-0 mb-md-3">
+                      <input
+                        type="text"
+                        placeholder="Phone number"
+                        class="form-control mb-2 mb-md-0"
+                      />
+
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="form-control mb-2 mb-md-0"
+                      />
+                    </div>
+
                     <textarea
-                      class="form-control mb-3"
+                      class="form-control mb-2 mb-md-3 w-100"
                       placeholder="Your message"
                       rows="3"
                     ></textarea>
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  class="btn-primary fs-6 w-100 fw-semibold"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-            <div class="carousel-item live-call">
-              <div class="row">
-                <div class="col-md-6 col-12">
-                  <h2 class="mb-3">Live call</h2>
-                  <p class="mb-3">
-                    Submit your phone number and we will get back to you in next
-                    30 minutes.
-                  </p>
-                  <p class="mb-3">
-                    In the meantime you can find some useful information in our
-                    <a href="#">knowledge base.</a>
-                  </p>
-                  <p class="mb-3">Looking forward to talk with you.</p>
-                  <span>
-                    Please note that our work time is from 09:00 to 17:30
-                    Central European Standard Time (GMT+1).
-                  </span>
-                  <form class="mt-3">
-                    <div class="row mb-3">
-                      <div class="col-md-6 col-12">
-                        <input
-                          type="text"
-                          placeholder="Your name"
-                          class="form-control"
-                        />
-                      </div>
-                      <div class="col-md-6 col-12">
-                        <input
-                          type="text"
-                          placeholder="Your number"
-                          class="form-control"
-                        />
-                      </div>
+
+                    <div class="mb-0 mb-md-3 d-flex align-items-center">
+                      <input
+                        class="form-check-input d-none d-md-block"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label
+                        class="form-check-label d-none d-md-block"
+                        for="flexCheckChecked"
+                      >
+                        I have read and agree to
+                        <a href="/terms-and-conditions.html">
+                          Terms and conditions
+                        </a>
+                      </label>
                     </div>
-                    <button type="submit" class="btn-primary w-100 fw-semibold">
+
+                    <button type="submit" class="btn-primary w-100">
                       Submit
                     </button>
                   </form>
                 </div>
-                <div class="col-md-6 col-12">
-                  <img
-                    src="assets/contact-live-call.png"
-                    width="418px"
-                    height="388px"
-                  />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="swiper-item live-call">
+                <div class="row">
+                  <div class="col-md-5 col-12">
+                    <h2 class="mb-4 d-none d-md-block">Live call</h2>
+                    <p class="mb-3">
+                      Submit your name and surname, phone number and we will get
+                      back to you as soon as possible.
+                    </p>
+                    <p class="mb-3 d-none d-md-block">
+                      In the meantime you can find some useful content in our
+                      <a href="/resources.html">knowledge base.</a>
+                    </p>
+                    <p class="mb-4 mb-md-3">
+                      We look forward to hearing from you.
+                    </p>
+                    <p class="light-par d-none d-md-block">
+                      Please note that our work time is from 09:00 to 17:30
+                      Central European Standard Time (GMT+1)
+                    </p>
+
+                    <form class="mt-3">
+                      <div class="live-call-row d-flex mb-2 mb-md-3">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="form-control mb-2 mb-md-0"
+                        />
+
+                        <input
+                          type="text"
+                          placeholder="Phone number"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <input
+                          class="form-check-input d-none d-md-block"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                        />
+                        <label
+                          class="form-check-label d-none d-md-block"
+                          for="flexCheckChecked"
+                        >
+                          I have read and agree to
+                          <a href="/terms-and-conditions.html">
+                            Terms and conditions
+                          </a>
+                        </label>
+                      </div>
+
+                      <button type="submit" class="btn-primary w-100 mt-md-3">
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-md-7 col-12 px-md-0 text-center">
+                    <h2 class="d-md-none d-block mb-3 text-start">
+                      Live call<span class="hours fs-6 fw-normal">
+                        (09:00 - 17:30 CEST)
+                      </span>
+                    </h2>
+                    <img src="assets/contact-live-call.png" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item map">
-              <div class="d-flex w-100 h-100">
-                <img src="assets/contact-map.png" class="d-block w-50 h-100" />
-                <div class="py-7 px-6">
-                  <div class="mb-6">
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="swiper-item map">
+                <div class="map-row d-flex w-100 h-100">
+                  <img src="assets/contact-map.png" class="d-none d-md-block" />
+                  <img src="assets/contact-map-mob.png" class="d-md-none" />
+                  <div class="py-md-7 px-md-6 p-4">
+                    <div class="mb-6 d-none d-md-block">
+                      <h2>CYOR24</h2>
+                      <p>CYOR24 is a brand of CYORMEDIA LTD.</p>
+                    </div>
+                    <h2 class="d-md-none mb-3">Contact information</h2>
+
+                    <div class="mb-3">
+                      <p class="par-light">POSTAL ADRESS</p>
+                      <p>Gaugasse 1065203 Wiesbaden, Germany</p>
+                    </div>
+
+                    <div class="mb-3">
+                      <p class="par-light">PHONE</p>
+                      <p>+49 611 94 587 444</p>
+                    </div>
+
+                    <div class="mb-3">
+                      <p class="par-light">MOBILE</p>
+                      <p>+49 611 94 587 44 49</p>
+                    </div>
+
+                    <p class="par-light">E-MAIL</p>
+                    <p>info@cyor24.com</p>
+
+                    <p class="mt-3 mt-md-5">
+                      You can also contact us using Contact form and Live call.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="swiper d-md-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-item contact-form">
+              <h2 class="mb-3">Contact us</h2>
+              <p class="mb-3 mb-md-5">
+                Use the contact form below or swipe left/right for other contact
+                options
+              </p>
+              <form>
+                <div class="contact-form-row d-flex mt-1 mt-md- 0mb-0 mb-md-3">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="form-control mb-2 mb-md-0"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="E-mail"
+                    class="form-control mb-2 mb-md-0"
+                  />
+                </div>
+                <div class="contact-form-row d-flex mb-0 mb-md-3">
+                  <input
+                    type="text"
+                    placeholder="Phone number"
+                    class="form-control mb-2 mb-md-0"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control mb-2 mb-md-0"
+                  />
+                </div>
+
+                <textarea
+                  class="form-control mb-2 mb-md-3 w-100"
+                  placeholder="Your message"
+                  rows="3"
+                ></textarea>
+
+                <div class="mb-0 mb-md-3 d-flex align-items-center">
+                  <input
+                    class="form-check-input d-none d-md-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label
+                    class="form-check-label d-none d-md-block"
+                    for="flexCheckChecked"
+                  >
+                    I have read and agree to
+                    <a href="/terms-and-conditions.html">
+                      Terms and conditions
+                    </a>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-primary w-100">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-item live-call">
+              <div class="row">
+                <div class="col-md-5 col-12">
+                  <h2 class="mb-4 d-none d-md-block">Live call</h2>
+                  <p class="mb-3">
+                    Submit your name and surname, phone number and we will get
+                    back to you as soon as possible.
+                  </p>
+                  <p class="mb-3 d-none d-md-block">
+                    In the meantime you can find some useful content in our
+                    <a href="#">knowledge base.</a>
+                  </p>
+                  <p class="mb-4 mb-md-3 text-nowrap">
+                    We look forward to hearing from you
+                  </p>
+                  <p class="light-par d-none d-md-block">
+                    Please note that our work time is from 09:00 to 17:30
+                    Central European Standard Time (GMT+1)
+                  </p>
+
+                  <form class="mt-3">
+                    <div class="live-call-row d-flex mb-2 mb-md-3">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="form-control mb-2 mb-md-0"
+                      />
+
+                      <input
+                        type="text"
+                        placeholder="Phone number"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <input
+                        class="form-check-input d-none d-md-block"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label
+                        class="form-check-label d-none d-md-block"
+                        for="flexCheckChecked"
+                      >
+                        I have read and agree to
+                        <a href="/terms-and-conditions.html">
+                          Terms and conditions
+                        </a>
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-100 mt-md-3">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+                <div class="col-md-7 col-12 px-md-0 text-center">
+                  <h2 class="d-md-none d-block mb-3 text-start">
+                    Live call<span class="hours fs-6 fw-normal">
+                      (09:00 - 17:30 CEST)
+                    </span>
+                  </h2>
+                  <img src="assets/contact-live-call.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-item map">
+              <div class="map-row d-flex w-100 h-100">
+                <img src="assets/contact-map.png" class="d-none d-md-block" />
+                <img src="assets/contact-map-mob.png" class="d-md-none" />
+                <div class="py-md-7 px-md-6 p-4">
+                  <div class="mb-6 d-none d-md-block">
                     <h2>CYOR24</h2>
                     <p>CYOR24 is a brand of CYORMEDIA LTD.</p>
                   </div>
+                  <h2 class="d-md-none mb-3">Contact information</h2>
 
                   <div class="mb-3">
-                    <span>POSTAL ADRESS</span>
+                    <p class="par-light">POSTAL ADRESS</p>
                     <p>Gaugasse 1065203 Wiesbaden, Germany</p>
                   </div>
 
                   <div class="mb-3">
-                    <span>PHONE</span>
+                    <p class="par-light">PHONE</p>
                     <p>+49 611 94 587 444</p>
                   </div>
 
                   <div class="mb-3">
-                    <span>MOBILE</span>
+                    <p class="par-light">MOBILE</p>
                     <p>+49 611 94 587 44 49</p>
                   </div>
 
-                  <span>E-MAIL</span>
+                  <p class="par-light">E-MAIL</p>
                   <p>info@cyor24.com</p>
 
-                  <p class="mt-5">
-                    You can also contact us immediately using
-                    <a href="#">Live chat</a> and <a href="#">Live call.</a>
+                  <p class="mt-3 mt-md-5">
+                    You can also contact us using Contact form and Live call.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -508,7 +695,7 @@
           <div class="first-col mb-4 mb-md-0">
             <img src="assets/logo-footer.svg" class="footer-logo mb-5" />
             <p class="mb-3 mb-md-5">
-              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 Countries
+              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 countries
               with more than <br />
               5,000 B2B clients.
             </p>
@@ -585,9 +772,33 @@
       </div>
     </div>
 
+    <script>
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+      let value = params.slide;
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+        initialSlide: value - 1,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -600,6 +811,7 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/links.js"></script>
   </body>
 </html>

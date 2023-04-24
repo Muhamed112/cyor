@@ -12325,8 +12325,15 @@ p {
   }
 }
 .services-tabs .tab-content .services-studies .card img {
+  object-fit: cover;
+  height: 240px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
+}
+@media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-studies .card img {
+    height: 160px;
+  }
 }
 .services-tabs .tab-content .services-studies .card .card-content {
   background-color: #f3f4f6;

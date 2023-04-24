@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - Career</title>
     <link rel="stylesheet" href="dist/career.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -20,6 +29,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,12 +63,13 @@
                   <div class="resources-row d-flex justify-content-between">
                     <div class="resource-item">
                       <h3 class="mb-5">
-                        Learn more about online <br />
+                        Learn more about online
+                        <br class="d-none d-xxl-block" />
                         <span class="text-secondary">reputation</span> and
-                        online <br />
+                        online <br class="d-none d-xxl-block" />
                         <span class="text-secondary">presence</span>
                       </h3>
-                      <p>
+                      <p class="text-nowrap">
                         For more questions feel free to
                         <a href="/contact.html" class="text-white">
                           contact us
@@ -68,8 +79,9 @@
                     <div class="resource-item">
                       <h4 class="mb-2">Online reputation management</h4>
                       <p>
-                        Partner with CYOR24 and protect your brand <br />image,
-                        improve customer trust and loyalty, <br />
+                        Partner with CYOR24 and protect your brand
+                        <br class="d-none d-xxl-block" />image, improve customer
+                        trust and loyalty, <br class="d-none d-xxl-block" />
                         and maintain a positive online reputation.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -85,9 +97,9 @@
                       <h4 class="mb-2">Online presence management</h4>
                       <p>
                         We will make sure your business looks good online!
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         We help businesses to establish and maintain their
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         online presence.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -108,24 +120,10 @@
               >
                 <div class="resources-row">
                   <div class="resource-item mb-3">
-                    <a href="/services.html" id="orm-link">
-                      Online reputation management
-                    </a>
-                    <p>
-                      Partner with CYOR24 and protect your brand image, improve
-                      customer trust and loyalty, and maintain a positive online
-                      reputation.
-                    </p>
+                    <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link">
-                      Online presence management
-                    </a>
-                    <p>
-                      We will make sure your business looks good online!
-                      <br />We help businesses to establish and maintain their
-                      online presence.
-                    </p>
+                    <a href="/services.html" id="opm-link"> OPM </a>
                   </div>
                 </div>
               </div>
@@ -164,7 +162,7 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">FAQ</h4>
-                      <p>Why are online presence and reputation important?</p>
+                      <p>What is online presence management?</p>
                       <p>What is a Google Business Profile?</p>
                       <p>Can i remove a negative Google review?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -178,9 +176,9 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">Blog</h4>
-                      <p>The consequences of a bad Online Reputation.</p>
-                      <p>How to optimize Google Business profile?</p>
-                      <p>How does the Google Search Algorithm work?</p>
+                      <p>Does my Business need a Website?</p>
+                      <p>How to Improve your Online Visibility</p>
+                      <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
                           href="/resources.html"
@@ -200,19 +198,9 @@
                 <div class="resources-row">
                   <div class="resource-item mb-3">
                     <a href="/resources.html" id="faq-link">FAQ</a>
-                    <p>
-                      Why are online presence and reputation important? <br />
-                      What is a Google Business Profile? <br />
-                      Can I remove a negative Google review?
-                    </p>
                   </div>
                   <div class="resource-item">
                     <a href="/resources.html" id="blog-link">Blog</a>
-                    <p>
-                      The consequences of a bad Online Reputation. <br />
-                      How to optimize Google Business Profile? <br />
-                      How does the Google Search Algorithm work?
-                    </p>
                   </div>
                 </div>
               </div>
@@ -236,35 +224,35 @@
               </a>
               <ul class="dropdown-menu bg-primary">
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/ger.png" />
                     <span class="d-none d-md-block">DE</span>
                     <span class="d-md-none">German</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/nl.png" />
                     <span class="d-none d-md-block">NL</span>
                     <span class="d-md-none">Dutch</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/es.png" />
                     <span class="d-none d-md-block">ES</span>
                     <span class="d-md-none">Spanish</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/it.png" />
                     <span class="d-none d-md-block">IT</span>
                     <span class="d-md-none">Italian</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/cro.png" />
                     <span class="d-none d-md-block">HR</span>
                     <span class="d-md-none">Croatian</span>
@@ -310,20 +298,34 @@
     <div class="content text-primary">
       <section class="career-hero text-white">
         <div class="container">
-          <div class="career-hero-content">
+          <div class="career-hero-content d-none d-md-block">
             <h1 class="mb-4">
               Are you ready for a new chapter in your life? Join our team.
             </h1>
-            <h4 class="mb-6 fw-normal">
-              CYOR24.com operates in 20 countries and we are always looking for
-              new colleagues. Check some of our open positions.
+            <h4 class="mb-md-5 fw-normal">
+              Join our global team at CYOR24.com - we're currently operating in
+              20 countries and constantly expanding.
             </h4>
-            <div class="seperator"></div>
+            <div class="seperator mt-md-2 mb-md-5"></div>
           </div>
         </div>
       </section>
 
-      <section class="join-us">
+      <section class="mob-desc d-md-none mt-3 pt-3 mb-4">
+        <div class="container">
+          <h1 class="mb-3">
+            Are you ready for a new chapter in your life? Join our team.
+          </h1>
+          <p class="mb-3">
+            CYOR24.com operates in 20 countries and we are always looking for
+            new colleagues.
+          </p>
+          <p class="mb-3">Scroll down to see what do we offer.</p>
+          <div class="separator pt-4 border-bottom border-info"></div>
+        </div>
+      </section>
+
+      <section class="join-us d-none d-md-block">
         <div class="container">
           <h2 class="mb-6 text-light">Why should you join us?</h2>
           <div class="row card-row">
@@ -339,8 +341,8 @@
                   width="120px"
                 />
                 <p class="mt-5">
-                  CYOR24 offers a competitive salary and benefits to our
-                  employees
+                  CYOR24 offers a <br />compensation package that is both
+                  competitive and comprehensive.
                 </p>
               </div>
             </div>
@@ -357,8 +359,8 @@
                   width="120px"
                 />
                 <p class="mt-5">
-                  We provide opportunities for career growth and development.
-                  With us you can achieve all your goals.
+                  We believe in empowering our team members with the tools and
+                  resources they need to reach their full potential.
                 </p>
               </div>
             </div>
@@ -384,7 +386,70 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="slider-first d-md-none">
+        <div class="container">
+          <h2 class="mb-4 d-md-none">Why should you join us?</h2>
+        </div>
+
+        <div class="swiper swiper-join swiper-container-pointer-events">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card text-center">
+                <h3 class="mb-2 fw-semibold">
+                  Competitive <br />
+                  compensation
+                </h3>
+                <img
+                  src="assets/career/dollar.svg"
+                  height="120px"
+                  width="120px"
+                />
+                <p class="mt-3">
+                  CYOR24 offers a compensation package that is both competitive
+                  and comprehensive.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center">
+                <h3 class="mb-2 fw-semibold">
+                  Career <br />
+                  development
+                </h3>
+                <img
+                  src="assets/career/arrow.svg"
+                  height="120px"
+                  width="120px"
+                />
+                <p class="mt-3">
+                  We believe in empowering our team members with the tools and
+                  resources they need to reach their full potential.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center">
+                <h3 class="mb-2 fw-semibold">
+                  Cutting-edge <br />
+                  technology
+                </h3>
+                <img
+                  src="assets/career/react.svg"
+                  height="120px"
+                  width="120px"
+                />
+                <p class="mt-3">
+                  Our company invests in technology to help our employees be
+                  more efficient and our clients more successful.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="benefits d-none d-md-block">
         <div class="container">
           <h2 class="mb-6">Other benefits</h2>
           <div class="row card-row">
@@ -402,7 +467,7 @@
                 <h3 class="mb-3">Innovative culture</h3>
                 <p>
                   We foster creativity and encourage experimentation, that lead
-                  to great solutions.
+                  to great results.
                 </p>
               </div>
             </div>
@@ -441,46 +506,99 @@
                 <h3 class="mb-3">Impactful work</h3>
                 <p>
                   Our products and services make a meaningful difference in
+                  people's lives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="seperator pt-md-4 border-bottom border-info"></div>
+        </div>
+      </section>
+
+      <section class="slider-second d-md-none">
+        <div class="container">
+          <h2 class="mb-4 d-md-none">Other benefits</h2>
+        </div>
+
+        <div class="swiper swiper-benefits swiper-container-pointer-events">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card mb-3">
+                <h3 class="mb-3">Mission-driven</h3>
+                <p>
+                  We prioritize our purpose and values over profits, striving to
+                  make a positive impact.
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="mb-3">Industry leader</h3>
+                <p>
+                  We are a recognized leader in our industry, with a reputation
+                  for excellence.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mb-3">
+                <h3 class="mb-3">Innovative culture</h3>
+                <p>
+                  We foster creativity and encourage experimentation, that lead
+                  to great solutions.
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="mb-3">Diversity and inclusion</h3>
+                <p>
+                  We are committed to fostering a diverse, equitable, and
+                  inclusive workplace.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mb-3">
+                <h3 class="mb-3">Strong company culture</h3>
+                <p>
+                  Our company culture is built on a foundation of mutual
+                  respect, trust, and collaboration.
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="mb-3">Impactful work</h3>
+                <p>
+                  Our products and services make a meaningful difference in
                   people's lives
                 </p>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <section class="gallery">
-        <div class="container">
-          <h2 class="mb-6">Take a look at our company</h2>
-          <div class="gallery-row d-flex">
-            <img class="img-item" src="assets/career/office.png" />
-            <img class="img-item mx-3" src="assets/career/meeting-room.png" />
-            <img
-              class="img-item"
-              src="assets/career/meeting.png"
-              width="486px"
-            />
+        <div class="container pb-md-0 pb-4">
+          <div class="separator pb-4 border-top border-info d-md-none"></div>
+          <h2 class="mb-4 text-primary">Take a look at our company</h2>
+          <div class="gallery-row d-flex mt-md-3 w-100">
+            <img src="assets/career/office.png" />
+            <img src="assets/career/meeting-room.png" />
+            <img src="assets/career/meeting.png" />
           </div>
-          <div class="gallery-row d-flex">
-            <img class="img-item" src="assets/career/talk.png" width="486px" />
-            <img
-              class="img-item mx-3"
-              src="assets/career/new-meeting.png"
-              width="486px"
-            />
-            <img
-              class="img-item"
-              src="assets/career/new-office.png"
-              width="216px"
-            />
+          <div class="gallery-row d-flex w-100">
+            <img src="assets/career/talk.png" />
+            <img src="assets/career/new-meeting.png" />
+            <img src="assets/career/new-office.png" />
           </div>
+          <div
+            class="seperator border-bottom border-info pt-md-6 d-none d-md-block"
+          ></div>
         </div>
       </section>
 
-      <section class="positions">
+      <section class="positions d-none d-md-block">
         <div class="container">
           <h2 class="mb-6">Open positions</h2>
-          <div class="positions-row d-flex">
+          <div class="positions-row">
             <div class="position-card">
               <div class="card-header">
                 <h3 class="mb-3">Customer support specialist (GER)</h3>
@@ -500,7 +618,7 @@
                 <p class="mb-3">
                   You will be the first point of contact for customers, and your
                   primary responsibility will be to provide timely and accurate
-                  responses to customer inquiries, complaints, and issues.
+                  responses to customer inquiries and issues.
                 </p>
                 <p>
                   Click
@@ -508,7 +626,9 @@
                   requirements.
                 </p>
               </div>
-              <button class="btn-primary w-100">Read more</button>
+              <button class="btn-primary w-100 frame-open" id="job1">
+                Read more
+              </button>
             </div>
             <div class="position-card mx-3">
               <div class="card-header">
@@ -537,7 +657,9 @@
                   requirements.
                 </p>
               </div>
-              <button class="btn-primary w-100">Read more</button>
+              <button class="btn-primary w-100 frame-open" id="job2">
+                Read more
+              </button>
             </div>
             <div class="position-card">
               <div class="card-header">
@@ -566,23 +688,809 @@
                   requirements.
                 </p>
               </div>
-              <button class="btn-primary w-100">Read more</button>
+              <button class="btn-primary w-100 frame-open" id="job3">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div class="position-frame p-7" id="frame-job1">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-md-4 mb-3 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">Customer support <br />specialist (GER)</h3>
+                <p>Wiesbaden, Germany</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 pt-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form">
+                <button class="btn-primary">Apply</button>
+              </a>
+            </div>
+          </div>
+          <div class="position-frame p-7" id="frame-job2">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-md-4 mb-3 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">Customer support <br />specialist (ITA)</h3>
+                <p>Torino, Italy</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 pt-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form">
+                <button class="btn-primary">Apply</button>
+              </a>
+            </div>
+          </div>
+          <div class="position-frame p-7" id="frame-job3">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-md-4 mb-3 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">
+                  Search engine <br />optimization specialist
+                </h3>
+                <p>Weisbaden, Germany</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 pt-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form">
+                <button class="btn-primary">Apply</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-third d-md-none" id="positions-swiper">
+        <div class="container">
+          <h2 class="mb-4 d-md-none">Open positions</h2>
+        </div>
+
+        <div class="swiper swiper-positions swiper-container-pointer-events">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="position-card">
+                <div class="card-header">
+                  <h3 class="mb-3">Customer support specialist (GER)</h3>
+                  <p>Wiesbaden, Germany</p>
+                </div>
+                <div class="card-content mb-4">
+                  <p class="mb-3 fw-semibold">Job Summary:</p>
+                  <p class="mb-3">
+                    We are currently seeking a highly motivated and
+                    detail-oriented Customer Support Specialist to join our
+                    team.
+                  </p>
+                  <p class="mb-3">
+                    As a Customer Support Specialist, you will be responsible
+                    for providing exceptional customer service and support to
+                    our clients.
+                  </p>
+                  <p class="mb-3">
+                    You will be the first point of contact for customers, and
+                    your primary responsibility will be to provide timely and
+                    accurate responses to customer inquiries, complaints, and
+                    issues.
+                  </p>
+                  <p>
+                    Click
+                    <span class="text-decoration-underline">Read more</span> for
+                    requirements.
+                  </p>
+                </div>
+                <button class="btn-primary w-100 frame-open" id="job1">
+                  Read more
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-card">
+                <div class="card-header">
+                  <h3 class="mb-3">Customer support specialist (ITA)</h3>
+                  <p>Torino, Italy</p>
+                </div>
+                <div class="card-content mb-5">
+                  <p class="mb-3 fw-semibold">Job Summary:</p>
+                  <p class="mb-3">
+                    This role is responsible for providing excellent customer
+                    service and support to clients.
+                  </p>
+                  <p class="mb-3">
+                    They will be the first point of contact for customers and
+                    will assist with inquiries, complaints, and issues.
+                  </p>
+                  <p class="mb-3">
+                    The primary responsibilities of this role include responding
+                    to inquiries in a timely and accurate manner, resolving
+                    customer issues and complaints, and documenting customer
+                    interactions and maintaining accurate records.
+                  </p>
+                  <p>
+                    Click
+                    <span class="text-decoration-underline">Read more</span> for
+                    requirements.
+                  </p>
+                </div>
+                <button class="btn-primary w-100 frame-open" id="job2">
+                  Read more
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-card">
+                <div class="card-header">
+                  <h3 class="mb-3">Search engine optimization specialist</h3>
+                  <p>Wiesbaden, Germany</p>
+                </div>
+                <div class="card-content mb-5">
+                  <p class="mb-3 fw-semibold">Job Summary:</p>
+                  <p class="mb-3">
+                    We are seeking an experienced and results-driven SEO
+                    Specialist to join our team.
+                  </p>
+                  <p class="mb-3">
+                    As an SEO Specialist, you will be responsible for improving
+                    our clients' search engine rankings and driving traffic to
+                    their websites.
+                  </p>
+                  <p class="mb-3">
+                    You will work closely with the marketing team to develop and
+                    implement SEO strategies, conduct keyword research, optimize
+                    website content, and track website performance metrics.
+                  </p>
+                  <p>
+                    Click
+                    <span class="text-decoration-underline">Read more</span> for
+                    requirements.
+                  </p>
+                </div>
+                <button class="btn-primary w-100 frame-open" id="job3">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container">
+          <div class="position-frame p-4" id="frame-mob-job1">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-4 mb-4 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">Customer support <br />specialist (GER)</h3>
+                <p>Wiesbaden, Germany</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form" class="btn-link">
+                <button class="btn-primary mt-4">Apply</button>
+              </a>
+              <a class="frame-close w-100" href="#positions-swiper">
+                <button class="btn-secondary mt-2 w-100 bg-transparent">
+                  Back to jobs listing
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="position-frame p-4" id="frame-mob-job2">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-md-4 mb-3 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">Customer support <br />specialist (ITA)</h3>
+                <p>Torino, Italy</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 pt-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form" class="btn-link">
+                <button class="btn-primary mt-4">Apply</button>
+              </a>
+              <a class="frame-close w-100" href="#positions-swiper">
+                <button class="btn-secondary mt-2 w-100 bg-transparent">
+                  Back to jobs listing
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="position-frame p-4" id="frame-mob-job3">
+            <div
+              class="frame-header d-flex justify-content-between align-items-start pb-md-4 mb-3 border-bottom border-info"
+            >
+              <div class="header">
+                <h3 class="mb-3">
+                  Search engine <br />optimization specialist
+                </h3>
+                <p>Weisbaden, Germany</p>
+              </div>
+              <a class="frame-close">
+                <img src="/assets/close-black.svg" />
+              </a>
+            </div>
+
+            <div
+              class="frame-content mb-3 pb-3 pt-3 border-bottom border-info d-flex justify-content-between"
+            >
+              <div class="content-col mb-3">
+                <p class="fw-semibold mb-3">Job Summary:</p>
+                <p class="mb-3">
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+                <p class="mb-3">
+                  As a Customer Support Specialist, you will be responsible for
+                  providing exceptional customer service and support to our
+                  clients.
+                </p>
+                <p>
+                  We are currently seeking a highly motivated and
+                  detail-oriented Customer Support Specialist to join our team.
+                </p>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Key responsibilities:</p>
+                <ul class="mb-0">
+                  <li>
+                    Provide prompt and courteous responses to customer inquiries
+                    via phone, email, chat, and other communication channels
+                  </li>
+                  <li>
+                    Resolve customer issues and complaints in a timely and
+                    effective manner
+                  </li>
+                  <li>
+                    Escalate complex customer issues to appropriate teams or
+                    managers as needed
+                  </li>
+                  <li>
+                    Document customer interactions and maintain accurate records
+                    of customer inquiries and issues
+                  </li>
+                  <li>
+                    Continuously update customer database and keep records
+                    curren
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to improve customer
+                    service processes and procedures
+                  </li>
+                  <li>
+                    Provide feedback to management on customer issues and
+                    recommend process improvements
+                  </li>
+                </ul>
+              </div>
+              <div class="content-col mb-3">
+                <p class="mb-3 fw-semibold">Requirements:</p>
+                <ul class="mb-0">
+                  <li>
+                    High school diploma or equivalent; associate or bachelor's
+                    degree preferred
+                  </li>
+                  <li>
+                    Minimum of 1-2 years of experience in a customer support
+                    role
+                  </li>
+                  <li>
+                    Excellent communication skills, both verbal and written
+                  </li>
+                  <li>Strong problem-solving and analytical skills</li>
+                  <li>
+                    Ability to multitask and manage multiple customer inquiries
+                    simultaneously
+                  </li>
+                  <li>
+                    Proficient in Microsoft Office Suite and experience with
+                    customer support software and tools
+                  </li>
+                  <li>Ability to work independently and as part of a team</li>
+                  <li>
+                    Ability to work in a fast-paced and dynamic environment
+                  </li>
+                  <li>Strong attention to detail and accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="frame-footer d-flex justify-content-between pt-3">
+              <p>
+                If you are passionate about delivering exceptional customer
+                service and possess the required skills and experience, we would
+                love to hear from you!
+              </p>
+              <a href="#apply-form" class="btn-link">
+                <button class="btn-primary mt-4">Apply</button>
+              </a>
+              <a class="frame-close w-100" href="#positions-swiper">
+                <button class="btn-secondary mt-2 w-100 bg-transparent">
+                  Back to jobs listing
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="apply">
+      <section class="apply mb-md-7 mb-6" id="apply-form">
         <div class="container">
-          <h2 class="mb-6">Apply here</h2>
+          <h2 class="mb-md-6 mb-4">Apply here</h2>
           <div class="row main-row">
             <div class="col-md-6 col-12">
               <form class="apply-form">
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected>Customer support specialist</option>
+                  <option value="1">Customer support specialist (GER)</option>
+                  <option value="2">Customer support specialist (ITA)</option>
+                  <option value="3">
+                    Search engine optimization specialist
+                  </option>
                 </select>
                 <div class="row">
                   <div class="col-md-6 col-126">
@@ -654,9 +1562,12 @@
                 </div>
 
                 <div class="buttons-row d-flex">
-                  <button class="btn-secondary">CV</button>
-                  <button class="btn-secondary mx-3">Biography</button>
-                  <button class="btn-primary fw-semibold">SEND</button>
+                  <div class="first d-flex mb-2 mb-md-0">
+                    <button class="btn-secondary">CV</button>
+                    <button class="btn-secondary mx-md-3">Biography</button>
+                  </div>
+
+                  <button class="btn-primary">SEND</button>
                 </div>
               </form>
             </div>
@@ -664,6 +1575,9 @@
               <img src="assets/career/form-img.png" />
             </div>
           </div>
+          <div
+            class="separator pt-3 border-bottom border-info d-none d-md-block"
+          ></div>
         </div>
       </section>
     </div>
@@ -674,7 +1588,7 @@
           <div class="first-col mb-4 mb-md-0">
             <img src="assets/logo-footer.svg" class="footer-logo mb-5" />
             <p class="mb-3 mb-md-5">
-              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 Countries
+              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 countries
               with more than <br />
               5,000 B2B clients.
             </p>
@@ -751,6 +1665,41 @@
       </div>
     </div>
 
+    <script>
+      const swiper = new Swiper(".swiper-join ", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swiper2 = new Swiper(".swiper-benefits ", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swiper23 = new Swiper(".swiper-positions ", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

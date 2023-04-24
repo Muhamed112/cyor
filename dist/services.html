@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor - Services</title>
     <link rel="stylesheet" href="dist/services.css" />
+
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -20,6 +25,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,12 +59,13 @@
                   <div class="resources-row d-flex justify-content-between">
                     <div class="resource-item">
                       <h3 class="mb-5">
-                        Learn more about online <br />
+                        Learn more about online
+                        <br class="d-none d-xxl-block" />
                         <span class="text-secondary">reputation</span> and
-                        online <br />
+                        online <br class="d-none d-xxl-block" />
                         <span class="text-secondary">presence</span>
                       </h3>
-                      <p>
+                      <p class="text-nowrap">
                         For more questions feel free to
                         <a href="/contact.html" class="text-white">
                           contact us
@@ -68,8 +75,9 @@
                     <div class="resource-item">
                       <h4 class="mb-2">Online reputation management</h4>
                       <p>
-                        Partner with CYOR24 and protect your brand <br />image,
-                        improve customer trust and loyalty, <br />
+                        Partner with CYOR24 and protect your brand
+                        <br class="d-none d-xxl-block" />image, improve customer
+                        trust and loyalty, <br class="d-none d-xxl-block" />
                         and maintain a positive online reputation.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -85,9 +93,9 @@
                       <h4 class="mb-2">Online presence management</h4>
                       <p>
                         We will make sure your business looks good online!
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         We help businesses to establish and maintain their
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         online presence.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -108,24 +116,10 @@
               >
                 <div class="resources-row">
                   <div class="resource-item mb-3">
-                    <a href="/services.html" id="orm-link">
-                      Online reputation management
-                    </a>
-                    <p>
-                      Partner with CYOR24 and protect your brand image, improve
-                      customer trust and loyalty, and maintain a positive online
-                      reputation.
-                    </p>
+                    <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link">
-                      Online presence management
-                    </a>
-                    <p>
-                      We will make sure your business looks good online!
-                      <br />We help businesses to establish and maintain their
-                      online presence.
-                    </p>
+                    <a href="/services.html" id="opm-link"> OPM </a>
                   </div>
                 </div>
               </div>
@@ -164,7 +158,7 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">FAQ</h4>
-                      <p>Why are online presence and reputation important?</p>
+                      <p>What is online presence management?</p>
                       <p>What is a Google Business Profile?</p>
                       <p>Can i remove a negative Google review?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -178,9 +172,9 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">Blog</h4>
-                      <p>The consequences of a bad Online Reputation.</p>
-                      <p>How to optimize Google Business profile?</p>
-                      <p>How does the Google Search Algorithm work?</p>
+                      <p>Does my Business need a Website?</p>
+                      <p>How to Improve your Online Visibility</p>
+                      <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
                           href="/resources.html"
@@ -200,19 +194,9 @@
                 <div class="resources-row">
                   <div class="resource-item mb-3">
                     <a href="/resources.html" id="faq-link">FAQ</a>
-                    <p>
-                      Why are online presence and reputation important? <br />
-                      What is a Google Business Profile? <br />
-                      Can I remove a negative Google review?
-                    </p>
                   </div>
                   <div class="resource-item">
                     <a href="/resources.html" id="blog-link">Blog</a>
-                    <p>
-                      The consequences of a bad Online Reputation. <br />
-                      How to optimize Google Business Profile? <br />
-                      How does the Google Search Algorithm work?
-                    </p>
                   </div>
                 </div>
               </div>
@@ -236,35 +220,35 @@
               </a>
               <ul class="dropdown-menu bg-primary">
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/ger.png" />
                     <span class="d-none d-md-block">DE</span>
                     <span class="d-md-none">German</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/nl.png" />
                     <span class="d-none d-md-block">NL</span>
                     <span class="d-md-none">Dutch</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/es.png" />
                     <span class="d-none d-md-block">ES</span>
                     <span class="d-md-none">Spanish</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/it.png" />
                     <span class="d-none d-md-block">IT</span>
                     <span class="d-md-none">Italian</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/cro.png" />
                     <span class="d-none d-md-block">HR</span>
                     <span class="d-md-none">Croatian</span>
@@ -308,16 +292,16 @@
     </nav>
 
     <div class="content text-primary">
-      <section class="services-hero bg-primary text-white py-md-7">
+      <section class="services-hero py-md-7">
         <div class="container">
           <div class="content mb-md-4">
             <h1 class="mb-3">
               The only online reputation and presence partner you will ever need
             </h1>
             <h4 class="fw-normal">
-              CYOR24 is a specialist in online reputation and presence
-              management, but that is only a small part of our extensive range
-              of services.
+              At CYOR24, we're not just experts in online reputation and
+              presence management - we offer a comprehensive suite of services
+              to help your business thrive.
             </h4>
           </div>
         </div>
@@ -325,9 +309,9 @@
 
       <section class="services-tabs">
         <div class="container">
-          <ul class="nav nav-tabs mb-md-7" id="myTab" role="tablist">
+          <ul class="nav nav-tabs mb-md-7 mb-3" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link active"
                 id="home-tab"
                 data-bs-toggle="tab"
@@ -337,11 +321,14 @@
                 aria-controls="home-tab-pane"
                 aria-selected="true"
               >
-                Online reputation management
-              </button>
+                <span class="d-none d-md-block">
+                  Online reputation managment
+                </span>
+                <span class="d-md-none"> Online reputation </span>
+              </a>
             </li>
             <li class="nav-item" role="presentation">
-              <button
+              <a
                 class="nav-link"
                 id="profile-tab"
                 data-bs-toggle="tab"
@@ -351,8 +338,11 @@
                 aria-controls="profile-tab-pane"
                 aria-selected="false"
               >
-                Online presence management
-              </button>
+                <span class="d-none d-md-block">
+                  Online presence management
+                </span>
+                <span class="d-md-none"> Online presence </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -366,30 +356,30 @@
           >
             <section class="services-intro">
               <div class="container">
-                <div class="row pb-md-7 border-bottom border-info">
+                <div class="row">
                   <div class="col-md-6">
-                    <h2 class="mb-md-7">
+                    <h2 class="mb-md-7 mb-3 mt-3 mt-md-0">
                       What is online reputation management?
                     </h2>
-                    <p class="mb-5">
+                    <p class="mb-md-5 mb-3">
                       Online reputation refers to
-                      <strong>
+                      <strong class="fw-semibold">
                         how your brand is perceived and talked about online
                       </strong>
                       including reviews, ratings, and comments on social media
-                      and other platforms.
+                      or other online platforms.
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-md-5 mb-3">
                       In the past, businesses had more control over their
                       reputations, but now customers have the power to shape a
                       company's image through online reviews.
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-md-5 mb-3">
                       A negative online reputation can have a significant impact
                       on your business, potentially leading to losing customers,
                       revenue, and credibility.
                     </p>
-                    <p>
+                    <p class="pb-3 pb-md-0">
                       By partnering with CYOR24 for online reputation
                       management, businesses can protect their brand image,
                       improve customer trust and loyalty, and maintain a
@@ -399,39 +389,120 @@
                   </div>
 
                   <div class="col-md-6 text-center">
-                    <img src="assets/services/orm/first.png" />
+                    <img
+                      src="assets/services/orm/first.png"
+                      class="my-4 my-md-0 px-5 px-md-0"
+                    />
                   </div>
                 </div>
+                <div
+                  class="seperator pt-md-7 pt-3 border-bottom border-info d-none d-md-block"
+                ></div>
               </div>
             </section>
-            <section class="services-facts">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="row">
+            <section class="services-facts mt-3 mt-md-0">
+              <div class="container pt-md-7 pt-3">
+                <div class="row pb-4 pb-md-0">
                   <div class="col-md-3">
-                    <h2 class="text-light">Facts & stats</h2>
+                    <h2 class="text-light d-none d-md-block">Facts & stats</h2>
+                    <div
+                      class="d-flex d-md-none align-items-center justify-content-between mb-4 mt-3"
+                    >
+                      <h2 class="text-opacity">Facts & stats</h2>
+                      <div class="mob-icon-box">
+                        <img src="/assets/services/icon.svg" />
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-9">
                     <h2 class="mb-4">Did you know that</h2>
-                    <p>
-                      30% of consumers say they have looked up a business’s
-                      reviews while standing or being parked right outside to
-                      decide if they should go in or not?
-                    </p>
+                    <div
+                      id="carouselExampleAutoplaying"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <p
+                          class="carousel-item mb-3 mb-md-0 active"
+                          data-bs-interval="1300"
+                        >
+                          <span class="fw-semibold"> 30% </span>
+                          of consumers say they have looked up a business’s
+                          reviews while standing or being parked right outside
+                          to decide if they should go in or not?
+                        </p>
+
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 90% </span>
+                          of respondents who recalled reading online reviews
+                          claimed that positive online reviews influence buying
+                          decisions.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Google accounts for
+                          <span class="fw-semibold"> 73% </span> of all reviews
+                          worldwide.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 97% </span> of people read
+                          reviews for local businesses.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 92% </span> of B2B buyers
+                          are more likely to purchase after reading a trusted
+                          review
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 93% </span> of consumers
+                          say online reviews impact their purchasing decisions.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 91% </span> of 18-34 year
+                          old trust online reviews as much as personal
+                          recommendations.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          A bad reputation costs a company at least
+                          <span class="fw-semibold"> 10% </span> more per hire.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 68% </span> of consumers
+                          will leave a review if asked.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Customers are willing to spend
+                          <span class="fw-semibold"> 31% </span> more on a
+                          business with excellent reviews.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Customers are willing to spend A one-star increase on
+                          Google my Business rating leads to a
+                          <span class="fw-semibold"> 5-9% </span> increase in
+                          revenue.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div
+                  class="seperator pb-md-7 pb-3 border-bottom border-info d-none d-md-block"
+                ></div>
               </div>
             </section>
             <section class="services-competences">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="w-100 text-end mb-3">
+              <div class="container pt-md-7 pt-3">
+                <div class="w-100 text-md-end mb-md-3 mb-7 mt-3 mt-md-0">
                   <span class="small-title">Our core competences</span>
                 </div>
                 <div class="row align-items-center">
                   <div class="col-md-6 text-center mb-md-7">
-                    <img src="assets/services/orm/competences-1.png" />
+                    <img
+                      src="assets/services/orm/competences-1.png"
+                      width="306px"
+                    />
                   </div>
                   <div class="col-md-6">
-                    <h2 class="mb-4">
+                    <h2 class="mb-4 mt-5">
                       Online monitoring and tracking of your company’s brand
                     </h2>
                     <p class="mb-4">
@@ -444,135 +515,256 @@
                       Learn more
                     </button>
                   </div>
+                </div>
 
+                <div class="row align-items-center">
                   <div class="col-md-6">
                     <h2 class="mb-4">
                       Review management and responding to negative reviews on
                       Google
                     </h2>
                     <p class="mb-4">
-                      Managing Google my Business profile and answering to the
+                      Managing Google Business Profile and answering to the
                       negative reviews on behalf of the company owner.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary fw-semibold mb-3 mb-md-0">
+                      Learn more
+                    </button>
                   </div>
                   <div class="col-md-6 text-center mt-md-7 mb-md-7">
-                    <img src="assets/services/orm/competences-2.png" />
+                    <img
+                      src="assets/services/orm/competences-2.png"
+                      class="my-6 my-md-0"
+                    />
                   </div>
+                </div>
 
-                  <div class="col-md-6 text-center mt-md-7">
-                    <img src="assets/services/orm/competences-3.png" />
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center mt-md-7 mb-md-3">
+                    <img
+                      src="assets/services/orm/competences-3.png"
+                      class="my-4 my-md-0 img-fluid"
+                    />
                   </div>
                   <div class="col-md-6">
                     <h2 class="mb-4">
                       Crisis management and reputation repair
                     </h2>
                     <p class="mb-4">
-                      We are the only Online reputation management company that
-                      is able to fully remove Google my Business reviews. And we
-                      guarantee for the results.
+                      We are the only Online Reputation Management company that
+                      is able to fully remove Google Business Profile reviews
+                      and guarantee for the results.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary fw-semibold mb-3">
+                      Learn more
+                    </button>
                   </div>
                 </div>
+                <div
+                  class="seperator pb-md-6 pb-3 border-bottom border-info"
+                ></div>
               </div>
             </section>
             <section class="services-more">
-              <div class="container border-bottom border-info pt-md-7">
-                <div class="w-100 text-end mb-md-7">
+              <div class="container pt-md-7 pt-3">
+                <div class="w-100 text-md-end mb-md-7 mb-3 mt-3 mt-md-0">
                   <span class="small-title">More ORM services</span>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="icon-box p-3 mb-4">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4"
+                    >
                       <img src="assets/services/orm/search.svg" />
                     </div>
                     <h2 class="mb-4">Search engine optimization (SEO)</h2>
                     <p class="mb-4">
-                      Optimizing a company's website and online content to
-                      ensure high rankings on search engine result pages and
-                      boost the online reputation.
+                      Transform your website from an unnoticed online presence
+                      to a high-traffic destination.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary fw-semibold mb-3 mb-md-0">
+                      Learn more
+                    </button>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="icon-box p-3 mb-4">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4 mt-3 mt-md-0"
+                    >
                       <img src="assets/services/orm/light-bulb.svg" />
                     </div>
                     <h2 class="mb-4">Content creation</h2>
                     <p class="mb-4">
                       We create high-quality content such as blog posts,
-                      articles, and videos to promote positive brand awareness
-                      and address any negative perceptions.
+                      articles, and videos to promote brand awareness and
+                      address any negative perceptions.
                     </p>
                     <button class="btn-primary fw-semibold">Learn more</button>
                   </div>
                 </div>
               </div>
             </section>
-            <section class="services-info mb-md-7">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="d-flex justify-content-between">
-                  <p>
-                    <span class="fw-semibold">97%</span> of people read reviews
-                    for local businesses.
-                  </p>
-                  <span>/</span>
-                  <p>
-                    <span class="fw-semibold">92%</span> of B2B buyers are more
-                    likely to purchase after reading a trusted review
-                  </p>
-                  <span>/</span>
-                  <p><span class="fw-semibold">68%</span> of consumers</p>
+            <section class="services-info mb-md-7 pb-3 pb-md-0">
+              <div class="container">
+                <div
+                  class="seperator pt-md-7 pt-4 border-top border-info"
+                ></div>
+                <div class="marquee-section">
+                  <div class="marquee-div">
+                    <div class="marquee">
+                      <span>
+                        <span class="fw-semibold">40%</span> of small businesses
+                        didn’t have a web presence in 2023
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">60.67%</span> of website
+                        traffic comes from mobile devices
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">92.3%</span> of internet users
+                        access the internet using a mobile phone
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">30%</span> of people would
+                        rather return to a website they’ve purchased from in the
+                        past.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        It’s estimated that by the year 2040,
+                        <span class="fw-semibold">95%</span> of purchases will
+                        be through e-Commerce.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">71%</span> of people believe
+                        they’ll get a better deal online, even if the item isn’t
+                        technically on sale.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">25%</span> of small businesses
+                        have no idea what their lead generation conversion rates
+                        are.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">61%</span> of people will make
+                        a purchase after reading a recommendation on a blog
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        Websites with blog content have
+                        <span class="fw-semibold">434%</span> more search
+                        engine-indexed webpages
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">78%</span> of small businesses
+                        attract new customers and engage existing ones using
+                        social media.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        One in four small businesses (28%) don't have a website,
+                        <span class="fw-semibold">44%</span> plan to create one
+                        in 2022.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        A bad reputation costs a company at least
+                        <span class="fw-semibold">10%</span> more per hire.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">68%</span> of consumers will
+                        leave a review if asked.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        Customers are willing to spend
+                        <span class="fw-semibold">31%</span> more on a business
+                        with excellent reviews.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        A one-star increase on Google my Business rating leads
+                        to a <span class="fw-semibold">5-9%</span> increase in
+                        revenue.
+                      </span>
+                      <span class="mx-3">/</span>
+                    </div>
+                  </div>
                 </div>
+                <div
+                  class="seperator pt-md-7 pt-4 mb-4 mb-md-0 border-bottom border-info"
+                ></div>
               </div>
             </section>
-            <section class="services-contact bg-primary mb-md-7">
+            <section class="services-contact bg-primary mb-md-7 mb-4">
               <div class="container">
                 <div class="row text-white">
                   <div class="col-md-6">
-                    <h1 class="mb-4 text-secondary">Pay only for result!</h1>
+                    <h1 class="mb-mb-4 mb-3 text-secondary">
+                      Pay only for result!
+                    </h1>
                     <p class="mb-3">
                       The reason for CYOR24 fast expansion is primarily due to
-                      our "pay-only-for-results" approach.
+                      our
+                      <span class="fw-semibold">"pay-only-for-results"</span>
+                      approach.
                     </p>
-                    <p>
-                      This means that we only require clients to pay for our
-                      services if we successfully resolve their online
-                      reputation issues caused by negative reviews.
+                    <p class="mb-3 mb-md-0">
+                      We're so confident in our ability to help you improve your
+                      online reputation that we offer a no-risk guarantee. That
+                      means you only pay for our services if we successfully
+                      resolve the issues.
                     </p>
                   </div>
 
                   <div class="col-md-6">
-                    <h1 class="mb-4 text-secondary">Contact us</h1>
-                    <p class="mb-3">
+                    <h1 class="mb-md- 4 mb-3 mt-3 mt-md-0 text-secondary">
+                      Contact us
+                    </h1>
+                    <p class="mb-4 mb-md-3">
                       Submit your phone number and we will get back to you as
                       soon as possible.
                     </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <input
-                          class="input form-control"
-                          placeholder="Name and surname"
-                          type="text"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <input
-                          class="input form-control"
-                          placeholder="Your phone number"
-                          type="number"
-                        />
-                      </div>
-                      <div class="col-12 mt-2">
-                        <button
-                          class="btn-primary fw-bolder w-100"
-                          type="submit"
-                        >
-                          Submit
-                        </button>
-                      </div>
+                    <div class="form-inputs d-flex">
+                      <input
+                        class="input form-control"
+                        placeholder="Name and surname"
+                        type="text"
+                      />
+
+                      <input
+                        class="input form-control"
+                        placeholder="Your phone number"
+                        type="text"
+                      />
+                    </div>
+
+                    <div class="col-12 mt-2">
+                      <button class="btn-primary w-100" type="submit">
+                        Submit
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -580,37 +772,39 @@
             </section>
             <section class="services-studies mb-md-7">
               <div class="container">
-                <h2 class="mb-4">Case studies</h2>
-                <div class="row mt-md-3 pb-md-7 border-bottom border-info">
+                <h2 class="mb-4 mt-2 mt-md-0">Blog</h2>
+                <div class="row pt-md-3 pt-2">
                   <div class="col-md-6">
-                    <div class="card border-0">
-                      <img
-                        src="/assets/resources/blog-img-placeholder.png"
-                        class="w-100"
-                      />
+                    <div class="card border-0 mb-4 mb-md-0">
+                      <img src="/assets/resources/blog-1.png" class="w-100" />
                       <div class="card-content">
-                        <h4 class="fw-normal">
-                          From 2.7 stars on Google to 36% increase in revenue
-                        </h4>
+                        <p class="fw-normal">
+                          What are the Most Important Actions a Company can Take
+                          to Improve Online Reputation?
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="card border-0">
-                      <img src="/assets/resources/blog-img-placeholder.png" />
+                    <div class="card border-0 mb-4 mb-md-0">
+                      <img src="/assets/resources/blog-2.png" />
                       <div class="card-content">
-                        <h4 class="fw-normal">
-                          From 2.7 stars on Google to 36% increase in revenue
-                        </h4>
+                        <p class="fw-normal">
+                          Should a Small Local Business be Concerned About
+                          Negative Reviews on Google?
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div
+                  class="seperator pt-md-7 pt-3 border-bottom border-info"
+                ></div>
               </div>
             </section>
-            <section class="services-bottom mb-md-7">
+            <section class="services-bottom mb-md-7 mb-6 pt-md-0 pt-3">
               <div class="container">
-                <h2 class="mb-3">
+                <h2 class="mb-3 mt-3 mt-md-0">
                   Maybe interested in online presence management?
                 </h2>
                 <p class="mb-3">
@@ -619,7 +813,15 @@
                 </p>
                 <p class="fw-semibold">
                   Check out our
-                  <a href="#" id="#opm">online presence management services.</a>
+                  <a
+                    href="#profile-tab-pane"
+                    data-toggle="tab"
+                    role="tab"
+                    class="tab-link"
+                    onclick="topFunction()"
+                  >
+                    online presence management services.
+                  </a>
                 </p>
               </div>
             </section>
@@ -633,90 +835,180 @@
           >
             <section class="services-intro">
               <div class="container">
-                <div class="row pb-md-7 border-bottom border-info">
+                <div class="row">
                   <div class="col-md-6">
-                    <h2 class="mb-md-7">What is online presence management?</h2>
-                    <p class="mb-5">
+                    <h2 class="mb-md-7 mb-3 mt-3 mt-md-0">
+                      What is online presence management?
+                    </h2>
+                    <p class="mb-md-5 mb-3">
                       Online presence refers to the collective
-                      <strong>
+                      <strong class="fw-semibold">
                         digital footprint or representation of a brand, or
                         organization on the internet.
                       </strong>
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-md-5 mb-3">
                       A poor online presence leads directly to missed business
                       opportunities, potential partnerships or collaborations.
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-md-5 mb-3">
                       In order to improve your online presence, it's essential
                       to focus on aspects such as responsive web design,
                       user-friendly interface, visually appealing graphics,
                       relevant and high-quality content, and search engine
                       optimization.
                     </p>
-                    <p>
-                      By incorporating these elements, we can enhance the user
-                      experience, increase engagement, and improve the website's
-                      visibility and ranking on search engines, ultimately
-                      resulting in a positive online presence.
+                    <p class="pb-3 pb-md-0">
+                      By weaving these key elements into your website, we're
+                      able to elevate the user experience, boost engagement, and
+                      catapult your website to the top of search engine results
+                      pages.
                     </p>
                   </div>
 
                   <div class="col-md-6 text-center">
-                    <img src="assets/services/opm/first.png" />
+                    <img
+                      src="assets/services/opm/first.png"
+                      class="my-4 my-md-0 px-5 px-md-0"
+                    />
                   </div>
                 </div>
               </div>
             </section>
-            <section class="services-facts">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="row">
+            <section class="services-facts mt-3 mt-md-0">
+              <div class="container pt-md-7 pt-3">
+                <div class="row pb-4 pb-md-0">
                   <div class="col-md-3">
-                    <h2 class="text-light">Facts & stats</h2>
+                    <h2 class="text-light d-none d-md-block">Facts & stats</h2>
+                    <div
+                      class="d-flex d-md-none align-items-center justify-content-between mb-4 mt-3"
+                    >
+                      <h2 class="text-opacity">Facts & stats</h2>
+                      <div class="mob-icon-box">
+                        <img src="/assets/services/icon.svg" />
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-9">
                     <h2 class="mb-4">Did you know that</h2>
-                    <p>
-                      Websites with blog content have 434% more search
-                      engine-indexed webpages.
-                    </p>
+                    <div
+                      id="carouselExampleAutoplaying"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <p class="carousel-item mb-3 mb-md-0 active">
+                          <span class="fw-semibold"> 40% </span>
+                          of small businesses didn’t have a web presence in 2023
+                        </p>
+
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 60.67% </span>
+                          of website traffic comes from mobile devices
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 92.3% </span> of internet
+                          users access the internet using a mobile phone
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 30% </span> of people would
+                          rather return to a website they’ve purchased from in
+                          the past.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          It’s estimated that by the year 2040,
+                          <span class="fw-semibold"> 95% </span> of purchases
+                          will be through e-Commerce.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 71% </span> of people
+                          believe they’ll get a better deal online, even if the
+                          item isn’t technically on sale.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 25% </span> of small
+                          businesses have no idea what their lead generation
+                          conversion rates are.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 61% </span> of people will
+                          make a purchase after reading a recommendation on a
+                          blog
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          Websites with blog content have
+                          <span class="fw-semibold"> 434% </span> more search
+                          engine-indexed webpages.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          <span class="fw-semibold"> 78% </span> of small
+                          businesses attract new customers and engage existing
+                          ones using social media.
+                        </p>
+                        <p class="carousel-item mb-3 mb-md-0">
+                          One in four small businesses
+                          <span class="fw-semibold"> (28%) </span> don't have a
+                          website, 44% plan to create one in 2022.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div
+                  class="seperator pb-md-7 pb-3 border-bottom border-info d-none d-md-block"
+                ></div>
               </div>
             </section>
             <section class="services-competences">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="w-100 text-end mb-3">
+              <div class="container pt-md-7 pt-3">
+                <div class="w-100 text-md-end mb-md-3 mb-7 mt-3 mt-md-0">
                   <span class="small-title">Our core competences</span>
                 </div>
                 <div class="row align-items-center">
                   <div class="col-md-6 text-center mb-md-7">
-                    <img src="assets/services/opm/competences-1.png" />
+                    <img
+                      src="assets/services/opm/competences-1.png"
+                      width="306px"
+                    />
                   </div>
                   <div class="col-md-6">
-                    <h2 class="mb-4">Website development</h2>
+                    <h2 class="mb-4 mt-5">Website development</h2>
                     <p class="mb-4">
                       We design and develop compelling, mobile and user-friendly
                       websites that meet the specific needs of clients and help
                       them to significantly improve their online presence.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary mt-3 fw-semibold">
+                      Learn more
+                    </button>
                   </div>
+                </div>
 
+                <div class="row align-items-center">
                   <div class="col-md-6">
                     <h2 class="mb-4">Digital marketing</h2>
                     <p class="mb-4">
                       Increase customer engagement, win new clients or improve
                       brand awareness. We got you covered.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary fw-semibold mb-3 mb-md-0">
+                      Learn more
+                    </button>
                   </div>
-                  <div class="col-md-6 text-center mb-md-7">
-                    <img src="assets/services/opm/competences-2.png" />
+                  <div class="col-md-6 text-center mt-md-7 mb-md-7">
+                    <img
+                      src="assets/services/opm/competences-2.png"
+                      class="my-6 my-md-0"
+                    />
                   </div>
+                </div>
 
-                  <div class="col-md-6 text-center">
-                    <img src="assets/services/opm/competences-3.png" />
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center mt-md-7 mb-md-3">
+                    <img
+                      src="assets/services/opm/competences-3.png"
+                      class="my-4 my-md-0 img-fluid"
+                    />
                   </div>
                   <div class="col-md-6">
                     <h2 class="mb-4">E-commerce development</h2>
@@ -724,21 +1016,26 @@
                       We build e-commerce solutions that convert web shop
                       visitors into buying customers.
                     </p>
-                    <button class="btn-primary mt-3 fw-semibold">
+                    <button class="btn-primary mb-3 fw-semibold">
                       Learn more
                     </button>
                   </div>
                 </div>
+                <div
+                  class="seperator pb-md-6 pb-3 border-bottom border-info"
+                ></div>
               </div>
             </section>
             <section class="services-more">
-              <div class="container border-bottom border-info pt-md-7">
-                <div class="w-100 text-end mb-md-7">
+              <div class="container pt-md-7 pt-3">
+                <div class="w-100 text-md-end mb-md-7 mb-3 mt-3 mt-md-0">
                   <span class="small-title">More OPM services</span>
                 </div>
                 <div class="row">
-                  <div class="col-md-6 mb-md-6">
-                    <div class="icon-box p-3 mb-4">
+                  <div class="col-md-6">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4"
+                    >
                       <img src="assets/services/opm/info.svg" />
                     </div>
                     <h2 class="mb-4">Social media management</h2>
@@ -747,11 +1044,15 @@
                       maintain a positive image and engage with potential
                       customers.
                     </p>
-                    <button class="btn-primary fw-semibold">Learn more</button>
+                    <button class="btn-primary fw-semibold mb-3 mb-md-0">
+                      Learn more
+                    </button>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="icon-box p-3 mb-4">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4 mt-3 mt-md-0"
+                    >
                       <img src="assets/services/opm/pallete.svg" />
                     </div>
                     <h2 class="mb-4">Graphic design</h2>
@@ -763,7 +1064,9 @@
                   </div>
 
                   <div class="col-md-6 mt-md-6">
-                    <div class="icon-box p-3 mb-4">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4 mt-3 mt-md-0"
+                    >
                       <img src="assets/services/opm/smiley.svg" />
                     </div>
                     <h2 class="mb-4">UX design</h2>
@@ -775,7 +1078,9 @@
                   </div>
 
                   <div class="col-md-6 mt-md-6">
-                    <div class="icon-box p-3 mb-4">
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center mb-4 mt-3 mt-md-0"
+                    >
                       <img src="assets/services/opm/box.svg" />
                     </div>
                     <h2 class="mb-4">UI design</h2>
@@ -788,24 +1093,118 @@
                 </div>
               </div>
             </section>
-            <section class="services-info mb-md-7">
-              <div class="container py-md-7 border-bottom border-info">
-                <div class="d-flex justify-content-between">
-                  <p>
-                    <span class="fw-semibold">97%</span> of people read reviews
-                    for local businesses.
-                  </p>
-                  <span>/</span>
-                  <p>
-                    <span class="fw-semibold">92%</span> of B2B buyers are more
-                    likely to purchase after reading a trusted review
-                  </p>
-                  <span>/</span>
-                  <p><span class="fw-semibold">68%</span> of consumers</p>
+            <section class="services-info mb-md-7 pb-3 pb-md-0">
+              <div class="container">
+                <div
+                  class="seperator pt-md-7 pt-4 border-top border-info"
+                ></div>
+                <div class="marquee-section">
+                  <div class="marquee-div">
+                    <div class="marquee text-primary">
+                      <span>
+                        <span class="fw-semibold">97%</span> of people read
+                        reviews for local businesses.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">92%</span> of B2B buyers are
+                        more likely to purchase after reading a trusted review
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">68%</span> of consumers
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        Google accounts for
+                        <span class="fw-semibold">73%</span> of all reviews
+                        worldwide.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">30%</span> of consumers say
+                        they have looked up a business’s reviews while standing
+                        or being parked right outside to decide if they should
+                        go in or not.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">90%</span> of respondents who
+                        recalled reading online reviews claimed that positive
+                        online reviews influence buying decisions.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">86%</span> said buying
+                        decisions were influenced by negative online reviews.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">97%</span> people read reviews
+                        for local businesses.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">92%</span> of B2B buyers are
+                        more likely to purchase after reading a trusted review
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">93%</span> of consumers say
+                        online reviews impact their purchasing decisions.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">91%</span> of 18-34 year old
+                        trust online reviews as much as personal
+                        recommendations.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        A bad reputation costs a company at least
+                        <span class="fw-semibold">10%</span> more per hire.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        <span class="fw-semibold">68%</span> of consumers will
+                        leave a review if asked.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        Customers are willing to spend
+                        <span class="fw-semibold">31%</span> more on a business
+                        with excellent reviews.
+                      </span>
+                      <span class="mx-3">/</span>
+
+                      <span>
+                        A one-star increase on Google my Business rating leads
+                        to a <span class="fw-semibold">5-9%</span> increase in
+                        revenue.
+                      </span>
+                      <span class="mx-3">/</span>
+                    </div>
+                  </div>
                 </div>
+                <div
+                  class="seperator pt-md-7 pt-4 mb-4 mb-md-0 border-bottom border-info"
+                ></div>
               </div>
             </section>
-            <section class="services-contact bg-primary mb-md-7">
+            <section class="services-contact bg-primary mb-md-7 mb-4">
               <div class="container">
                 <div class="row text-white">
                   <div class="col-md-6">
@@ -818,42 +1217,39 @@
                       and seriousness, and we are committed to going above and
                       beyond to deliver exceptional outcomes.
                     </p>
-                    <p>
+                    <p class="mb-3 mb-md-0">
                       Providing outstanding results to our clients is crucial
                       for building long-term relationships and establishing a
-                      positive reputation in our industry
+                      positive reputation in our industry.
                     </p>
                   </div>
 
                   <div class="col-md-6">
-                    <h1 class="mb-4 text-secondary">Contact us</h1>
-                    <p class="mb-3">
+                    <h1 class="mb-md- 4 mb-3 mt-3 mt-md-0 text-secondary">
+                      Contact us
+                    </h1>
+                    <p class="mb-4 mb-md-3">
                       Submit your phone number and we will get back to you as
                       soon as possible.
                     </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <input
-                          class="input form-control"
-                          placeholder="Name and surname"
-                          type="text"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <input
-                          class="input form-control"
-                          placeholder="Your phone number"
-                          type="number"
-                        />
-                      </div>
-                      <div class="col-12 mt-2">
-                        <button
-                          class="btn-primary fw-bolder w-100"
-                          type="submit"
-                        >
-                          Submit
-                        </button>
-                      </div>
+                    <div class="form-inputs d-flex">
+                      <input
+                        class="input form-control"
+                        placeholder="Name and surname"
+                        type="text"
+                      />
+
+                      <input
+                        class="input form-control"
+                        placeholder="Your phone number"
+                        type="text"
+                      />
+                    </div>
+
+                    <div class="col-12 mt-2">
+                      <button class="btn-primary w-100" type="submit">
+                        Submit
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -861,46 +1257,53 @@
             </section>
             <section class="services-studies mb-md-7">
               <div class="container">
-                <h2 class="mb-4">Case studies</h2>
-                <div class="row mt-md-3 pb-md-7 border-bottom border-info">
+                <h2 class="mb-4 mt-2 mt-md-0">Blog</h2>
+                <div class="row pt-md-3 pt-2">
                   <div class="col-md-6">
-                    <div class="card border-0">
-                      <img
-                        src="/assets/resources/blog-img-placeholder.png"
-                        class="w-100"
-                      />
+                    <div class="card border-0 mb-4 mb-md-0">
+                      <img src="/assets/resources/blog-1.png" class="w-100" />
                       <div class="card-content">
-                        <h4 class="fw-normal">
-                          From 2.7 stars on Google to 36% increase in revenue
-                        </h4>
+                        <p class="fw-normal">
+                          Importance of a Responsive and Mobile-Friendly Website
+                          in 2023.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="card border-0">
-                      <img src="/assets/resources/blog-img-placeholder.png" />
+                    <div class="card border-0 mb-4 mb-md-0">
+                      <img src="/assets/resources/blog-2.png" />
                       <div class="card-content">
-                        <h4 class="fw-normal">
-                          From 2.7 stars on Google to 36% increase in revenue
-                        </h4>
+                        <p class="fw-normal">
+                          Does my business need a website?
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div
+                  class="seperator pt-md-7 pt-3 border-bottom border-info"
+                ></div>
               </div>
             </section>
-            <section class="services-bottom mb-md-7">
+            <section class="services-bottom mb-md-7 mb-6 pt-md-0 pt-3">
               <div class="container">
-                <h2 class="mb-3">
+                <h2 class="mb-3 mt-3 mt-md-0">
                   Maybe interested in online reputation management?
                 </h2>
                 <p class="mb-3">
                   You are satisfied with your online presence and look to
-                  strengthen your online reputation instead??
+                  strengthen your online reputation instead?
                 </p>
                 <p class="fw-semibold">
                   Check out our
-                  <a href="#" id="#orm">
+                  <a
+                    href="#home-tab-pane"
+                    data-toggle="tab"
+                    role="tab"
+                    class="tab-link"
+                    onclick="topFunction()"
+                  >
                     online reputation management services.
                   </a>
                 </p>
@@ -917,7 +1320,7 @@
           <div class="first-col mb-4 mb-md-0">
             <img src="assets/logo-footer.svg" class="footer-logo mb-5" />
             <p class="mb-3 mb-md-5">
-              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 Countries
+              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 countries
               with more than <br />
               5,000 B2B clients.
             </p>
@@ -995,8 +1398,8 @@
     </div>
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
     <script
@@ -1009,6 +1412,7 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+    <script src="js/tabLink.js"></script>
     <script src="js/links.js"></script>
   </body>
 </html>

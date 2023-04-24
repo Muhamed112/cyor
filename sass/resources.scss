@@ -133,14 +133,17 @@
           border: none;
           margin-right: 24px;
           img {
+            object-fit: cover;
             height: 200px;
             width: 100%;
             margin-bottom: 24px;
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
           }
-          p {
+          a {
             font-weight: 500;
+            line-height: 19px;
+            font-size: 16px;
           }
           &:last-child {
             margin-right: 0;
@@ -159,7 +162,7 @@
           .card {
             width: 100%;
             height: auto;
-            p {
+            a {
               margin-bottom: 24px;
             }
             img {

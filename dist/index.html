@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyor</title>
     <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="dist/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c99e187881.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
@@ -20,6 +30,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,12 +64,13 @@
                   <div class="resources-row d-flex justify-content-between">
                     <div class="resource-item">
                       <h3 class="mb-5">
-                        Learn more about online <br />
+                        Learn more about online
+                        <br class="d-none d-xxl-block" />
                         <span class="text-secondary">reputation</span> and
-                        online <br />
+                        online <br class="d-none d-xxl-block" />
                         <span class="text-secondary">presence</span>
                       </h3>
-                      <p>
+                      <p class="text-nowrap">
                         For more questions feel free to
                         <a href="/contact.html" class="text-white">
                           contact us
@@ -68,8 +80,9 @@
                     <div class="resource-item">
                       <h4 class="mb-2">Online reputation management</h4>
                       <p>
-                        Partner with CYOR24 and protect your brand <br />image,
-                        improve customer trust and loyalty, <br />
+                        Partner with CYOR24 and protect your brand
+                        <br class="d-none d-xxl-block" />image, improve customer
+                        trust and loyalty, <br class="d-none d-xxl-block" />
                         and maintain a positive online reputation.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -85,9 +98,9 @@
                       <h4 class="mb-2">Online presence management</h4>
                       <p>
                         We will make sure your business looks good online!
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         We help businesses to establish and maintain their
-                        <br />
+                        <br class="d-none d-xxl-block" />
                         online presence.
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -108,24 +121,10 @@
               >
                 <div class="resources-row">
                   <div class="resource-item mb-3">
-                    <a href="/services.html" id="orm-link">
-                      Online reputation management
-                    </a>
-                    <p>
-                      Partner with CYOR24 and protect your brand image, improve
-                      customer trust and loyalty, and maintain a positive online
-                      reputation.
-                    </p>
+                    <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link">
-                      Online presence management
-                    </a>
-                    <p>
-                      We will make sure your business looks good online!
-                      <br />We help businesses to establish and maintain their
-                      online presence.
-                    </p>
+                    <a href="/services.html" id="opm-link"> OPM </a>
                   </div>
                 </div>
               </div>
@@ -164,7 +163,7 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">FAQ</h4>
-                      <p>Why are online presence and reputation important?</p>
+                      <p>What is online presence management?</p>
                       <p>What is a Google Business Profile?</p>
                       <p>Can i remove a negative Google review?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
@@ -178,9 +177,9 @@
                     </div>
                     <div class="resource-item">
                       <h4 class="mb-2">Blog</h4>
-                      <p>The consequences of a bad Online Reputation.</p>
-                      <p>How to optimize Google Business profile?</p>
-                      <p>How does the Google Search Algorithm work?</p>
+                      <p>Does my Business need a Website?</p>
+                      <p>How to Improve your Online Visibility</p>
+                      <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
                           href="/resources.html"
@@ -200,19 +199,9 @@
                 <div class="resources-row">
                   <div class="resource-item mb-3">
                     <a href="/resources.html" id="faq-link">FAQ</a>
-                    <p>
-                      Why are online presence and reputation important? <br />
-                      What is a Google Business Profile? <br />
-                      Can I remove a negative Google review?
-                    </p>
                   </div>
                   <div class="resource-item">
                     <a href="/resources.html" id="blog-link">Blog</a>
-                    <p>
-                      The consequences of a bad Online Reputation. <br />
-                      How to optimize Google Business Profile? <br />
-                      How does the Google Search Algorithm work?
-                    </p>
                   </div>
                 </div>
               </div>
@@ -236,35 +225,35 @@
               </a>
               <ul class="dropdown-menu bg-primary">
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/ger.png" />
                     <span class="d-none d-md-block">DE</span>
                     <span class="d-md-none">German</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/nl.png" />
                     <span class="d-none d-md-block">NL</span>
                     <span class="d-md-none">Dutch</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/es.png" />
                     <span class="d-none d-md-block">ES</span>
                     <span class="d-md-none">Spanish</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/it.png" />
                     <span class="d-none d-md-block">IT</span>
                     <span class="d-md-none">Italian</span>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link d-flex align-items-center" href="#">
                     <img src="assets/flags/cro.png" />
                     <span class="d-none d-md-block">HR</span>
                     <span class="d-md-none">Croatian</span>
@@ -308,64 +297,1119 @@
     </nav>
 
     <div class="content text-primary">
-      <div class="container">
-        <h1 class="my-3">HOME PAGE</h1>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
+      <section class="home-hero">
+        <div class="swiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center">
+              <h1 class="mb-md-4 mb-5">
+                We solve your online reputation
+                <br class="d-none d-md-block" />problems, and you
+                <span class="bg-secondary">pay only for results</span>
+              </h1>
+              <h3 class="pt-md-3 pb-md-4 mb-3 fw-normal">
+                Are you tired of seeing your online reputation suffer? Let
+                CYOR24 work their magic!
+              </h3>
+              <button class="btn-primary mt-3">Free live call</button>
+            </div>
+            <div class="swiper-slide text-center">
+              <h1 class="mb-md-4 mb-5">
+                Transform your digital presence into
+                <br class="d-none d-md-block" />
+                a <span class="bg-secondary">sales powerhouse</span> with our
+                expert solutions.
+              </h1>
+              <h3 class="pt-md-3 pb-md-4 mb-3 fw-normal">
+                Let us transform your website, social media, and SEO strategy so
+                your sales can skyrocket.
+              </h3>
+              <button class="btn-primary mt-3">Free live call</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-slider">
+        <div class="container">
+          <div class="separator pb-8 border-top border-info"></div>
+          <h4 class="mb-4 text-center">
+            Trusted by 5,000+ B2B clients and partners in 20+ countries
+          </h4>
+          <div
+            class="swiper swiper-partners swiper-container-pointer-events pb-3"
+          >
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="/assets/about-us/domino.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/about-us/redefining.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/about-us/opel.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/about-us/shmid.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/assets/about-us/mercedes.svg"
+                  height="40px"
+                  width="160px"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/about-us/google.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/about-us/yt.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/assets/about-us/meta.svg"
+                  height="26px"
+                  width="128px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="separator pt-6 border-bottom border-info"></div>
+        </div>
+      </section>
+      <section class="how-we-work">
+        <div class="container">
+          <div class="header text-center">
+            <h1 class="mb-4">How does CYOR24 work?</h1>
+            <h4>From start to finish in three simple steps</h4>
+          </div>
+          <div class="row mt-md-6 mt-7">
+            <div class="col-md-4 col-12">
+              <div class="card pb-3 pb-md-0">
+                <img
+                  src="assets/home/briefing.png"
+                  height="160px"
+                  class="mb-4 mt-md-7 mt-0"
+                />
+                <h3 class="mb-4 mt-2 text-center">1. Briefing call</h3>
+                <p class="mb-3">
+                  During our initial briefing call, you'll have the chance to
+                  introduce us to all your online woes and improvements you want
+                  to make.
+                </p>
+                <p class="mb-3">
+                  From removing those pesky reviews on Google and Yelp to
+                  tackling unwanted articles on sites like Cylex and 11880,
+                  we'll work tirelessly to enhance your online presence.
+                </p>
+                <p class="mb-3">
+                  Trust us to handle all your online reputation needs.
+                </p>
+                <p class="fw-semibold">
+                  Check out our <a href="/services.html">ORM</a> and
+                  <a href="/services.html?tab=profile-tab">OPM</a>
+                  services
+                </p>
+              </div>
+              <div
+                class="separator d-md-none pt-4 mb-7 border-bottom border-info"
+              ></div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card pb-3 pb-md-0">
+                <img
+                  src="assets/home/implementation.png"
+                  height="195px"
+                  class="mb-4 mt-5"
+                />
+                <h3 class="mb-4 text-center">2. Implementation</h3>
+                <p class="mb-3">The magic starts here!</p>
+                <p class="mb-3">
+                  Our expert support teams will take charge of your case and
+                  drive it towards success.
+                </p>
+                <p class="mb-3">
+                  From implementation to review, we'll work tirelessly until
+                  you're completely satisfied.
+                </p>
+                <p class="mb-3">
+                  Trust us to elevate your brand and leave a lasting impression
+                  online.
+                </p>
+                <a class="fw-semibold" href="/resources.html?tab=profile-tab">
+                  Visit our blog to learn more about our way of working
+                </a>
+              </div>
+              <div
+                class="separator d-md-none pt-4 mb-7 border-bottom border-info"
+              ></div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img
+                  src="assets/home/delivery.png"
+                  height="240px"
+                  class="mb-2"
+                />
+                <h3 class="mb-4 text-center">3. Delivery</h3>
+                <p class="mb-3">
+                  Looking for a payment model that guarantees results? Look no
+                  further! With our pay-only-for-results model, you'll only pay
+                  us once we've delivered on every aspect of the contract.
+                </p>
+                <p class="mb-3">
+                  Don't settle for less - work with us and only pay for success!
+                </p>
+                <p class="small">
+                  Pay for results model applies only for the online reputation
+                  repair services. Don't waste another minute, dollar or euro on
+                  ineffective strategies - trust us to get the job done!
+                </p>
+                <a href="/contact.html?slide=2">
+                  <button class="btn-secondary w-100 mt-4">
+                    Talk to our representative
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="separator d-md-none pt-8 border-bottom border-info"></div>
+        </div>
+      </section>
+      <section class="help">
+        <div class="container">
+          <div class="header mb-8 text-center">
+            <h1 class="mb-4">Born to help</h1>
+            <p class="mb-md-5 mb-3 d-md-flex justify-content-center">
+              Over the years, we have had the privilege of serving
+              <span class="bg-secondary mx-md-1">
+                more than 5,000 B2B clients,
+              </span>
+              each with unique goals and challenges.
+              <span class="d-none d-md-block mx-1">
+                Learn more
+                <a href="/about-us.html" class="fw-semibold"> about us. </a>
+              </span>
+            </p>
+            <span class="d-md-none">
+              Learn more
+              <a href="/about-us.html" class="fw-semibold"> about us. </a>
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-12">
+              <div
+                class="card justify-content-center align-items-center text-center mb-8 mb-md-0"
+              >
+                <div class="icon">
+                  <img src="/assets/home/ppl.svg" />
+                </div>
+                <div class="d-flex">
+                  <h1 class="count" data-count="120">0</h1>
+                  <h1>+</h1>
+                </div>
+
+                <h3 class="mb-4">People</h3>
+                <p class="text-center">
+                  Our team of experts are ready to deliver value
+                </p>
+                <a href="/about-us.html" class="btn-link">
+                  <button class="btn-secondary">About us</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-12">
+              <div
+                class="card justify-content-center align-items-center mb-8 mb-md-0"
+              >
+                <div class="icon">
+                  <img src="/assets/home/countries.svg" />
+                </div>
+                <h1 class="count" data-count="20">0</h1>
+                <h3 class="mb-4">Countries</h3>
+                <p class="text-center">
+                  We operate globally, with focus on EU and EEA region
+                </p>
+                <a href="/about-us.html" class="btn-link">
+                  <button class="btn-secondary">About us</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-12">
+              <div
+                class="card justify-content-center align-items-center mb-8 mb-md-0"
+              >
+                <div class="icon">
+                  <img src="/assets/home/clients.svg" />
+                </div>
+                <div class="d-flex">
+                  <h1 class="count" data-count="5000">0+</h1>
+                  <h1>+</h1>
+                </div>
+
+                <h3 class="mb-4">B2B Clients</h3>
+                <p class="text-center">
+                  Our loyal clients are our biggest asset
+                </p>
+                <a href="/about-us.html" class="btn-link">
+                  <button class="btn-secondary">About us</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-12">
+              <div class="card justify-content-center align-items-center">
+                <div class="icon">
+                  <img src="/assets/home/calendar.svg" />
+                </div>
+                <h1 class="count" data-count="12">0</h1>
+                <h3 class="mb-4">Years</h3>
+                <p class="text-center">
+                  More then a decade of experience in omnichannel digital
+                  marketing
+                </p>
+                <a href="/about-us.html" class="btn-link">
+                  <button class="btn-secondary">About us</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-contact bg-primary">
+        <div class="container">
+          <div class="row text-white align-items-end">
+            <div class="col-md-6">
+              <h1 class="mb-md-5 mb-3 text-secondary">
+                Your success matters to us!
+              </h1>
+              <p class="mb-5">
+                CYOR24 values each of its clients as if they were our first. We
+                approach each assignment with utmost dedication and seriousness,
+                and we are committed to going above and beyond to deliver
+                exceptional outcomes.
+              </p>
+              <p class="mb-3 mb-md-0">
+                Providing outstanding results to our clients is crucial for
+                building long-term relationships and establishing a positive
+                reputation in our industry.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h1 class="mb-md-5 mb-3 mt-3 mt-md-0 text-secondary">
+                Contact us
+              </h1>
+              <p class="mb-4 mb-md-3">
+                Submit your phone number and we will get back to you as soon as
+                possible.
+              </p>
+              <div class="form-inputs d-flex">
+                <input
+                  class="input form-control"
+                  placeholder="Name and surname"
+                  type="text"
+                />
+
+                <input
+                  class="input form-control"
+                  placeholder="Your phone number"
+                  type="text"
+                />
+              </div>
+
+              <div class="col-12 mt-2">
+                <button class="btn-primary w-100" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="statistics">
+        <div class="container">
+          <div class="heading text-center">
+            <h2 class="mb-3">
+              We are passionate about statistics and knowledge sharing.
+            </h2>
+            <p>
+              Here are some
+              <span class="bg-secondary">surprising facts</span> about online
+              reputation and online presence!
+            </p>
+          </div>
+          <div class="statistic d-flex align-items-center">
+            <div class="statistic-left">
+              <div class="d-flex mb-3">
+                <h1 class="count" data-count="73">0</h1>
+                <h1>%</h1>
+              </div>
+              <h3 class="mb-4">
+                of all reviews worldwide come from Google Business Profile
+              </h3>
+              <a href="/services.html" class="d-none d-md-block">
+                Manage negative Google reviews
+              </a>
+            </div>
+            <div class="statistic-right">
+              <img src="/assets/home/statistic1.png" />
+              <a href="/services.html d-md-none " class="d-md-none">
+                Manage negative Google reviews
+              </a>
+              <div
+                class="separator border-bottom border-info pt-5 mb-5 d-md-none"
+              ></div>
+            </div>
+          </div>
+          <div class="statistic d-flex align-items-center">
+            <div class="statistic-left">
+              <div class="d-flex mb-3">
+                <h1 class="count" data-count="92">0</h1>
+                <h1>%</h1>
+              </div>
+              <h3 class="mb-4">
+                of internet users access the internet using a mobile phone
+              </h3>
+              <a href="/services.html" class="d-none d-md-block">
+                Read more about responsive design
+              </a>
+            </div>
+            <div class="statistic-right">
+              <img src="/assets/home/statistic2.png" />
+              <a href="/services.html" class="d-md-none">
+                Read more about responsive design
+              </a>
+              <div
+                class="separator border-bottom border-info pt-5 mb-5 d-md-none"
+              ></div>
+            </div>
+          </div>
+          <div class="statistic d-flex align-items-center">
+            <div class="statistic-left">
+              <div class="d-flex mb-3">
+                <h1 class="count" data-count="31">0</h1>
+                <h1>%</h1>
+              </div>
+              <h3 class="mb-4">
+                of business owners don't have a website in 2023.
+              </h3>
+              <a
+                href="/services.html?tab=profile-tab"
+                class="d-none d-md-block"
+              >
+                Learn more about OPM services
+              </a>
+            </div>
+            <div class="statistic-right">
+              <img src="/assets/home/statistic3.png" />
+              <a href="/services.html?tab=profile-tab" class="d-md-none">
+                Learn more about OPM services
+              </a>
+              <div
+                class="separator border-bottom border-info pt-5 mb-5 d-md-none"
+              ></div>
+            </div>
+          </div>
+          <div class="statistic d-flex align-items-center">
+            <div class="statistic-left">
+              <div class="d-flex mb-3">
+                <h1 class="count" data-count="91">0</h1>
+                <h1>%</h1>
+              </div>
+              <h3 class="mb-4">
+                of clients trust online reviews equally to personal advice.
+              </h3>
+              <a href="/services.html" class="d-none d-md-block">
+                Learn more about ORM services
+              </a>
+            </div>
+            <div class="statistic-right">
+              <img src="/assets/home/statistic4.png" />
+              <a href="/services.html" class="d-md-none">
+                Learn more about ORM services
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-services">
+        <div class="container">
+          <div class="seperator-big border-top border-info"></div>
+          <div class="services d-flex justify-content-between">
+            <div class="services-left">
+              <h3 class="mb-md-4 mb-3">Services</h3>
+              <div
+                class="seperator pt-3 mb-3 border-bottom border-info d-none d-md-block"
+              ></div>
+              <h4 class="fw-normal pt-3 mb-3">
+                Discover our
+                <span class="fw-semibold">
+                  top six most requested services.
+                </span>
+              </h4>
+              <h4 class="pb-md-3 pb-7 fw-normal">
+                Our effort resulted in a significant boost in sales for all our
+                clients - a transformation that they were delighted to witness
+                and experience first-hand!
+              </h4>
+              <div
+                class="seperator pt-3 mb-3 border-bottom border-info d-none d-md-block"
+              ></div>
+              <a href="/services.html" class="text-decoration-none">
+                <button class="btn-secondary w-100 mt-3 d-none d-md-block">
+                  See all services
+                </button>
+              </a>
+            </div>
+            <div class="services-right">
+              <div class="card-row d-flex justify-content-between pb-4">
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/star.svg" />
+                  </div>
+                  <h4 class="mb-3">Responding to negative reviews</h4>
+                  <p class="mb-3">
+                    Managing Google Business Profile and answering to the
+                    negative reviews.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/eye.svg" />
+                  </div>
+                  <h4 class="mb-3">Online monitoring of your brand</h4>
+                  <p class="mb-3">
+                    We monitor and respond to customer reviews on various online
+                    platforms.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="card-row d-flex justify-content-between mt-3 pb-4">
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/repair.svg" />
+                  </div>
+                  <h4 class="mb-3">Online reputation repair</h4>
+                  <p class="mb-3">
+                    We will fully remove Google Business Profile reviews and
+                    guarantee for the results.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/window.svg" />
+                  </div>
+                  <h4 class="mb-3">Website development</h4>
+                  <p class="mb-3">
+                    We develop mobile friendly websites that meet the specific
+                    needs of our clients.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="card-row d-flex justify-content-between">
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/search.svg" />
+                  </div>
+                  <h4 class="mb-3">Search engine optimization (SEO)</h4>
+                  <p class="mb-3">
+                    Transform your website from an unnoticed online presence to
+                    a high-traffic destination.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+                <div class="card">
+                  <div class="icon-box mb-3">
+                    <img src="/assets/home/paper.svg" />
+                  </div>
+                  <h4 class="mb-3">Social media management</h4>
+                  <p class="mb-3">
+                    We monitor and manage company's social media presence.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <a href="/services.html" class="text-decoration-none">
+              <button class="btn-primary w-100 d-md-none">
+                See all services
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="reputation text-primary">
+        <div class="container">
+          <div class="separator pb-8 mb-md-8 border-top border-info"></div>
+          <h2 class="mb-3 text-md-center">Our reputation speaks for itself</h2>
+          <h4 class="mb-md-7 pb-5 mb-3 text-md-center fw-normal">
+            What fellow entrepreneurs say about our services
+          </h4>
+          <div
+            class="reputation-content d-none d-md-flex justify-content-between align-items-start"
+          >
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="ppl-box nav-link active d-flex align-items-center mb-4"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  <img src="/assets/about-us/pierre.png" />
+                  <div class="name-position">
+                    <h4>Pierre Arlettaz</h4>
+                    <p>Owner PoolArt Piscine</p>
+                  </div>
+                </button>
+                <button
+                  class="ppl-box nav-link d-flex align-items-center mb-4"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  <img src="/assets/about-us/massimo.png" />
+                  <div class="name-position">
+                    <h4>Dr. Massimo T. Sartori</h4>
+                    <p>Owner Ambros Medica</p>
+                  </div>
+                </button>
+                <button
+                  class="ppl-box nav-link d-flex align-items-center"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  <img src="/assets/about-us/jan.png" />
+                  <div class="name-position">
+                    <h4>Jan Dekker</h4>
+                    <p>Dekker Auto's</p>
+                  </div>
+                </button>
+              </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="text-box tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+                tabindex="0"
+              >
+                <h4 class="mb-1">CYOR24 helped me to expand my bussines!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    Despite having a great reputation as a swimming pool
+                    contractor in my local community, I was having a hard time
+                    reaching new customers and expanding my business. That's
+                    when I decided to try out the service of Optimizing my
+                    Google Business profile, and I am so glad I did!
+                  </p>
+                  <p class="mb-3">
+                    ldina’s team at CYOR24 optimized my profile with relevant
+                    keywords, new images, and updated the company information.
+                    They also encouraged my satisfied customers to leave
+                    reviews, which further boosted my online reputation.
+                  </p>
+                  <p>
+                    As a result, my business now appears higher in search
+                    rankings, and potential customers can easily find and learn
+                    about my business. Since the optimization, I've noticed a
+                    significant increase in the number of calls and inquiries I
+                    receive from potential customers. I'm also receiving more
+                    positive reviews from satisfied customers.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-box tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+                tabindex="0"
+              >
+                <h4 class="mb-1">We gained more local customers!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    As a car dealership owner, I was struggling to attract new
+                    customers online. Even though we had a great physical
+                    location and a reputation for quality service, our online
+                    presence was lacking. That's when we turned to the team at
+                    CYOR24 for help with optimizing our Google Business profile.
+                  </p>
+                  <p class="mb-3">
+                    I have to say, the results were truly impressive. With the
+                    help of Laura and her team, we were able to improve our
+                    online reputation and attract new customers from the local
+                    area. Our Google Business profile is now optimized with
+                    accurate and up-to-date information, professional photos,
+                    and positive customer reviews. As a result, we've seen a
+                    significant increase in online traffic and have been able to
+                    convert more leads into sales.
+                  </p>
+                  <p>
+                    The process was simple and straightforward, and Laura at
+                    CYOR24 was always available to answer any questions we had.
+                    They took the time to understand our business and tailored
+                    their services to our unique needs. I would highly recommend
+                    their services to any business looking to improve their
+                    online presence and attract new customers.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-box tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+                tabindex="0"
+              >
+                <h4 class="mb-1">
+                  New customers are now better match to our services.
+                </h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    One of the biggest challenges of providing aesthetic
+                    medicine services is keeping our patients satisfied. They
+                    have high expectations when it comes to their health and
+                    appearance, and it can be difficult to meet those
+                    expectations. But with the help of CYOR24's service, I've
+                    been able to improve my online reputation and attract more
+                    patients who are a good fit for my practice.
+                  </p>
+                  <p class="mb-3">
+                    My online presence has significantly improved, and I've
+                    noticed an increase in new patients finding my practice
+                    through Google. The service was efficient, professional, and
+                    the team at Cyor24 was responsive and easy to work with.
+                    Sofia and her team took the time to understand my business
+                    and my unique needs, and they were able to tailor their
+                    service to meet those needs.
+                  </p>
+                  <p>
+                    Overall, I highly recommend CYOR24's service for anyone
+                    looking to optimize their Google Business profile and
+                    improve their online presence. It's a game-changer for small
+                    businesses like mine, and I'm grateful for the positive
+                    impact it's had on my practice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper reputation-swiper d-md-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ppl-box d-flex align-items-center">
+                <img src="/assets/about-us/pierre.png" />
+                <div class="name-position">
+                  <h4>Pierre Arlettaz</h4>
+                  <p class="opacity-50">Owner PoolArt Piscine</p>
+                </div>
+              </div>
+              <div class="text-box" id="text-test-1">
+                <h4 class="mb-1">CYOR24 helped me to expand my bussines!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    Despite having a great reputation as a swimming pool
+                    contractor in my local community, I was having a hard time
+                    reaching new customers and expanding my business. That's
+                    when I decided to try out the service of Optimizing my
+                    Google Business profile, and I am so glad I did!
+                  </p>
+                  <p class="mb-3">
+                    ldina’s team at CYOR24 optimized my profile with relevant
+                    keywords, new images, and updated the company information.
+                    They also encouraged my satisfied customers to leave
+                    reviews, which further boosted my online reputation.
+                  </p>
+                  <p>
+                    As a result, my business now appears higher in search
+                    rankings, and potential customers can easily find and learn
+                    about my business. Since the optimization, I've noticed a
+                    significant increase in the number of calls and inquiries I
+                    receive from potential customers. I'm also receiving more
+                    positive reviews from satisfied customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ppl-box d-flex align-items-center">
+                <img src="/assets/about-us/massimo.png" />
+                <div class="name-position">
+                  <h4>Dr. Massimo T. Sartori</h4>
+                  <p class="opacity-50">Owner Ambros Medica</p>
+                </div>
+              </div>
+              <div class="text-box" id="text-test-1">
+                <h4 class="mb-1">CYOR24 helped me to expand my bussines!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    Despite having a great reputation as a swimming pool
+                    contractor in my local community, I was having a hard time
+                    reaching new customers and expanding my business. That's
+                    when I decided to try out the service of Optimizing my
+                    Google Business profile, and I am so glad I did!
+                  </p>
+                  <p class="mb-3">
+                    ldina’s team at CYOR24 optimized my profile with relevant
+                    keywords, new images, and updated the company information.
+                    They also encouraged my satisfied customers to leave
+                    reviews, which further boosted my online reputation.
+                  </p>
+                  <p>
+                    As a result, my business now appears higher in search
+                    rankings, and potential customers can easily find and learn
+                    about my business. Since the optimization, I've noticed a
+                    significant increase in the number of calls and inquiries I
+                    receive from potential customers. I'm also receiving more
+                    positive reviews from satisfied customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ppl-box d-flex align-items-center">
+                <img src="/assets/about-us/jan.png" />
+                <div class="name-position">
+                  <h4>Jan Dekker</h4>
+                  <p class="opacity-50">Dekker Auto's</p>
+                </div>
+              </div>
+              <div class="text-box" id="text-test-1">
+                <h4 class="mb-1">CYOR24 helped me to expand my bussines!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    Despite having a great reputation as a swimming pool
+                    contractor in my local community, I was having a hard time
+                    reaching new customers and expanding my business. That's
+                    when I decided to try out the service of Optimizing my
+                    Google Business profile, and I am so glad I did!
+                  </p>
+                  <p class="mb-3">
+                    ldina’s team at CYOR24 optimized my profile with relevant
+                    keywords, new images, and updated the company information.
+                    They also encouraged my satisfied customers to leave
+                    reviews, which further boosted my online reputation.
+                  </p>
+                  <p>
+                    As a result, my business now appears higher in search
+                    rankings, and potential customers can easily find and learn
+                    about my business. Since the optimization, I've noticed a
+                    significant increase in the number of calls and inquiries I
+                    receive from potential customers. I'm also receiving more
+                    positive reviews from satisfied customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="separator pt-8 mt-md-8 border-bottom border-info"></div>
+        </div>
+      </section>
+      <section class="home-contact bg-primary">
+        <div class="container">
+          <div class="row text-white">
+            <div class="col-md-6">
+              <h1 class="mb-md-5 mb-3 text-secondary">Pay only for results!</h1>
+              <p class="mb-4">
+                The reason for CYOR24 fast expansion is primarily due to our
+                <span class="fw-semibold">"pay-only-for-results"</span>
+                approach.
+              </p>
+              <p class="mb-3 mb-md-0">
+                We're so confident in our ability to help you improve your
+                online reputation that we offer a no-risk guarantee. That means
+                you only pay for our review removal services if we successfully
+                resolve the issues.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h1 class="mb-md-5 mb-3 mt-3 mt-md-0 text-secondary">
+                Let's talk
+              </h1>
+              <p class="mb-4 mb-md-3">
+                Submit your phone number and we will get back to you as soon as
+                possible.
+              </p>
+              <div class="form-inputs d-flex">
+                <input
+                  class="input form-control"
+                  placeholder="Name and surname"
+                  type="text"
+                />
+
+                <input
+                  class="input form-control"
+                  placeholder="Your phone number"
+                  type="text"
+                />
+              </div>
+
+              <div class="col-12 mt-2">
+                <button class="btn-primary w-100" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-blog">
+        <div class="blog-header text-center">
+          <h2 class="mb-4">Blog</h2>
+          <p class="mb-md-6 mb-3">
+            Gain valuable insights and strategies for optimizing your online
+            reputation and presence.
+            <a href="/resources.html?tab=profile-tab" class="d-none d-md-block">
+              See all articles.
+            </a>
+          </p>
+          <a href="/resources.html" class="d-md-none">See all articles.</a>
+        </div>
+
+        <div class="swiper blog-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img-container mb-md-3">
+                  <img src="/assets/resources/blog-1.png" class="img-fluid" />
+                </div>
+                <div class="card-content mt-md-3 mt-4">
+                  <div
+                    class="separator mb-md-5 mb-4 border-top border-info"
+                  ></div>
+                  <h4 class="pb-md-2">
+                    Importance of a Responsive and Mobile-Friendly Website in
+                    2023.
+                  </h4>
+                  <button class="blog-button mt-4">Read</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img-container mb-md-3">
+                  <img src="/assets/resources/blog-2.png" class="img-fluid" />
+                </div>
+                <div class="card-content mt-md-3 mt-4">
+                  <div
+                    class="separator mb-md-5 mb-4 border-top border-info"
+                  ></div>
+                  <h4 class="pb-md-2">
+                    What are the Most Important Actions a Company can Take to
+                    Improve Online Reputation?
+                  </h4>
+                  <button class="blog-button mt-4">Read</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img-container mb-md-3">
+                  <img src="/assets/resources/blog-3.png" class="img-fluid" />
+                </div>
+                <div class="card-content mt-md-3 mt-4">
+                  <div
+                    class="separator mb-md-5 mb-4 border-top border-info"
+                  ></div>
+                  <h4 class="pb-md-2">
+                    Should a Small Local Business be Concerned About Negative
+                    Reviews on Google?
+                  </h4>
+                  <button class="blog-button mt-4">Read</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-faq">
+        <div class="container">
+          <div class="separator-top border-top border-info"></div>
+          <div class="header text-center pb-6">
+            <h2 class="mb-4 d-none d-md-block">Frequently asked questions</h2>
+            <h2 class="mb-4 d-md-none">FAQ</h2>
+            <h4 class="mb-3 fw-normal">
+              Everything you want to know about ORM nd OPM
+            </h4>
+          </div>
+
+          <div class="accordion tab-box" id="accordionExample">
+            <div class="accordion-item text-primary">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is online reputation management?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Online reputation refers to how your brand is perceived and
+                    talked about online including reviews, ratings, and comments
+                    on social media or other online platforms. Learn more about
+                    ORM here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item text-primary">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What is online presence management?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Online presence management refers to the process of
+                    controlling and maintaining your business's digital
+                    footprint across various online channels, including social
+                    media, review sites, search engines, and more. It involves
+                    actively managing your brand's online reputation, building a
+                    strong online presence, and engaging with your target
+                    audience. By leveraging the power of online presence
+                    management, you can increase brand awareness, generate more
+                    leads and sales, and establish your business as a credible
+                    and authoritative player in your industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item text-primary">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Why do online reputation and online presence matter?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Online presence management refers to the process of
+                    controlling and maintaining your business's digital
+                    footprint across various online channels, including social
+                    media, review sites, search engines, and more. It involves
+                    actively managing your brand's online reputation, building a
+                    strong online presence, and engaging with your target
+                    audience. By leveraging the power of online presence
+                    management, you can increase brand awareness, generate more
+                    leads and sales, and establish your business as a credible
+                    and authoritative player in your industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item text-primary">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  How can i solve the online reputation damage caused by low
+                  Google review score?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Yes, CYOR24! At Cyor24, we understand how important your
+                    online reputation is to your business. With more and more
+                    customers turning to the internet to research products and
+                    services, negative Google reviews can have a significant
+                    impact on your business's success. Our service is designed
+                    to help businesses like yours address negative Google
+                    reviews and improve their online reputation. We are one of
+                    the very few companies that can provide this kind of
+                    service, and we're confident that our approach is without
+                    competition. What sets us apart is our
+                    PAY-FOR-THE-RESULT-ONLY guarantee. Our distinct business
+                    model provides our clients with reassurance, as they only
+                    need to pay for outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="separator-bottom border-bottom border-info"></div>
+        </div>
+      </section>
+      <section class="get-started text-md-center">
+        <div class="container">
+          <h2 class="mb-4">Get started in seconds</h2>
+          <div class="buttons d-flex justify-content-center">
+            <a href="/contact.html?slide=2" class="text-decoration-none">
+              <button class="btn-primary mx-md-2">Free live call</button>
+            </a>
+            <a href="/contact.html?slide1" class="text-decoration-none">
+              <button class="btn-secondary mx-md-2">Contact form</button>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="footer bg-primary text-white">
@@ -374,7 +1418,7 @@
           <div class="first-col mb-4 mb-md-0">
             <img src="assets/logo-footer.svg" class="footer-logo mb-5" />
             <p class="mb-3 mb-md-5">
-              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 Countries
+              CYOR24 is CYORMEDIA LTD.’s brand that is operating in 20 countries
               with more than <br />
               5,000 B2B clients.
             </p>
@@ -451,9 +1495,55 @@
       </div>
     </div>
 
+    <script>
+      const swiper = new Swiper(".swiper-hero", {
+        // Optional parameters
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+      });
+      const swiper2 = new Swiper(".swiper-partners", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+        },
+        loop: true,
+        breakpoints: {
+          900: {
+            slidesPerView: 4,
+            centeredSlides: false,
+            autoplay: {
+              delay: 1000,
+            },
+          },
+        },
+      });
+      const swiper3 = new Swiper(".reputation-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+      });
+
+      const swiper4 = new Swiper(".blog-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: true,
+        breakpoints: {
+          900: {
+            slidesPerView: "auto",
+            spaceBetween: 24,
+            loop: false,
+          },
+        },
+      });
+    </script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -466,6 +1556,52 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function countUp() {
+        $(".count").each(function () {
+          var $this = $(this),
+            countTo = $this.attr("data-count");
+
+          $({ countNum: $this.text() }).animate(
+            {
+              countNum: countTo,
+            },
+
+            {
+              duration: 7000,
+              easing: "linear",
+              step: function () {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $this.text(this.countNum);
+              },
+            }
+          );
+        });
+      }
+      $(function () {
+        "user strict";
+        var bAnimate = true;
+        $(".count").css("opacity", "0.0");
+
+        $(window).scroll(function () {
+          // console.log("scroll top=" + $(this).scrollTop());
+          // console.log("div offset top=" + $("div").offset().top);
+          var scrolling = $(this).scrollTop(),
+            divoffset = $(".count").offset().top,
+            screenBottom = scrolling + $(window).height(),
+            elemBottom = divoffset + $(".count").outerHeight(); //
+          if (screenBottom > elemBottom) {
+            if (bAnimate) {
+              $(".count").css("opacity", "1.0");
+              countUp();
+              bAnimate = false;
+            }
+          }
+        });
+      });
+    </script>
     <script src="js/links.js"></script>
   </body>
 </html>

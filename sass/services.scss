@@ -156,8 +156,13 @@
     .services-studies {
       .card {
         img {
+          object-fit: cover;
+          height: 240px;
           border-top-right-radius: 12px;
           border-top-left-radius: 12px;
+          @include media-breakpoint-down(md) {
+            height: 160px;
+          }
         }
         .card-content {
           background-color: #f3f4f6;
