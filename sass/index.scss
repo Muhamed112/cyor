@@ -7,8 +7,10 @@
   padding: 120px 0;
   .btn-primary {
     width: 200px;
+    font-size: 20px;
     @include media-breakpoint-down(md) {
       width: 160px;
+      font-size: 16px;
     }
   }
   @include media-breakpoint-down(md) {
@@ -35,6 +37,12 @@
 
 .how-we-work {
   padding: 125px 0;
+  h1 {
+    font-size: 31.25px;
+  }
+  h4 {
+    font-weight: 400;
+  }
   .card {
     height: 665px;
     border: none;
@@ -63,7 +71,6 @@
     }
     h4 {
       font-size: 16px;
-      font-weight: 400;
     }
     .card {
       padding: 0;
@@ -157,6 +164,9 @@
         padding-right: 50px;
       }
       @include media-breakpoint-down(md) {
+        h2 {
+          font-size: 33px;
+        }
         width: 100%;
         h4 {
           padding-right: 0;
@@ -380,7 +390,7 @@
   .statistic {
     justify-content: space-between;
     .count {
-      font-size: 61px;
+      font-size: 95.73px;
     }
     .statistic-left,
     .statistic-right {
@@ -429,6 +439,11 @@
 .home-blog {
   padding: 70px 0 0 0;
   background-color: #f3f4f6;
+  .blog-header {
+    a {
+      font-size: 20px;
+    }
+  }
   .swiper {
     padding-bottom: 120px;
     padding-top: 40px;
@@ -536,8 +551,12 @@
   }
   .accordion-item {
     .accordion-button {
+      font-size: 20px;
       padding: 16px 24px 16px 32px;
       color: $primary;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
     }
     .collapsed {
       padding-bottom: 6px;
@@ -564,7 +583,7 @@
 
   @include media-breakpoint-down(md) {
     padding: 32px 0 64px 0;
-    h1 {
+    h2 {
       font-size: 31px;
     }
   }
@@ -592,6 +611,9 @@
   }
 
   @include media-breakpoint-down(md) {
+    h1 {
+      font-size: 25px;
+    }
     padding: 64px 0;
     .container {
       padding: 0 58px;

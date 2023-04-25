@@ -35,7 +35,7 @@ $(document).ready(function () {
     $(".pre-header").css("display", "none");
   });
 
-  $(".header-close").click(function (e) {
+  $(".frame-close").click(function (e) {
     $(".position-frame").css("display", "none");
     $(".positions-row").css("display", "flex");
     $(".swiper-positions").css("display", "block");
@@ -47,6 +47,8 @@ $(document).ready(function () {
     if (st < lastScrollTop) {
       //âíèç
       $(".navbar").addClass("sticky-top");
+      $(".navbar-collapse").removeClass("show");
+      $(".navbar-toggler").attr("aria-expanded", "false");
     } else {
       // ââåðõ
       $(".navbar").removeClass("sticky-top");
