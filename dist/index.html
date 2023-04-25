@@ -17,6 +17,23 @@
     ></script>
   </head>
   <body>
+    <div class="pre-header bg-secondary w-100 py-md-3 py-2">
+      <div
+        class="container d-flex justify-content-center align-items-center py-1 py-md-0"
+      >
+        <p class="mx-auto d-none d-lg-block">
+          You’ve spoken to our team and requested an offer? You can see it
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <p class="mx-auto d-lg-none">
+          You can see your offer
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <a class="header-close">
+          <img src="/assets/close-black.svg" />
+        </a>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
       <div class="container">
         <a class="navbar-brand p-0" href="/">
@@ -30,7 +47,6 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -105,7 +121,7 @@
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/services.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -124,7 +140,9 @@
                     <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link"> OPM </a>
+                    <a href="/services.html?tab=profile-tab" id="opm-link">
+                      OPM
+                    </a>
                   </div>
                 </div>
               </div>
@@ -182,7 +200,7 @@
                       <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/resources.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -201,10 +219,15 @@
                     <a href="/resources.html" id="faq-link">FAQ</a>
                   </div>
                   <div class="resource-item">
-                    <a href="/resources.html" id="blog-link">Blog</a>
+                    <a href="/resources.html?tab=profile-tab" id="blog-link">
+                      Blog
+                    </a>
                   </div>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-5 px-md-3" href="/offer.html"> Offer </a>
             </li>
             <li class="nav-item nav-contact">
               <a class="nav-link py-md-5 px-md-3" href="/contact.html">
@@ -338,32 +361,32 @@
             class="swiper swiper-partners swiper-container-pointer-events pb-3"
           >
             <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img src="/assets/about-us/domino.svg" />
+              <div class="swiper-slide text-center">
+                <img src="/assets/about-us/domino.svg" width="150" />
               </div>
-              <div class="swiper-slide">
-                <img src="/assets/about-us/redefining.svg" />
+              <div class="swiper-slide text-center">
+                <img src="/assets/about-us/redefining.jpg" width="175" />
               </div>
-              <div class="swiper-slide">
-                <img src="/assets/about-us/opel.svg" />
+              <div class="swiper-slide text-center">
+                <img src="/assets/about-us/opel.png" width="60" />
               </div>
-              <div class="swiper-slide">
-                <img src="/assets/about-us/shmid.svg" />
+              <div class="swiper-slide text-center">
+                <img src="/assets/about-us/shmid.png" width="210" />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img
                   src="/assets/about-us/mercedes.svg"
                   height="40px"
                   width="160px"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="/assets/about-us/google.svg" />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="/assets/about-us/yt.svg" />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img
                   src="/assets/about-us/meta.svg"
                   height="26px"
@@ -510,7 +533,8 @@
 
                 <h3 class="mb-4">People</h3>
                 <p class="text-center">
-                  Our team of experts are ready to deliver value
+                  Our team of experts are <br />
+                  ready to deliver value
                 </p>
                 <a href="/about-us.html" class="btn-link">
                   <button class="btn-secondary">About us</button>
@@ -527,7 +551,8 @@
                 <h1 class="count" data-count="20">0</h1>
                 <h3 class="mb-4">Countries</h3>
                 <p class="text-center">
-                  We operate globally, with focus on EU and EEA region
+                  We operate globally, with <br />
+                  focus on EU and EEA region
                 </p>
                 <a href="/about-us.html" class="btn-link">
                   <button class="btn-secondary">About us</button>
@@ -548,7 +573,8 @@
 
                 <h3 class="mb-4">B2B Clients</h3>
                 <p class="text-center">
-                  Our loyal clients are our biggest asset
+                  Our loyal clients are our <br />
+                  biggest asset
                 </p>
                 <a href="/about-us.html" class="btn-link">
                   <button class="btn-secondary">About us</button>
@@ -563,8 +589,8 @@
                 <h1 class="count" data-count="12">0</h1>
                 <h3 class="mb-4">Years</h3>
                 <p class="text-center">
-                  More then a decade of experience in omnichannel digital
-                  marketing
+                  More then a decade of experience <br />
+                  in omnichannel digital marketing
                 </p>
                 <a href="/about-us.html" class="btn-link">
                   <button class="btn-secondary">About us</button>
@@ -595,7 +621,7 @@
             </div>
 
             <div class="col-md-6">
-              <h1 class="mb-md-5 mb-3 mt-3 mt-md-0 text-secondary">
+              <h1 class="mb-xxl-5 mb-3 mt-3 mt-md-0 text-secondary">
                 Contact us
               </h1>
               <p class="mb-4 mb-md-3">
@@ -650,7 +676,7 @@
             </div>
             <div class="statistic-right">
               <img src="/assets/home/statistic1.png" />
-              <a href="/services.html d-md-none " class="d-md-none">
+              <a href="/services.html" class="d-md-none">
                 Manage negative Google reviews
               </a>
               <div
@@ -667,13 +693,19 @@
               <h3 class="mb-4">
                 of internet users access the internet using a mobile phone
               </h3>
-              <a href="/services.html" class="d-none d-md-block">
+              <a
+                href="/blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
+                class="d-none d-md-block"
+              >
                 Read more about responsive design
               </a>
             </div>
             <div class="statistic-right">
               <img src="/assets/home/statistic2.png" />
-              <a href="/services.html" class="d-md-none">
+              <a
+                href="/blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
+                class="d-md-none"
+              >
                 Read more about responsive design
               </a>
               <div
@@ -716,13 +748,16 @@
               <h3 class="mb-4">
                 of clients trust online reviews equally to personal advice.
               </h3>
-              <a href="/services.html" class="d-none d-md-block">
+              <a
+                href="/resources.html?tab=profile-tab"
+                class="d-none d-md-block"
+              >
                 Learn more about ORM services
               </a>
             </div>
             <div class="statistic-right">
               <img src="/assets/home/statistic4.png" />
-              <a href="/services.html" class="d-md-none">
+              <a href="/resources.html?tab=profile-tab" class="d-md-none">
                 Learn more about ORM services
               </a>
             </div>
@@ -734,7 +769,7 @@
           <div class="seperator-big border-top border-info"></div>
           <div class="services d-flex justify-content-between">
             <div class="services-left">
-              <h3 class="mb-md-4 mb-3">Services</h3>
+              <h2 class="mb-md-4 mb-3">Services</h2>
               <div
                 class="seperator pt-3 mb-3 border-bottom border-info d-none d-md-block"
               ></div>
@@ -936,48 +971,12 @@
                   </p>
                 </div>
               </div>
+
               <div
                 class="text-box tab-pane fade"
                 id="nav-profile"
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
-                tabindex="0"
-              >
-                <h4 class="mb-1">We gained more local customers!</h4>
-                <img src="assets/about-us/stars.svg" class="mb-3" />
-                <div class="box-content pt-3">
-                  <p class="mb-3">
-                    As a car dealership owner, I was struggling to attract new
-                    customers online. Even though we had a great physical
-                    location and a reputation for quality service, our online
-                    presence was lacking. That's when we turned to the team at
-                    CYOR24 for help with optimizing our Google Business profile.
-                  </p>
-                  <p class="mb-3">
-                    I have to say, the results were truly impressive. With the
-                    help of Laura and her team, we were able to improve our
-                    online reputation and attract new customers from the local
-                    area. Our Google Business profile is now optimized with
-                    accurate and up-to-date information, professional photos,
-                    and positive customer reviews. As a result, we've seen a
-                    significant increase in online traffic and have been able to
-                    convert more leads into sales.
-                  </p>
-                  <p>
-                    The process was simple and straightforward, and Laura at
-                    CYOR24 was always available to answer any questions we had.
-                    They took the time to understand our business and tailored
-                    their services to our unique needs. I would highly recommend
-                    their services to any business looking to improve their
-                    online presence and attract new customers.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="text-box tab-pane fade"
-                id="nav-contact"
-                role="tabpanel"
-                aria-labelledby="nav-contact-tab"
                 tabindex="0"
               >
                 <h4 class="mb-1">
@@ -1009,6 +1008,43 @@
                     improve their online presence. It's a game-changer for small
                     businesses like mine, and I'm grateful for the positive
                     impact it's had on my practice.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-box tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+                tabindex="0"
+              >
+                <h4 class="mb-1">We gained more local customers!</h4>
+                <img src="assets/about-us/stars.svg" class="mb-3" />
+                <div class="box-content pt-3">
+                  <p class="mb-3">
+                    As a car dealership owner, I was struggling to attract new
+                    customers online. Even though we had a great physical
+                    location and a reputation for quality service, our online
+                    presence was lacking. That's when we turned to the team at
+                    CYOR24 for help with optimizing our Google Business profile.
+                  </p>
+                  <p class="mb-3">
+                    I have to say, the results were truly impressive. With the
+                    help of Laura and her team, we were able to improve our
+                    online reputation and attract new customers from the local
+                    area. Our Google Business profile is now optimized with
+                    accurate and up-to-date information, professional photos,
+                    and positive customer reviews. As a result, we've seen a
+                    significant increase in online traffic and have been able to
+                    convert more leads into sales.
+                  </p>
+                  <p>
+                    The process was simple and straightforward, and Laura at
+                    CYOR24 was always available to answer any questions we had.
+                    They took the time to understand our business and tailored
+                    their services to our unique needs. I would highly recommend
+                    their services to any business looking to improve their
+                    online presence and attract new customers.
                   </p>
                 </div>
               </div>
@@ -1150,7 +1186,7 @@
             </div>
 
             <div class="col-md-6">
-              <h1 class="mb-md-5 mb-3 mt-3 mt-md-0 text-secondary">
+              <h1 class="mb-xxl-5 mb-3 mt-3 mt-md-0 text-secondary">
                 Let's talk
               </h1>
               <p class="mb-4 mb-md-3">
@@ -1181,14 +1217,19 @@
       <section class="home-blog">
         <div class="blog-header text-center">
           <h2 class="mb-4">Blog</h2>
-          <p class="mb-md-6 mb-3">
+          <h4 class="mb-md-6 mb-3 fw-normal">
             Gain valuable insights and strategies for optimizing your online
             reputation and presence.
-            <a href="/resources.html?tab=profile-tab" class="d-none d-md-block">
+            <a
+              href="/resources.html?tab=profile-tab"
+              class="d-none d-md-inline-block"
+            >
               See all articles.
             </a>
-          </p>
-          <a href="/resources.html" class="d-md-none">See all articles.</a>
+          </h4>
+          <a href="/resources.html?tab=profile-tab" class="d-md-none">
+            See all articles.
+          </a>
         </div>
 
         <div class="swiper blog-swiper">
@@ -1206,7 +1247,12 @@
                     Importance of a Responsive and Mobile-Friendly Website in
                     2023.
                   </h4>
-                  <button class="blog-button mt-4">Read</button>
+                  <a
+                    href="/blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
+                    class="text-decoration-none"
+                  >
+                    <button class="blog-button mt-4">Read</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1223,7 +1269,12 @@
                     What are the Most Important Actions a Company can Take to
                     Improve Online Reputation?
                   </h4>
-                  <button class="blog-button mt-4">Read</button>
+                  <a
+                    href="/blog/what-are-the-most-important-actions-a-company-can-take-to-improve-online-reputation.html"
+                    class="text-decoration-none"
+                  >
+                    <button class="blog-button mt-4">Read</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1282,7 +1333,7 @@
                     Online reputation refers to how your brand is perceived and
                     talked about online including reviews, ratings, and comments
                     on social media or other online platforms. Learn more about
-                    ORM here.
+                    ORM <a href="/services.html" class="fw-semibold"> here.</a>
                   </p>
                 </div>
               </div>
@@ -1399,7 +1450,7 @@
       </section>
       <section class="get-started text-md-center">
         <div class="container">
-          <h2 class="mb-4">Get started in seconds</h2>
+          <h1 class="mb-4">Get started in seconds</h1>
           <div class="buttons d-flex justify-content-center">
             <a href="/contact.html?slide=2" class="text-decoration-none">
               <button class="btn-primary mx-md-2">Free live call</button>

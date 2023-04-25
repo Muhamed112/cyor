@@ -31,6 +31,10 @@ $(document).ready(function () {
     $("#frame-mob-" + id).css("display", "block");
   });
 
+  $(".header-close").click(function (e) {
+    $(".pre-header").css("display", "none");
+  });
+
   $(".frame-close").click(function (e) {
     $(".position-frame").css("display", "none");
     $(".positions-row").css("display", "flex");
@@ -43,6 +47,8 @@ $(document).ready(function () {
     if (st < lastScrollTop) {
       //âíèç
       $(".navbar").addClass("sticky-top");
+      $(".navbar-collapse").removeClass("show");
+      $(".navbar-toggler").attr("aria-expanded", "false");
     } else {
       // ââåðõ
       $(".navbar").removeClass("sticky-top");

@@ -11,6 +11,23 @@
     ></script>
   </head>
   <body>
+    <div class="pre-header bg-secondary w-100 py-md-3 py-2">
+      <div
+        class="container d-flex justify-content-center align-items-center py-1 py-md-0"
+      >
+        <p class="mx-auto d-none d-lg-block">
+          You’ve spoken to our team and requested an offer? You can see it
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <p class="mx-auto d-lg-none">
+          You can see your offer
+          <a href="/offer.html" class="fw-semibold"> here!</a>
+        </p>
+        <a class="header-close">
+          <img src="/assets/close-black.svg" />
+        </a>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark p-md-0">
       <div class="container">
         <a class="navbar-brand p-0" href="/">
@@ -24,7 +41,6 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onclick="lockScroll()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,7 +115,7 @@
                       </p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/services.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -118,7 +134,9 @@
                     <a href="/services.html" id="orm-link"> ORM </a>
                   </div>
                   <div class="resource-item">
-                    <a href="/services.html" id="opm-link"> OPM </a>
+                    <a href="/services.html?tab=profile-tab" id="opm-link">
+                      OPM
+                    </a>
                   </div>
                 </div>
               </div>
@@ -176,7 +194,7 @@
                       <p>Can i Remove Google Reviews?</p>
                       <button class="btn-primary rounded-2 py-2 px-4 mt-3">
                         <a
-                          href="/resources.html"
+                          href="/resources.html?tab=profile-tab"
                           class="w-100 px-3 text-decoration-none"
                         >
                           Explore more
@@ -195,10 +213,15 @@
                     <a href="/resources.html" id="faq-link">FAQ</a>
                   </div>
                   <div class="resource-item">
-                    <a href="/resources.html" id="blog-link">Blog</a>
+                    <a href="/resources.html?tab=profile-tab" id="blog-link">
+                      Blog
+                    </a>
                   </div>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-5 px-md-3" href="/offer.html"> Offer </a>
             </li>
             <li class="nav-item nav-contact">
               <a class="nav-link py-md-5 px-md-3" href="/contact.html">
@@ -921,13 +944,13 @@
                   <div class="card-row d-flex">
                     <div class="card">
                       <a
-                        href="blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
+                        href="/blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
                       >
                         <img src="assets/resources/blog-1.png" />
                       </a>
 
                       <a
-                        href="blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
+                        href="/blog/importance-of-a-responsive-and-mobile-friendly-website-in-2023.html"
                         class="text-decoration-none"
                       >
                         Importance of a Responsive and Mobile-Friendly Website
@@ -935,35 +958,102 @@
                       </a>
                     </div>
                     <div class="card">
-                      <img src="assets/resources/blog-2.png" />
-                      <p>
+                      <a
+                        href="/blog/what-are-the-most-important-actions-a-company-can-take-to-improve-online-reputation.html"
+                      >
+                        <img src="assets/resources/blog-2.png" />
+                      </a>
+                      <a
+                        href="/blog/what-are-the-most-important-actions-a-company-can-take-to-improve-online-reputation.html"
+                        class="text-decoration-none"
+                      >
                         What are the Most Important Actions a Company can Take
                         to Improve Online Reputation?
-                      </p>
+                      </a>
                     </div>
                     <div class="card">
-                      <img src="assets/resources/blog-3.png" />
-                      <p>
+                      <a
+                        href="/blog/should-a-small-local-business-be-concerned-about-negative-review-on-google.html"
+                      >
+                        <img src="assets/resources/blog-3.png" />
+                      </a>
+                      <a
+                        href="/blog/should-a-small-local-business-be-concerned-about-negative-review-on-google.html"
+                        class="text-decoration-none"
+                      >
                         Should a Small Local Business be Concerned About
                         Negative Reviews on Google?
-                      </p>
+                      </a>
                     </div>
                   </div>
                   <div class="card-row d-flex">
                     <div class="card">
-                      <img src="assets/resources/blog-4.png" />
-                      <p>Does my business need a website?</p>
+                      <a href="/blog/does-my-business-need-a-website.html">
+                        <img src="assets/resources/blog-4.png" />
+                      </a>
+                      <a
+                        href="/blog/does-my-business-need-a-website.html"
+                        class="text-decoration-none"
+                      >
+                        Does my business need a website?
+                      </a>
                     </div>
                     <div class="card">
-                      <img src="assets/resources/blog-5.png" />
-                      <p>How to Improve Your Website Visibility Online?</p>
+                      <a
+                        href="/blog/how to-improve-your-online-visibility.html"
+                      >
+                        <img src="assets/resources/blog-5.png" />
+                      </a>
+                      <a
+                        href="/blog/how to-improve-your-online-visibility.html"
+                        class="text-decoration-none"
+                      >
+                        How to Improve Your Website Visibility Online?
+                      </a>
                     </div>
                     <div class="card">
-                      <img src="assets/resources/blog-6.png" />
-                      <p>
+                      <a
+                        href="/blog/why-does it-take-so-long-for-google-to-remove-an-unwanted-review.html"
+                      >
+                        <img src="assets/resources/blog-6.png" />
+                      </a>
+                      <a
+                        href="/blog/why-does it-take-so-long-for-google-to-remove-an-unwanted-review.html"
+                        class="text-decoration-none"
+                      >
                         Why Does it Take So Long for Google to Remove an
                         Unwanted Review?
-                      </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-row d-flex">
+                    <div class="card">
+                      <a
+                        href="/blog/how-to-effectively-manage-your-google-business-profile-in-6-simple-steps.html"
+                      >
+                        <img src="assets/resources/blog-3.png" />
+                      </a>
+                      <a
+                        href="/blog/how-to-effectively-manage-your-google-business-profile-in-6-simple-steps.html"
+                        class="text-decoration-none"
+                      >
+                        How to Effectively Manage your Google Business Profile
+                        in 6 Simple Steps.
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a
+                        href="/blog/how-to-maintain-a-strong-online-presence-and-business-operations-in-times-of-uncertainty.html"
+                      >
+                        <img src="assets/resources/blog-2.png" />
+                      </a>
+                      <a
+                        href="/blog/how-to-maintain-a-strong-online-presence-and-business-operations-in-times-of-uncertainty.html"
+                        class="text-decoration-none"
+                      >
+                        How to Maintain a Strong Online Presence and Business
+                        Operations in Times of Uncertainty?
+                      </a>
                     </div>
                   </div>
                 </div>
