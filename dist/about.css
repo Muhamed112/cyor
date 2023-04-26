@@ -12127,7 +12127,10 @@ p {
     width: 140px;
   }
 }
-@media (min-width: 768px) {
+.footer .middle-col {
+  margin: 0 50px 0 40px;
+}
+@media (min-width: 1600px) {
   .footer .middle-col {
     margin: 0 116px;
   }

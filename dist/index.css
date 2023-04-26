@@ -12127,7 +12127,10 @@ p {
     width: 140px;
   }
 }
-@media (min-width: 768px) {
+.footer .middle-col {
+  margin: 0 50px 0 40px;
+}
+@media (min-width: 1600px) {
   .footer .middle-col {
     margin: 0 116px;
   }
@@ -12213,7 +12216,13 @@ p {
 }
 .home-hero .btn-primary {
   width: 200px;
-  font-size: 20px;
+  height: 56px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 auto;
 }
 @media (max-width: 767.98px) {
   .home-hero .btn-primary {
@@ -12247,9 +12256,6 @@ p {
 }
 .how-we-work h1, .how-we-work .h1 {
   font-size: 31.25px;
-}
-.how-we-work h4, .how-we-work .h4 {
-  font-weight: 400;
 }
 .how-we-work .card {
   height: 665px;
@@ -12285,6 +12291,9 @@ p {
 
 .help {
   margin-bottom: 140px;
+}
+.help .header h1, .help .header .h1 {
+  font-size: 31.25px;
 }
 .help .card {
   border: 0;
@@ -12365,7 +12374,7 @@ p {
   width: 300px;
 }
 .home-services .services .services-left h4, .home-services .services .services-left .h4 {
-  padding-right: 50px;
+  font-size: 18px;
 }
 @media (max-width: 767.98px) {
   .home-services .services .services-left {
@@ -12373,9 +12382,6 @@ p {
   }
   .home-services .services .services-left h2, .home-services .services .services-left .h2 {
     font-size: 33px;
-  }
-  .home-services .services .services-left h4, .home-services .services .services-left .h4 {
-    padding-right: 0;
   }
 }
 .home-services .services .services-right .card {
@@ -12622,9 +12628,6 @@ p {
   padding: 70px 0 0 0;
   background-color: #f3f4f6;
 }
-.home-blog .blog-header a {
-  font-size: 20px;
-}
 .home-blog .swiper {
   padding-bottom: 120px;
   padding-top: 40px;
@@ -12656,6 +12659,9 @@ p {
 }
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content {
   padding: 0 40px 40px 40px;
+}
+.home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content h4, .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .h4 {
+  font-weight: 500;
 }
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .blog-button {
   width: 100%;

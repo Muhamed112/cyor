@@ -7,7 +7,13 @@
   padding: 120px 0;
   .btn-primary {
     width: 200px;
-    font-size: 20px;
+    height: 56px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 auto;
     @include media-breakpoint-down(md) {
       width: 160px;
       font-size: 16px;
@@ -39,9 +45,6 @@
   padding: 125px 0;
   h1 {
     font-size: 31.25px;
-  }
-  h4 {
-    font-weight: 400;
   }
   .card {
     height: 665px;
@@ -81,6 +84,11 @@
 
 .help {
   margin-bottom: 140px;
+  .header {
+    h1 {
+      font-size: 31.25px;
+    }
+  }
   .card {
     border: 0;
     border-radius: 24px;
@@ -161,16 +169,13 @@
     .services-left {
       width: 300px;
       h4 {
-        padding-right: 50px;
+        font-size: 18px;
       }
       @include media-breakpoint-down(md) {
         h2 {
           font-size: 33px;
         }
         width: 100%;
-        h4 {
-          padding-right: 0;
-        }
       }
     }
     .services-right {
@@ -439,11 +444,6 @@
 .home-blog {
   padding: 70px 0 0 0;
   background-color: #f3f4f6;
-  .blog-header {
-    a {
-      font-size: 20px;
-    }
-  }
   .swiper {
     padding-bottom: 120px;
     padding-top: 40px;
@@ -471,6 +471,9 @@
           }
           .card-content {
             padding: 0 40px 40px 40px;
+            h4 {
+              font-weight: 500;
+            }
             .blog-button {
               width: 100%;
               height: 48px;
