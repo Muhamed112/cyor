@@ -57,6 +57,10 @@ p {
   img {
     height: 24px;
     width: 24px;
+    @include media-breakpoint-down(md) {
+      height: 20px;
+      width: 20px;
+    }
   }
 }
 
@@ -74,6 +78,16 @@ p {
   .form-control::placeholder {
     color: #fff;
     font-weight: 300;
+    font-size: 12.8px;
+  }
+}
+
+.pre-header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(md) {
+    height: 40px;
     font-size: 12.8px;
   }
 }
@@ -109,7 +123,7 @@ p {
       padding-right: 0px !important;
       span {
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
         padding-left: 7px;
       }
       @include media-breakpoint-down(md) {
