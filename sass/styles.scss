@@ -198,7 +198,26 @@ p {
     position: absolute;
     border-top: 0.5px solid #acffbe;
     .resources-row {
+      .resource-item {
+        a {
+          &:hover {
+            color: $secondary !important;
+          }
+        }
+        button {
+          a {
+            &:hover {
+              color: $primary !important;
+            }
+          }
+        }
+      }
       .resource-item:first-child {
+        a {
+          &:hover {
+            color: #fff !important;
+          }
+        }
         @include media-breakpoint-down(xxl) {
           margin-right: 70px;
         }
@@ -302,7 +321,9 @@ p {
   }
 
   .middle-col {
-    margin: 0 50px 0 40px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 50px 0 40px;
+    }
     @include media-breakpoint-up(xxl) {
       margin: 0 116px;
     }

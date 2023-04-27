@@ -160,12 +160,16 @@
           .card {
             width: 100%;
             height: auto;
+
             a {
-              margin-bottom: 24px;
+              &:first-child {
+                margin-bottom: 16px;
+              }
+              margin-bottom: 32px;
             }
             img {
               height: 160px;
-              margin-bottom: 16px;
+              margin-bottom: 0px;
               border-top-left-radius: 0;
               border-top-right-radius: 0;
             }

@@ -12034,8 +12034,17 @@ p {
   position: absolute;
   border-top: 0.5px solid #acffbe;
 }
+.navbar .subheader .resources-row .resource-item a:hover {
+  color: #a1ffa1 !important;
+}
+.navbar .subheader .resources-row .resource-item button a:hover {
+  color: #0a2b51 !important;
+}
 .navbar .subheader .resources-row .resource-item:first-child {
   margin-right: 106px;
+}
+.navbar .subheader .resources-row .resource-item:first-child a:hover {
+  color: #fff !important;
 }
 @media (max-width: 1599.98px) {
   .navbar .subheader .resources-row .resource-item:first-child {
@@ -12132,8 +12141,10 @@ p {
     width: 140px;
   }
 }
-.footer .middle-col {
-  margin: 0 50px 0 40px;
+@media (min-width: 992px) {
+  .footer .middle-col {
+    margin: 0 50px 0 40px;
+  }
 }
 @media (min-width: 1600px) {
   .footer .middle-col {
@@ -12232,7 +12243,8 @@ p {
 @media (max-width: 767.98px) {
   .home-hero .btn-primary {
     width: 160px;
-    font-size: 16px;
+    font-size: 12.8px;
+    height: 48px;
   }
 }
 @media (max-width: 767.98px) {
@@ -12242,7 +12254,9 @@ p {
   .home-hero h1, .home-hero .h1 {
     font-size: 31.25px;
   }
-  .home-hero h3, .home-hero .h3 {
+  .home-hero h3, .home-hero .h3,
+  .home-hero h4,
+  .home-hero .h4 {
     font-size: 16px;
   }
   .home-hero .swiper-slide {
@@ -12291,6 +12305,10 @@ p {
   .how-we-work .card {
     padding: 0;
     height: auto;
+  }
+  .how-we-work .card:hover {
+    background: transparent;
+    box-shadow: none;
   }
 }
 
@@ -12408,24 +12426,22 @@ p {
 .home-services .services .services-right .card a {
   visibility: hidden;
 }
-.home-services .services .services-right .card:hover {
-  background: #ffffff;
-  box-shadow: 0px 123px 74px rgba(0, 0, 0, 0.01), 0px 55px 55px rgba(0, 0, 0, 0.01), 0px 14px 30px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
-}
-.home-services .services .services-right .card:hover a {
-  visibility: visible;
+@media (min-width: 992px) {
+  .home-services .services .services-right .card:hover {
+    background: #ffffff;
+    box-shadow: 0px 123px 74px rgba(0, 0, 0, 0.01), 0px 55px 55px rgba(0, 0, 0, 0.01), 0px 14px 30px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
+  }
+  .home-services .services .services-right .card:hover a {
+    visibility: visible;
+  }
 }
 @media (max-width: 767.98px) {
   .home-services .services .services-right .card {
     padding: 32px 24px;
     width: 100%;
     margin-bottom: 32px;
-  }
-  .home-services .services .services-right .card a {
-    display: none;
-  }
-  .home-services .services .services-right .card:hover a {
-    display: block;
+    background: #ffffff;
+    box-shadow: 0px 123px 74px rgba(0, 0, 0, 0.01), 0px 55px 55px rgba(0, 0, 0, 0.01), 0px 14px 30px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
   }
 }
 @media (max-width: 767.98px) {
@@ -12447,6 +12463,9 @@ p {
 @media (max-width: 767.98px) {
   .reputation {
     margin-bottom: 32px;
+  }
+  .reputation h2, .reputation .h2 {
+    font-size: 25px;
   }
 }
 .reputation nav {
@@ -12514,7 +12533,7 @@ p {
   padding-right: 32px !important;
 }
 .reputation .swiper .swiper-slide {
-  width: 325px;
+  width: 100%;
 }
 .reputation .swiper .swiper-slide-active .ppl-box {
   box-shadow: 0px 154px 93px rgba(0, 0, 0, 0.01), 0px 69px 69px rgba(0, 0, 0, 0.02), 0px 17px 38px rgba(0, 0, 0, 0.02), 0px 0px 0px rgba(0, 0, 0, 0.02);
@@ -12547,7 +12566,7 @@ p {
 }
 @media (max-width: 767.98px) {
   .home-contact {
-    padding: 40px 0;
+    padding: 64px 0;
   }
   .home-contact h1, .home-contact .h1 {
     font-size: 16px;
@@ -12668,6 +12687,11 @@ p {
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content h4, .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .h4 {
   font-weight: 500;
 }
+@media (max-width: 991.98px) {
+  .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content h4, .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .h4 {
+    font-size: 16px;
+  }
+}
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .blog-button {
   width: 100%;
   height: 48px;
@@ -12690,8 +12714,10 @@ p {
     padding: 0 24px 32px 24px;
   }
 }
-.home-blog .swiper .swiper-wrapper .swiper-slide .card:hover {
-  box-shadow: 0px 100px 123px rgba(35, 39, 46, 0.01), 0px 91px 91px rgba(35, 39, 46, 0.02), 0px 23px 50px rgba(35, 39, 46, 0.02), 0px 0px 0px rgba(35, 39, 46, 0.02);
+@media (min-width: 992px) {
+  .home-blog .swiper .swiper-wrapper .swiper-slide .card:hover {
+    box-shadow: 0px 100px 123px rgba(35, 39, 46, 0.01), 0px 91px 91px rgba(35, 39, 46, 0.02), 0px 23px 50px rgba(35, 39, 46, 0.02), 0px 0px 0px rgba(35, 39, 46, 0.02);
+  }
 }
 @media (max-width: 767.98px) {
   .home-blog {
@@ -12711,11 +12737,12 @@ p {
   }
   .home-blog .swiper .swiper-wrapper .swiper-slide {
     width: 326px;
-    height: 480px;
+    height: 440px;
   }
   .home-blog .swiper .swiper-wrapper .swiper-slide .card {
     height: 100%;
     width: 100%;
+    box-shadow: 0px 100px 123px rgba(35, 39, 46, 0.01), 0px 91px 91px rgba(35, 39, 46, 0.02), 0px 23px 50px rgba(35, 39, 46, 0.02), 0px 0px 0px rgba(35, 39, 46, 0.02);
   }
   .home-blog .swiper .swiper-wrapper .swiper-slide .card h4, .home-blog .swiper .swiper-wrapper .swiper-slide .card .h4 {
     font-weight: 500;
@@ -12809,7 +12836,7 @@ p {
     font-size: 25px;
   }
   .get-started .container {
-    padding: 0 58px;
+    padding: 0 50px;
   }
   .get-started .container .buttons {
     flex-direction: column;
