@@ -199,6 +199,9 @@ p {
     border-top: 0.5px solid #acffbe;
     .resources-row {
       .resource-item:first-child {
+        @include media-breakpoint-down(xxl) {
+          margin-right: 70px;
+        }
         margin-right: 106px;
       }
       .resource-item:last-child {

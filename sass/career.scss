@@ -90,9 +90,6 @@
         background-color: #f3f4f6;
         border-radius: 20px;
         border: none;
-        @include media-breakpoint-down(xxl) {
-          height: 195px;
-        }
       }
     }
   }

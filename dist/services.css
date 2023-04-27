@@ -12037,6 +12037,11 @@ p {
 .navbar .subheader .resources-row .resource-item:first-child {
   margin-right: 106px;
 }
+@media (max-width: 1599.98px) {
+  .navbar .subheader .resources-row .resource-item:first-child {
+    margin-right: 70px;
+  }
+}
 .navbar .subheader .resources-row .resource-item:last-child {
   margin-left: auto;
 }
@@ -12265,12 +12270,13 @@ p {
   color: #0a2b51;
 }
 .services-tabs .tab-content .btn-primary {
-  width: 160px;
+  width: 140px;
   font-size: 12.8px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
 }
 @media (max-width: 767.98px) {
   .services-tabs .tab-content .btn-primary {

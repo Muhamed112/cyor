@@ -12037,6 +12037,11 @@ p {
 .navbar .subheader .resources-row .resource-item:first-child {
   margin-right: 106px;
 }
+@media (max-width: 1599.98px) {
+  .navbar .subheader .resources-row .resource-item:first-child {
+    margin-right: 70px;
+  }
+}
 .navbar .subheader .resources-row .resource-item:last-child {
   margin-left: auto;
 }
@@ -12421,6 +12426,7 @@ p {
   border: 0.5px solid #0a2b51;
   border-radius: 12px;
   margin-right: 16px;
+  padding-left: 16px;
 }
 .pop-block .block .form-control::placeholder {
   color: #0a2b51 !important;
