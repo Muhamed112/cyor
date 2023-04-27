@@ -53,6 +53,7 @@
     border: none;
     border-radius: 24px;
     padding: 0px 40px 0px 40px;
+    transition: 0.25s;
 
     .small {
       font-size: 12.8px;
@@ -99,6 +100,7 @@
     border: 0;
     border-radius: 24px;
     padding: 40px 0 32px 0;
+    transition: 0.25s;
     .count {
       font-size: 61px;
     }
@@ -191,6 +193,7 @@
         border-radius: 20px;
         border: 0;
         margin-left: 30px;
+        transition: 0.25s;
         .icon-box {
           height: 48px;
           width: 48px;
@@ -263,6 +266,7 @@
     width: 480px;
     border: 0;
     text-align: left;
+    transition: 0.25s;
     img {
       width: 72px;
       margin-right: 18px;
@@ -464,6 +468,7 @@
           border-radius: 24px;
           border: 0;
           background-color: #f3f4f6;
+          transition: 0.25s;
           .img-container {
             height: 393px;
             width: 100%;
@@ -496,6 +501,7 @@
               font-size: 16px;
               font-weight: 500;
               color: $primary;
+              transition: 0.25s;
               &:hover {
                 background-color: $secondary;
                 border: 0;

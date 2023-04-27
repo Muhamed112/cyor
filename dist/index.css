@@ -11873,6 +11873,7 @@ p {
   border-radius: 12px;
   padding: 10px 0;
   color: #0a2b51;
+  transition: 0.25s;
 }
 .btn-secondary:hover {
   background: #a1ffa1;
@@ -11939,6 +11940,7 @@ p {
 
 .navbar .nav-res:hover .subheader {
   visibility: visible;
+  opacity: 1;
 }
 @media (max-width: 767.98px) {
   .navbar .dropdown {
@@ -12029,6 +12031,8 @@ p {
   padding: 30px 0 40px 0;
   z-index: 1000;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity ease-in 0.2s;
   top: 100%;
   left: 0;
   position: absolute;
@@ -12224,6 +12228,47 @@ p {
   top: -50px;
 }
 
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
 .home-hero {
   padding: 120px 0;
 }
@@ -12281,6 +12326,7 @@ p {
   border: none;
   border-radius: 24px;
   padding: 0px 40px 0px 40px;
+  transition: 0.25s;
 }
 .how-we-work .card .small {
   font-size: 12.8px;
@@ -12322,6 +12368,7 @@ p {
   border: 0;
   border-radius: 24px;
   padding: 40px 0 32px 0;
+  transition: 0.25s;
 }
 .help .card .count {
   font-size: 61px;
@@ -12413,6 +12460,7 @@ p {
   border-radius: 20px;
   border: 0;
   margin-left: 30px;
+  transition: 0.25s;
 }
 .home-services .services .services-right .card .icon-box {
   height: 48px;
@@ -12480,6 +12528,7 @@ p {
   width: 480px;
   border: 0;
   text-align: left;
+  transition: 0.25s;
 }
 .reputation .ppl-box img {
   width: 72px;
@@ -12667,6 +12716,7 @@ p {
   border-radius: 24px;
   border: 0;
   background-color: #f3f4f6;
+  transition: 0.25s;
 }
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .img-container {
   height: 393px;
@@ -12703,6 +12753,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: #0a2b51;
+  transition: 0.25s;
 }
 .home-blog .swiper .swiper-wrapper .swiper-slide .card .card-content .blog-button:hover {
   background-color: #a1ffa1;

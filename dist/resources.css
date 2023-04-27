@@ -11873,6 +11873,7 @@ p {
   border-radius: 12px;
   padding: 10px 0;
   color: #0a2b51;
+  transition: 0.25s;
 }
 .btn-secondary:hover {
   background: #a1ffa1;
@@ -11939,6 +11940,7 @@ p {
 
 .navbar .nav-res:hover .subheader {
   visibility: visible;
+  opacity: 1;
 }
 @media (max-width: 767.98px) {
   .navbar .dropdown {
@@ -12029,6 +12031,8 @@ p {
   padding: 30px 0 40px 0;
   z-index: 1000;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity ease-in 0.2s;
   top: 100%;
   left: 0;
   position: absolute;
@@ -12224,6 +12228,47 @@ p {
   top: -50px;
 }
 
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
 .resources-hero {
   margin-bottom: 40px;
   background-color: #f3f4f6;
@@ -12340,6 +12385,7 @@ p {
     background-image: none;
     height: 40px;
     font-size: 12.8px;
+    padding-left: 16px;
   }
   .resources-tabs .tab-box .form-control::placeholder {
     font-size: 12.8px;
