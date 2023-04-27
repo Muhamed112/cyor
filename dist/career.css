@@ -12335,6 +12335,11 @@ p {
 .content .gallery {
   margin-bottom: 40px;
 }
+@media (max-width: 991.98px) {
+  .content .gallery {
+    margin-bottom: 8px;
+  }
+}
 .content .gallery .container .gallery-row {
   height: 400px;
   margin-bottom: 20px;

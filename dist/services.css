@@ -12389,6 +12389,11 @@ p {
   border-bottom-right-radius: 12px;
 }
 @media (max-width: 767.98px) {
+  .services-tabs .tab-content .services-studies .card .card-content {
+    padding: 28px 24px;
+  }
+}
+@media (max-width: 767.98px) {
   .services-tabs .tab-content .services-studies .card img {
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;

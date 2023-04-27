@@ -122,6 +122,9 @@
 
   .gallery {
     margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 8px;
+    }
     .container {
       .gallery-row {
         height: 400px;

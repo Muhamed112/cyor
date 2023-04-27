@@ -171,6 +171,9 @@
           color: #263238;
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
+          @include media-breakpoint-down(md) {
+            padding: 28px 24px;
+          }
         }
 
         @include media-breakpoint-down(md) {
