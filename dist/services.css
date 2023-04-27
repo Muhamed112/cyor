@@ -12392,6 +12392,9 @@ p {
   .services-tabs .tab-content .services-studies .card .card-content {
     padding: 28px 24px;
   }
+  .services-tabs .tab-content .services-studies .card .card-content p {
+    font-weight: 500;
+  }
 }
 @media (max-width: 767.98px) {
   .services-tabs .tab-content .services-studies .card img {

@@ -12332,6 +12332,11 @@ p {
   font-size: 12.8px;
   line-height: 15px;
 }
+@media (max-width: 767.98px) {
+  .content .slider-second .swiper .swiper-slide .card {
+    padding: 24px 0 24px 24px;
+  }
+}
 .content .gallery {
   margin-bottom: 40px;
 }

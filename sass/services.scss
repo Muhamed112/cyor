@@ -173,6 +173,9 @@
           border-bottom-right-radius: 12px;
           @include media-breakpoint-down(md) {
             padding: 28px 24px;
+            p {
+              font-weight: 500;
+            }
           }
         }
 

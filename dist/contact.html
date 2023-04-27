@@ -862,7 +862,7 @@
         slidesPerView: 1,
         spaceBetween: 16,
         centeredSlides: false,
-        loop: true,
+        loop: false,
         initialSlide: value - 1,
 
         navigation: {
@@ -872,6 +872,11 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          900: {
+            loop: true,
+          },
         },
       });
     </script>

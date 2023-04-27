@@ -394,8 +394,7 @@
     margin-bottom: 120px;
     @include media-breakpoint-down(md) {
       margin-bottom: 32px;
-      padding-bottom: 32px;
-      padding-top: 64px;
+      padding: 64px 0;
       border-bottom: 1px solid $info;
       border-top: 1px solid $info;
     }
